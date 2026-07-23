@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <string id="AppName">EvenG2Bridge</string>
+    <string id="Connected">Connected</string>
+    <string id="Disconnected">Disconnected</string>
+    <string id="Next">NEXT</string>
+    <string id="Prev">PREV</string>
+    <string id="Select">SELECT</string>
+</resources>

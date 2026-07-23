@@ -1,0 +1,32 @@
+import Toybox.Lang;
+using Toybox.WatchUi;
+using Toybox.WatchUi as Ui;
+using Toybox.Graphics;
+using Toybox.Graphics as Gfx;
+
+module Rez {
+    module Drawables {
+        (:initialized) var LauncherIcon as ResourceId;
+    } // Drawables
+
+    module Layouts {
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_var_dc_getWidth = dc.getWidth();
+
+            var rez_cmp_local_text_TitleLabel = new WatchUi.Text({:identifier=>"TitleLabel", :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>0, :text=>$.Rez.Strings.AppName, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+
+            var rez_cmp_local_text_StatusLabel = new WatchUi.Text({:identifier=>"StatusLabel", :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>50, :text=>$.Rez.Strings.Disconnected, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
+
+            return [rez_cmp_local_text_TitleLabel, rez_cmp_local_text_StatusLabel] as Array<WatchUi.Drawable>;
+        }
+    } // Layouts
+
+    module Strings {
+        (:initialized) var Connected as ResourceId;
+        (:initialized) var Prev as ResourceId;
+        (:initialized) var Next as ResourceId;
+        (:initialized) var Select as ResourceId;
+        (:initialized) var Disconnected as ResourceId;
+        (:initialized) var AppName as ResourceId;
+    } // Strings
+} // Rez

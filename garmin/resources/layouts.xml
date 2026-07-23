@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout id="MainLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <label id="TitleLabel" x="center" y="0" font="Graphics.FONT_MEDIUM" justification="Graphics.TEXT_JUSTIFY_CENTER" text="@Strings.AppName" />
+    <label id="StatusLabel" x="center" y="50" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_CENTER" text="@Strings.Disconnected" />
+</layout>

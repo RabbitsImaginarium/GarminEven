@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Garmin HUD</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #00FF66;
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+            padding: 5px;
+            box-sizing: border-box;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        #status { font-size: 0.8rem; color: #666; display: none; }
+        .metric-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+            width: 100%;
+        }
+        #pace-display { font-size: 96px; font-weight: bold; line-height: 1; }
+        #hr-display { font-size: 64px; font-weight: bold; line-height: 1; }
+        .bottom-row { display: flex; justify-content: space-between; width: 100%; }
+        .bottom-metric { font-size: 48px; font-weight: bold; }
+        #ws-debug { display: none; }
+    </style>
+</head>
+<body>
+    <div id="status">HUD Ready</div>
+    <div class="metric-container">
+        <div id="pace-display">--:--</div>
+        <div id="hr-display">0 ♥</div>
+        <div class="bottom-row">
+            <div id="dist-display" class="bottom-metric">0.00</div>
+            <div id="time-display" class="bottom-metric">0:00</div>
+        </div>
+    </div>
+    <div id="ws-debug">Connecting...</div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

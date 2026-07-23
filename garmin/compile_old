@@ -1,0 +1,3 @@
+#!/bin/bash
+monkeyc -y /home/general/Workspace/sandbox/garmin/developer_key -d epix2 -m manifest.xml -o ./bin/even-glasses.prg -z ./resources/resources.xml ./source/CommManager.mc ./source/RemoteApp.mc ./source/RemoteDelegate.mc ./source/RemoteView.mc
+

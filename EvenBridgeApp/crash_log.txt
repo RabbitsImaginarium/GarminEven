@@ -1,0 +1,978 @@
+--------- beginning of main
+07-22 08:03:02.552 19739 19739 I pixel-thermal: cellular-emergency:29.3726 raw data: VIRTUAL-SKIN:29372.6 cellular-emergency:29372.6 
+07-22 08:03:02.552 19739 19739 I pixel-thermal: VIRTUAL-SKIN-OUTER-DISPLAY: model_input: [29308.00 29625.00 28160.00 28982.00 30018.00 29316.00 30158.00 31306.00 28683.00 ]
+07-22 08:03:02.552 19739 19739 I native  : I0000 00:00:1784721782.552786   19739 thermal_tflite_wrapper.cc:270] ThermalTfliteInvoke
+07-22 08:03:02.552 19739 19739 I pixel-thermal: VIRTUAL-SKIN-OUTER-DISPLAY: model_output: [27417.7 ]
+07-22 08:03:02.552 19739 19739 I pixel-thermal: VIRTUAL-SKIN-OUTER-DISPLAY: predicted_value: [27417.7 ]
+07-22 08:03:02.552 19739 19739 I pixel-thermal: VIRTUAL-SKIN-OUTER-DISPLAY:27.4177 raw data: VIRTUAL-SKIN-OUTER-DISPLAY:27417.7 charging_therm:29308 flash_therm:28982 inner_disp_therm:29625 north_therm:30018 outer_disp_therm:28160 quiet_therm:29316 rfpa_therm:30158 soc_therm:31306 usb_pwr_therm:28683 
+07-22 08:03:02.552 19739 19739 I pixel-thermal: VIRTUAL-SKIN-INNER-DISPLAY:29.7638 raw data: VIRTUAL-SKIN-INNER-DISPLAY:29763.8 VIRTUAL-SKIN-OPEN:29763.8 
+07-22 08:03:02.552 19739 19739 I pixel-thermal: VIRTUAL-SKIN:29.3726 raw data: VIRTUAL-SKIN:29372.6 
+07-22 08:03:02.552 19739 19739 I pixel-thermal: VIRTUAL-USB-UI:0 raw data: VIRTUAL-USB-UI:0 
+07-22 08:03:02.553 19739 19739 I pixel-thermal: VIRTUAL-SKIN-CHARGE-WIRED:30.1691 raw data: NO_WLC:1 VIRTUAL-SKIN-CHARGE-LEGACY:29169 VIRTUAL-SKIN-CHARGE-WIRED:30169 
+07-22 08:03:02.553 19739 19739 I pixel-thermal: DEVICE-SCREEN-AOD-OFF-HINT:0 raw data: DEVICE-SCREEN-AOD-OFF-HINT:0 
+07-22 08:03:02.561 13211 13211 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+07-22 08:03:02.584 13211 13211 I om.eveng2bridge: hiddenapi: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/appcompat/widget/ViewUtils; (domain=app, TargetSdkVersion=34) using reflection: allowed
+07-22 08:03:02.584 13211 13211 I om.eveng2bridge: hiddenapi: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/appcompat/widget/ViewUtils; (domain=app, TargetSdkVersion=34) using reflection: allowed
+07-22 08:03:02.591 13211 13240 W System.err: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+07-22 08:03:02.591 13211 13240 W System.err: SLF4J: Defaulting to no-operation (NOP) logger implementation
+07-22 08:03:02.591 13211 13240 W System.err: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+07-22 08:03:02.593 13211 13211 I ContentCaptureHelper: Setting logging level to OFF
+07-22 08:03:02.610 13211 13240 I om.eveng2bridge: hiddenapi: Accessing hidden method Lsun/misc/VM;->maxDirectMemory()J (runtime_flags=0, domain=core-platform, api=unsupported) from Lio/netty/util/internal/PlatformDependent; (domain=app, TargetSdkVersion=34) using reflection: allowed
+07-22 08:03:02.611 13211 13240 I PlatformDependent: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+07-22 08:03:02.611 13211 13240 E om.eveng2bridge: No implementation found for int io.netty.channel.kqueue.Native.sizeofKEvent() (tried Java_io_netty_channel_kqueue_Native_sizeofKEvent and Java_io_netty_channel_kqueue_Native_sizeofKEvent__) - is the library loaded, e.g. System.loadLibrary?
+07-22 08:03:02.612  1598  1669 W InputChannel-JNI: Channel already disposed.
+07-22 08:03:02.612 13211 13240 E om.eveng2bridge: No implementation found for int io.netty.channel.epoll.Native.offsetofEpollData() (tried Java_io_netty_channel_epoll_Native_offsetofEpollData and Java_io_netty_channel_epoll_Native_offsetofEpollData__) - is the library loaded, e.g. System.loadLibrary?
+07-22 08:03:02.616 13211 13240 D nativeloader: Load libnetty_transport_native_epoll_aarch_64.so using class loader ns clns-9 (caller=/data/app/~~80_DDfBzCNfyqTix3Hyhbw==/com.eveng2bridge-eaQPEsUaHyeQ5wqmbetbOg==/base.apk!classes4.dex): dlopen failed: library "libnetty_transport_native_epoll_aarch_64.so" not found
+07-22 08:03:02.616 13211 13240 D nativeloader: Load libnetty_transport_native_epoll_aarch_64.so using class loader ns clns-9 (caller=/data/app/~~80_DDfBzCNfyqTix3Hyhbw==/com.eveng2bridge-eaQPEsUaHyeQ5wqmbetbOg==/base.apk!classes4.dex): dlopen failed: library "libnetty_transport_native_epoll_aarch_64.so" not found
+07-22 08:03:02.617 13211 13211 D EvenBridge: Garmin SDK Ready. Searching...
+07-22 08:03:02.622 13211 13240 D nativeloader: Load libnetty_transport_native_epoll.so using class loader ns clns-9 (caller=/data/app/~~80_DDfBzCNfyqTix3Hyhbw==/com.eveng2bridge-eaQPEsUaHyeQ5wqmbetbOg==/base.apk!classes4.dex): dlopen failed: library "libnetty_transport_native_epoll.so" not found
+07-22 08:03:02.623 13211 13240 D nativeloader: Load libnetty_transport_native_epoll.so using class loader ns clns-9 (caller=/data/app/~~80_DDfBzCNfyqTix3Hyhbw==/com.eveng2bridge-eaQPEsUaHyeQ5wqmbetbOg==/base.apk!classes4.dex): dlopen failed: library "libnetty_transport_native_epoll.so" not found
+07-22 08:03:02.626 13211 13240 I om.eveng2bridge: hiddenapi: Accessing hidden field Lsun/nio/ch/SelectorImpl;->selectedKeys:Ljava/util/Set; (runtime_flags=0, domain=core-platform, api=unsupported) from Lio/netty/channel/nio/NioEventLoop$4; (domain=app, TargetSdkVersion=34) using reflection: allowed
+07-22 08:03:02.626 13211 13240 I om.eveng2bridge: hiddenapi: Accessing hidden field Lsun/nio/ch/SelectorImpl;->publicSelectedKeys:Ljava/util/Set; (runtime_flags=0, domain=core-platform, api=unsupported) from Lio/netty/channel/nio/NioEventLoop$4; (domain=app, TargetSdkVersion=34) using reflection: allowed
+07-22 08:03:02.627 13211 13211 D EvenBridge: Paired with: EPIX
+07-22 08:03:02.628 13211 13211 D CompatChangeReporter: Compat change id reported: 247079863; UID 10444; state: ENABLED
+07-22 08:03:02.629 13211 13211 D VRI[MainActivity]: WindowInsets changed: 1080x2364 statusBars:[0,159,0,0] navigationBars:[0,0,0,117] ime:[0,0,0,1024] mandatorySystemGestures:[0,188,0,117] 
+07-22 08:03:02.630 13211 13211 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ViewRootImpl$$ExternalSyntheticLambda14@7602dde
+07-22 08:03:02.631 13211 13242 D WindowOnBackDispatcher: setOnBackInvokedCallbackInfo: android.view.ViewRootImpl$$ExternalSyntheticLambda14@7602dde
+07-22 08:03:02.631 13211 13211 I HWUI    : Using FreeType backend (prop=Auto)
+07-22 08:03:02.631 23588 32655 W Binder  : Caught a RuntimeException from the binder stub implementation.
+07-22 08:03:02.631 23588 32655 W Binder  : java.util.ConcurrentModificationException
+07-22 08:03:02.631 23588 32655 W Binder  : 	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1604)
+07-22 08:03:02.631 23588 32655 W Binder  : 	at java.util.HashMap$ValueIterator.next(HashMap.java:1632)
+07-22 08:03:02.631 23588 32655 W Binder  : 	at com.garmin.android.apps.connectmobile.connectiq.w0.<init>(SourceFile:171)
+07-22 08:03:02.631 23588 32655 W Binder  : 	at com.garmin.android.apps.connectmobile.connectiq.w0.b(SourceFile:6)
+07-22 08:03:02.631 23588 32655 W Binder  : 	at com.garmin.android.apps.connectmobile.connectiq.ConnectIQService$a.X(SourceFile:0)
+07-22 08:03:02.631 23588 32655 W Binder  : 	at com.garmin.android.apps.connectmobile.connectiq.v0$a.onTransact(SourceFile:165)
+07-22 08:03:02.631 23588 32655 W Binder  : 	at android.os.Binder.execTransactInternal(Binder.java:1328)
+07-22 08:03:02.631 23588 32655 W Binder  : 	at android.os.Binder.execTransact(Binder.java:1282)
+--------- beginning of system
+07-22 08:03:02.632  1598  2501 D CoreBackPreview: Window{3d335ba u0 com.eveng2bridge/com.eveng2bridge.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@9babd9d, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+07-22 08:03:02.630 13211 13211 W DefaultDispatch: type=1400 audit(0.0:16387): avc:  denied  { read } for  name="somaxconn" dev="proc" ino=2652583 scontext=u:r:untrusted_app_34:s0:c188,c257,c512,c768 tcontext=u:object_r:proc_net:s0 tclass=file permissive=0 app=com.eveng2bridge
+07-22 08:03:02.637 13211 13240 W MacAddressUtil: Failed to find a usable hardware address from the network interfaces; using random bytes: 2b:bb:06:f8:b5:ab:4e:b0
+07-22 08:03:02.652  1598  1669 D WindowManager: setClientSurface Surface(name=VRI-com.eveng2bridge/com.eveng2bridge.MainActivity#6621)/@0xeb6c212 for 3d335ba com.eveng2bridge/com.eveng2bridge.MainActivity
+07-22 08:03:02.654  1598  1598 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.654 13211 13211 I Surface : Creating surface for consumer unnamed-13211-0 with slotExpansion=1 for 64 slots
+07-22 08:03:02.655 13211 13211 I Surface : Creating surface for consumer VRI[MainActivity]#0(BLAST Consumer)0 with slotExpansion=1 for 64 slots
+07-22 08:03:02.660  1598  1598 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.668  1262  1262 D AOC     : A3:MSG: controller.cc, 933: SysMem: ipc: C-F1-Ar, cmd ID: 0x00c8, tag: 0x71, rc: 0
+07-22 08:03:02.669  1262  1262 D AOC     : A3:MSG: controller.cc, 933: SysMem: ipc: C-F1-Ar, cmd ID: 0x00c8, tag: 0x72, rc: 0
+07-22 08:03:02.697 22032 22032 D ConnectorProvider: Connector disabled by gantry flag.
+07-22 08:03:02.724  1598  1695 I ActivityTaskManager: Displayed com.eveng2bridge/.MainActivity for user 0: +333ms
+07-22 08:03:02.749  1598  1598 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.750  1598  2307 I ImeTracker: com.eveng2bridge:4e2dcb70: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false userId 0 displayId 0
+07-22 08:03:02.750  1598  1598 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.751 22032 22032 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): com.android.launcher3.uioverrides.QuickstepLauncher$2@59a4562
+07-22 08:03:02.751 22032 22073 D WindowOnBackDispatcher: setOnBackInvokedCallbackInfo: com.android.launcher3.uioverrides.QuickstepLauncher$2@59a4562
+07-22 08:03:02.751  1598  4704 D CoreBackPreview: Window{281a92a u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@795965b, mPriority=0, mIsAnimationCallback=true, mOverrideBehavior=0}
+07-22 08:03:02.753 13211 13211 D InsetsController: hide(ime())
+07-22 08:03:02.754 13211 13211 I ImeTracker: com.eveng2bridge:4e2dcb70: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+07-22 08:03:02.754  5028 12080 V ACCESSIBILITY: CLICK - text: e; viewId: com.google.android.apps.nexuslauncher:id/input
+07-22 08:03:02.755  5028 12080 V JOAOMGCD: AutoInput-CLICK - text: e; viewId: com.google.android.apps.nexuslauncher:id/input
+07-22 08:03:02.756  3891  3891 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():1677 onFinishInputView(true)
+07-22 08:03:02.758  1598  1669 W InputChannel-JNI: Channel already disposed.
+07-22 08:03:02.759  5028 13187 D EventBus: No subscribers registered for event class com.joaomgcd.log.k
+07-22 08:03:02.759  5028 13187 D EventBus: No subscribers registered for event class org.greenrobot.eventbus.NoSubscriberEvent
+07-22 08:03:02.759  3891  3891 I LatinIme: LatinIme.resetInputContext():2288 resetInputContext(): reason=5, externalEditsInfo=ExternalEditsInfo{action=0, offset=-1, textLength=0, originalTextLength=0, hasEdits=false}
+07-22 08:03:02.759  3891  3891 I InputContextChangeTracker: InputContextChangeTracker.fixLyingSelectionRangeFromSurroundingText():1678 fixLyingSelectionRangeFromSurroundingText(): [2, 2]([2, 2]) -> [0, 0]([0, 0])
+07-22 08:03:02.760  1598  2761 I ImeTracker: system_server:623e308a: onRequestHide at ORIGIN_SERVER reason IME_REQUESTED_CHANGED_LISTENER fromUser false displayId 0
+07-22 08:03:02.760  5028 12080 V LASTMESSAGEo: Received last update com.joaomgcd.accessibility.inputaction.b@ac3e2692
+07-22 08:03:02.760  3891  3891 I EmojiAndGlobeKeyExtension2: EmojiAndGlobeKeyExtension2.onDeactivate():153 
+07-22 08:03:02.760  3891  3891 I JarvisExtension: JarvisExtension.onDeactivate():1316 onDeactivate
+07-22 08:03:02.760  3891  3891 I JarvisTriggersManager: JarvisTriggersManager.onDeactivate():785 onDeactivate
+07-22 08:03:02.761  2507  2537 D WindowManagerShell: PipDesktopState: isPipInDesktopMode isAnyDeskActive=false isDisplayDesktopFirst=false
+07-22 08:03:02.761  3891  3891 I NgaExtension: NgaExtension.onDeactivate():693 NgaExtension#onDeactivate [SDG]
+07-22 08:03:02.761  1598  2501 I ActivityManager: Background started FGS: Allowed [callingPackage: com.joaomgcd.autoinput; callingUid: 10476; uidState: FGS ; uidBFSL: [BFSL]; BFGS denied: false; intent: Intent { act=com.twofortyfouram.locale.intent.action.REQUEST_QUERY flg=0x10000001 xflg=0x4 cmp=net.dinglisch.android.taskerm/com.joaomgcd.taskerm.plugin.ServiceRequestQuery (has extras) }; code:ACTIVITY_STARTER; tempAllowListReason:<,reasonCode:SYSTEM_ALLOW_LISTED,duration:9223372036854775807,callingUid:-1>; allowWiu:52; targetSdkVersion:35; callerTargetSdkVersion:36; startForegroundCount:0; bindFromPackage:null; isBindService:false]
+07-22 08:03:02.762  3891  3891 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener hon@86689f0 was not registered for notification class nxb
+07-22 08:03:02.762  1598  2501 W ForegroundServiceTypeLoggerModule: Foreground service start for UID: 10474 does not have any types
+07-22 08:03:02.762  3891 12101 I KeyboardEventHandler: KeyboardEventHandler.handleKeyboardVisibilityEvent():219 Handling KeyboardVisibilityEvent: KEYBOARD_CLOSED [SD]
+07-22 08:03:02.762  3891  3891 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltips():153 Tooltip with id spell_check_add_to_dictionary not found in tooltipManager.
+07-22 08:03:02.762  3891  3891 I NgaVoiceInputHandler: NgaVoiceInputHandler.shutdownInternalLegacy():348 VoiceInputHandler:deactivating with reason: SHUTDOWN_UNIVERSAL_EXTENSION_ON_DEACTIVATE [SDG]
+07-22 08:03:02.762  3618  4055 I twoshay.TouchContextService: Got new packet! ContextPacket{orientation: PORTRAIT, audioMode: NORMAL, adaptiveTouchSensitivity: ON, screenProtectorMode: ON, imeState: ImeState{displayId: 0, visible: false, top: 0, left: 0, bottom: 0, right: 0}, audioDeviceInfo: TYPE_UNKNOWN}
+07-22 08:03:02.762  3891  3891 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener ozw@b3e9819 was not registered for notification class ozx
+07-22 08:03:02.762  3891  3891 I SmartEdit: SmartEdit.unloadModels():144 SmartEdit: unloading models [SDG]
+07-22 08:03:02.763  3891  3891 I NgaInputManager: NgaInputManager.onDeactivate():469 SmartEdit: unloading models false [SDG]
+07-22 08:03:02.763  3891  3891 I UniversalDictationUiProvider: UniversalDictationUiProvider.onDeactivate():69 onDeactivate() [UD]
+07-22 08:03:02.764  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.764  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.764  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.764  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.764  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.764  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.764  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.764  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.764  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.764  1598  1695 D HintManagerService: Sent cleanup message for uid 10202
+07-22 08:03:02.764  3891  3891 I InputBundle: InputBundle.consumeEvent():1052 Skip consuming an event as keyboard status is INACTIVE
+07-22 08:03:02.766  3891  3891 I AbstractIme: AbstractIme.onDeactivate():212 LatinIme.onDeactivate()
+07-22 08:03:02.768  3891  3891 I PrimesLoggerHolder: FrameMetricServiceImpl.stopAsFuture():213 Measurement not found: OnConfigurationChanged
+07-22 08:03:02.768  3891  3891 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2276 
+07-22 08:03:02.768  3891  3891 D ImeBackCallbackSender: Unregister OnBackInvokedCallback at app window (packageName=com.google.android.apps.nexuslauncher)
+07-22 08:03:02.768  3891 12086 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():129 repeatCheckTimes = 0, locked = false
+07-22 08:03:02.768  3891  3891 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1460 onStartInput(EditorInfo{EditorInfo{packageName=com.eveng2bridge, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+07-22 08:03:02.768  3891  3891 I LatinIMEBase: LatinIMEBase.updateInputViewCoverNavigation():317 Update input view padding, isNavbarOverInputWindow=true, bottom inset=117
+07-22 08:03:02.769  3891 13103 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():129 repeatCheckTimes = 1, locked = false
+07-22 08:03:02.769  3891  3891 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1546 onStartInputView(EditorInfo{EditorInfo{packageName=com.eveng2bridge, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+07-22 08:03:02.769  1598  2501 W PackageConfigPersister: App-specific configuration not found for packageName: com.eveng2bridge and userId: 0
+07-22 08:03:02.769  3891  3891 I KeyboardHeightUtil: KeyboardHeightUtil.getOemKeyboardHeightRatio():81 systemKeyboardHeightRatio:1.000000.
+07-22 08:03:02.772 13211 13211 D VRI[MainActivity]: WindowInsets changed: ime:null 
+07-22 08:03:02.773  1598  1709 I ImeTracker: system_server:c3f4a22d: onRequestShow at ORIGIN_SERVER reason CONTROLS_CHANGED fromUser false displayId 0
+07-22 08:03:02.774  1598  4704 W ForegroundServiceTypeLoggerModule: FGS stop call for: 10474 has no types!
+07-22 08:03:02.776 13211 13211 I ImeTracker: system_server:c3f4a22d: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+07-22 08:03:02.776  3891  3891 I InputContextChangeTracker: InputContextChangeTracker.fixLyingSelectionRangeFromSurroundingText():1678 fixLyingSelectionRangeFromSurroundingText(): [-1, -1]([-1, -1]) -> [0, 0]([0, 0])
+07-22 08:03:02.776  3891  3891 I InputBundleManager: InputBundleManager.startInput():356 startInput2 restarting=false
+07-22 08:03:02.776  3891  3891 I InputBundleManager: InputBundleManager.loadActiveInputBundleId():552 loadActiveInputBundleId: und-Latn-x-password, password
+07-22 08:03:02.776  3891  3891 I InputBundle: InputBundle.activateIme():598 activateIme: INACTIVE, keyboardType=prime
+07-22 08:03:02.776  3891  3891 I AbstractIme: AbstractIme.onActivate():94 PasswordIme.onActivate() : EditorInfo = EditorInfo{packageName=com.eveng2bridge, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}, IncognitoMode = false, DeviceLocked = false
+07-22 08:03:02.777  3891  3891 I InputBundle: InputBundle.activateKeyboard():653 activateKeyboard: ACTIVE, type=KeyboardTypeAndPayload(keyboardType=prime, payload=null)
+07-22 08:03:02.777  3891  3891 I KeyboardWrapper: KeyboardWrapper.activateKeyboard():592 activateKeyboard(): type=prime, status=INACTIVE, imeDef=ImeDef{stringId=password, language=und-Latn-x-password, languageTag=und-Latn-x-password, processedConditions={language=en-CA, variant=qwerty, enable_number_row=true, enable_pk_simulator=false, device=phone, true=true, writing_helper_enable_by_word_revert=true, enable_number_row_in_password=true}, className=com.google.android.libraries.inputmethod.ime.password.PasswordIme, label=2132019358, keyEventInterpreter=null, inlineComposing=true, autoCapital=true, announceAutoSelectedCandidate=true, statusIcon=0, indicatorIcon=0, indicatorLabel=null, displayAppCompletions=false, extraValues=otq{}, processors=com.google.android.libraries.inputmethod.metadata.ProcessorsDef@739c681, unacceptableMetaKeys=4098, languageSpecificSettings=0, asciiCapable=false, alwaysShowSuggestions=false, useAsciiPasswordKeyboard=false, keyboardGroupDef=KeyboardGroupDef(variant=qwerty, variantLabel=0, pkLanguageTag=, pkLayoutType=, dynamicLayout=null, layoutSpecificSettings=[], layoutSpecificTheme=2132083596, order=0, supportsSplitMode=true, supportsOneHandedMode=true, isVariantNameMandatory=false, keyboardDefInfos={prime=KeyboardDefInfo(kbType=prime, initialStates=0, keyboardDefs=[2132215290, 2132215953, 2132215482], extraValues=otq{}), digit=KeyboardDefInfo(kbType=digit, initialStates=0, keyboardDefs=[2132215914], extraValues=otq{}), symbol=KeyboardDefInfo(kbType=symbol, initialStates=0, keyboardDefs=[2132216099], extraValues=otq{})}, overrideKeyboardXmlConditions=com.google.android.libraries.inputmethod.metadata.OverrideKeyboardXmlConditionsDef@8838f3a), phenotypeFlagId=0, localizationLanguageTag=null, supportsInlineSuggestion=false}
+07-22 08:03:02.777  3891  3891 I KeyboardManager: KeyboardManager.requestKeyboard():249 Creating keyboard prime, imeId=password, cacheKey=theme,!gsf,!pgsf,!use_system_font,BORDER,FLAVOR_DPI=XXHDPI,IS_LIGHT,KEYBOARD_WIDTH_CATEGORY=NORMAL,KEY_BORDER_SHAPE=1,LIGHT_THEME=true,PHYSICAL_DIAGONAL=6.295603,POPUP,SCREEN_SHORTEST_WIDTH=443,SCREEN_SHORTEST_WIDTH_NO_SCALE=443,SW400DP,XXHDPI,bottom4dp,enable_popup_on_keypress=true,keyboard_height_48_mm,non_linear_scale,noshadow,overlay_builtin_dynamic_color_light_base.binarypb:gm3-light-fff9f9f9-ff000000-af0cec28ed134d48091512734177b8e1,pgsans,silkpopup
+07-22 08:03:02.777  3891  3891 I KeyboardDefManager: KeyboardDefManager.requestKeyboardDef():128 requestKeyboardDef(): type=prime, info=ouy{defIds=[#0x7f1705fa, #0x7f170891, #0x7f1706ba], defIdsCacheKey=[2132215290, 2132215953, 2132215482]}
+07-22 08:03:02.777  3891  3891 I KeyboardDefManager: KeyboardDefManager.requestKeyboardDef():195 requestKeyboardDef(): getOrCreate from cache, info=ouy{defIds=[#0x7f1705fa, #0x7f170891, #0x7f1706ba], defIdsCacheKey=[2132215290, 2132215953, 2132215482]}
+07-22 08:03:02.777  3891  3891 I KeyboardDefManager: KeyboardDefManager$Companion$addFutureCallbackForKeyboardDefReceiver$1.onSuccess():425 requestKeyboardDef onSuccess(): info=ouy{defIds=[#0x7f1705fa, #0x7f170891, #0x7f1706ba], defIdsCacheKey=[2132215290, 2132215953, 2132215482]}
+07-22 08:03:02.777  3891  3891 I KeyboardWrapper: KeyboardWrapper.onKeyboardReady():226 onKeyboardReady(): type=prime(prime), kb=com.google.android.apps.inputmethod.latin.keyboard.LatinPasswordKeyboard@35bbb57
+07-22 08:03:02.777  3891  3891 I KeyboardWrapper: KeyboardWrapper.doActivateKeyboard():624 doActivateKeyboard(): prime
+07-22 08:03:02.783  3891  3891 I KeyboardViewHelper: KeyboardViewHelper.getView():180 Get view with height ratio:1.000000
+07-22 08:03:02.783  1598  1598 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.784  1598  2724 D AccessibilityManagerService: .getAccessibilityShortcutTargets {shortcutType=1, userId=0}
+07-22 08:03:02.784  1598  2724 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{com.android.server.accessibility.MagnificationController}, new:[com.android.server.accessibility.MagnificationController]
+07-22 08:03:02.787  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:02.787  3891  3891 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltips():153 Tooltip with id undo_access_point_promotion_banner not found in tooltipManager.
+07-22 08:03:02.788  3891  3891 W Keyboard: Keyboard.getKeyboardViewHelper():608 null helper is returned: keyboardDef=out{processedConditions={device=phone, enable_pk_simulator=false, android_software_xr_api_spatial=false, free_cursor=false, enable_free_cursor_by_long_press_space=true, enable_scrub_move=true, layout_9key_split=false, expressions=normal, language=en-CA, variant=qwerty, show_comma_key=true, show_period_key=true, keyboard_mode=normal, pref_enable_flick_symbols=false, show_secondary_digits=false, enable_secondary_symbols=true, enable_number_row=true, show_suggestion_strip=true}, globalConditions={global_theme_key=theme,!gsf,!pgsf,!use_system_font,BORDER,FLAVOR_DPI=XXHDPI,IS_LIGHT,KEYBOARD_WIDTH_CATEGORY=NORMAL,KEY_BORDER_SHAPE=1,LIGHT_THEME=true,PHYSICAL_DIAGONAL=6.295603,POPUP,SCREEN_SHORTEST_WIDTH=443,SCREEN_SHORTEST_WIDTH_NO_SCALE=443,SW400DP,XXHDPI,bottom4dp,enable_popup_on_keypress=true,keyboard_height_48_mm,non_linear_scale,noshadow,overlay_builtin_dynamic_color_light_base.binarypb:gm3-light-fff9f9f9-ff000000-af0cec28ed134d48091512734177b8e1,pgsans,silkpopup, global_locale=en_CA, global_density_dpi=390, global_orientation=1}, className=.latin.keyboard.LatinPasswordKeyboard, resourceIds=[#0x7f1705fa, #0x7f170891, #0x7f1706ba], initialStates=0, keyboardViewDefs=[ovk{direction=null, id=#0x7f0b023f, isScalable=true, layoutId=#0x7f0e02c4, type=BODY, touchable=true, defaultShow=true}, ovk{direction=null, id=#0x7f0b023f, isScalable=false, layoutId=#0x7f0e021f, type=FLOATING_CANDIDATES, touchable=false, defaultShow=false}, ovk{direction=LOCALE, id=#0x7f0b023f, isScalable=false, layoutId=#0x7f0e0528, type=HEADER, touchable=true, defaultShow=true}], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x7f0e0619, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=26388279066624}, type=WIDGET, helpersCreated={HEADER=ofc@6bcf874, BODY=ofc@fe1519d, FLOATING_CANDIDATES=ofc@63bc612}, context.getResources().getConfiguration(): {1.2 302mcc220mnc [en_CA] ldltr sw443dp w443dp h970dp 390dpi nrml long compactNeeded hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2364) mAppBounds=Rect(0, 0 - 1080, 2364) mMaxBounds=Rect(0, 0 - 1080, 2364) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.95 fontWeightAdjustment=0}
+07-22 08:03:02.788  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:02.790  3891  4045 I OnDeviceWmrCalculator: OnDeviceWmrCalculator.calculateWmr():94 WMR: 1.0000 (1 / 1)
+07-22 08:03:02.790  3891  3891 I InputBundleManager: InputBundleManager.startInput():371 startInput() with KeyboardTypeAndPayload(keyboardType=prime, payload=null)
+07-22 08:03:02.790  3891  3891 I PkModeUpdater: PkModeUpdater.onActivate():95 End PK mode: disablePkMode=false, entry=nyk{languageTag=en-CA, variant=qwerty, hasLocalizedResources=true, conditionCacheKey=_android_software_xr_api_spatial=false_app_first_start_timestamp=1754628319122_device=phone_device_size=default_enable_free_cursor_by_long_press_space=true_enable_number_row=true_enable_number_row_in_password=true_enable_pk_simulator=false_enable_pk_simulator_setting=false_enable_scrub_move=true_enable_secondary_digits=true_enable_secondary_symbols=true_expressions=normal_four_or_more_letter_rows=false_free_cursor=false_keyboard_font_size_setting=_keyboard_mode=normal_language=en-CA_layout_9key_split=false_orientation=portrait_physical_keyboard=nokeys_pk_simulator_vk_ready=false_pref_enable_flick_symbols=false_rtl_layout=false_show_comma_key=true_show_period_key=true_show_secondary_digits=false_show_suggestion_strip=true_show_suggestions=true_split_with_duplicate_keys=true_true=true_variant=qwerty_writing_helper_enable_by_word_revert=true, imeDef.stringId=ime_english_canada, imeDef.className=com.google.android.apps.inputmethod.libs.edittracker.EditTrackingImeWrapper, imeDef.languageTag=en-CA}, editorInfo=android.view.inputmethod.EditorInfo@56e7311
+07-22 08:03:02.791  3891  3891 I AccessoryInputModeManager: AccessoryInputModeManager.onModeStarted():356 Accessory input mode started: null
+07-22 08:03:02.791  3891  3891 W SupplementaryKeyboardsWrapper: SupplementaryKeyboardsWrapper.deactivateKeyboard():162 keyboard accessory_candidates_consumer is not activated before!
+07-22 08:03:02.791  3891  3891 I ContactPromoExtension: ContactPromoExtension.onActivate():82 Not activated ContactPromoExtension: not a normal text input box.
+07-22 08:03:02.791  3891  3891 I EmojiAndGlobeKeyExtension2: EmojiAndGlobeKeyExtension2.onActivate():146 
+07-22 08:03:02.791  3891  3891 I JarvisAccessPointCooperativeModeHelper: JarvisAccessPointCooperativeModeHelper.onActivate():177 onActivate
+07-22 08:03:02.791  3891  3891 I JarvisTriggersManager: JarvisTriggersManager.onActivate():243 onActivate
+07-22 08:03:02.791  3891  3891 I JarvisHelper: JarvisHelper.activateAutoFixItChipForEditor():132 Disable Fix it button as the editor does not support AC
+07-22 08:03:02.791  3891  4045 I CrossProfileSharedPreferences: CrossProfileSharedPreferences.maybeRunSyncTaskAfterFullSyncComplete():218 Full sync is not complete when incremental sync is called, trigger full sync
+07-22 08:03:02.791  3891  3891 I JarvisExtension: JarvisExtension.onActivate():393 onActivate
+07-22 08:03:02.792  3891  4045 W ModuleManager: ModuleManager.loadModule():634 Module qtw is not available
+07-22 08:03:02.793  3891 12070 I CrossProfileSharedPreferences: CrossProfileSharedPreferences.syncAllAllowedPreferencesInternal():276 Cannot make cross profile calls to full sync preferences
+07-22 08:03:02.793  3891  3891 W JarvisPromptGenAiRequestHandlerFactory: JarvisPromptGenAiRequestHandlerFactory.createGenAiRequestHandler():37 Private Inference Handler is requested, but build flavor is not supported. Falling back to default server-based GenAI request handler. Some feature may not work as expected.
+07-22 08:03:02.793  3891 12069 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():72 parseKeyboardGroupDef() 2132214002 -> 0_resource_name_obfuscated : WaitTime = 0 ms : RunTime = 2 ms
+07-22 08:03:02.793  3891  3891 I KeyboardModeUtils: KeyboardModeUtils.getKeyboardBottomOffset():435 inch: 0.350000 ydpi: 408.472992 adjustKeyboardBottomByDisplaySize: false currentDensityDpi: 390 defaultDensityDpi: 390 keyboardBottomToScreenPx: 142 keyboardBottomToNavBarPx: 25 navBarHeight: 117
+07-22 08:03:02.793  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:02.793  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:02.793  3891  3891 I KeyboardViewManager: KeyboardViewManager.updateKeyboardBottomFrame():518 Set bottomFrameHeight = 25 while holderPaddingBottom = 25; navigationHeight = 117
+07-22 08:03:02.794  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:02.794  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:02.794  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:02.794  3891  3891 W ExtensionWrapper: ExtensionWrapper.setExtensionViewVisibility():878 interface oiy is not activate
+07-22 08:03:02.794  3891  3891 I NewLanguagePromptExtension: NewLanguagePromptExtension.onActivate():189 Not activated NewLanguagePromptExtension: not a normal text input box.
+07-22 08:03:02.794  3891  3891 I NgaExtension: NgaExtension.onActivate():652 NgaExtension#onActivate [SDG]
+07-22 08:03:02.794  3891  3891 I NgaVoiceInputHandlerSwitcher: NgaVoiceInputHandlerSwitcher.restorePrimary():251 not switching to primary. fallback is null [SDG]
+07-22 08:03:02.794  3891  3891 I NgaVoiceInputHandler: NgaVoiceInputHandler.maybeCreateInputManager():260 VoiceInputHandler:activating [SDG]
+07-22 08:03:02.794  3891  3891 I CompositeIntentClassifier: CompositeIntentClassifier.<init>():49 Determined SmartEdit intent-classifier threshold: 0.900000 [SDG]
+07-22 08:03:02.794  3891  3891 I MobileBertIntentClassifier: MobileBertIntentClassifier.<init>():174 Successfully loaded native lib mobilebert_classifier_android_jni
+07-22 08:03:02.794  3891  3891 I ModelessCommandDetector: ModelessCommandDetector.<init>():86 Created modeless command detector with language code en [SDG]
+07-22 08:03:02.794  3891  3891 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener pad@9d99b60 was not registered for notification class pae
+07-22 08:03:02.794  3891  3891 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener ozw@b3e9819 was not registered for notification class ozx
+07-22 08:03:02.794  3891  3891 I NgaExtension: NgaExtension.onActivate():678 NgaExtension: interaction type=4 [SDG]
+07-22 08:03:02.794  3891 12101 I KeyboardEventHandler: KeyboardEventHandler.handleKeyboardVisibilityEvent():219 Handling KeyboardVisibilityEvent: KEYBOARD_OPENED [SD]
+07-22 08:03:02.794  3891 12103 I SpeechEnhancementLogger: SpeechEnhancementLogger.logAtInfo():24 Speech enhancement is disabled because flag is disabled [SD]
+07-22 08:03:02.794  3891  3891 I UniversalDictationUiProvider: UniversalDictationUiProvider.onActivate():63 onActivate() [UD]
+07-22 08:03:02.794  3891 12101 I PackageStatusChecker: PackageStatusChecker.isPackageSuspended():24 Current package suspended=false [SD]
+07-22 08:03:02.795  3891 12086 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():129 repeatCheckTimes = 1, locked = false
+07-22 08:03:02.795  3891 12069 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():77 Automatic switching disabled because Gboard setting is not shown [SD]
+07-22 08:03:02.795  3891 12069 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():92 Automatic switching disabled because there aren't enough supported keyboard languages [SD]
+07-22 08:03:02.795  3891 12069 I AsrProviderChoice: AsrProviderChoice.setChosenProvider():83 Setting chosen ASR provider to: 6 [SD]
+07-22 08:03:02.795  3891 12069 I EligibilityChecker: EligibilityChecker.triggerProactiveLanguagePackUpdate():479 Never attempted LP download before, triggering download for potential updates [SD]
+07-22 08:03:02.796  3891 12069 I EligibilityChecker: EligibilityChecker.getDictationConfigEligibilityForLocale():311 Dictation is enabled. workprofile=false [SD]
+07-22 08:03:02.796  3891  3891 I VoiceImeUtils: VoiceImeUtils.shouldStartVoiceInputAutomaticallyInCurrentInputBox():154 No private IME option set to start voice input. [RD]
+07-22 08:03:02.796  3891 13144 I LanguageDownloadQueue: LanguageDownloadQueue.performLanguageDownload():87 Starting language download job for en-CA [SD]
+07-22 08:03:02.796  3891  4045 I CrossProfileSharedPreferences: CrossProfileSharedPreferences.maybeRunSyncTaskAfterFullSyncComplete():218 Full sync is not complete when incremental sync is called, trigger full sync
+07-22 08:03:02.796  3891  3891 D ImeBackCallbackSender: Register OnBackInvokedCallback with priority=-1 at app window (packageName=com.eveng2bridge)
+07-22 08:03:02.796  3891 12069 I EligibilityUtilKt: EligibilityUtilKt.isDictationSupportedInInputField():92 Field type is not set, assuming supported input field. [SD]
+07-22 08:03:02.796  3891 12069 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():77 Automatic switching disabled because Gboard setting is not shown [SD]
+07-22 08:03:02.796  3891 12069 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():92 Automatic switching disabled because there aren't enough supported keyboard languages [SD]
+07-22 08:03:02.796  3891 12067 I KeyboardEligibilityNotifier: KeyboardEligibilityNotifier.notifyEligibility():76 Keyboard notified that eligibility=ELIGIBLE [SD]
+07-22 08:03:02.796 13211 13211 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@8fbf3a2
+07-22 08:03:02.798  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@9393c12, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:02.798  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@5983fe3, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:02.798  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@4c21109, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:02.798  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@dc82f0e, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:02.798  3891 12071 I SystemHapticSettings: SystemHapticSettings.updateSystemVibrationState():63 update vibration state: false
+07-22 08:03:02.798  3891 12067 I KeyboardUiManagerImpl: KeyboardUiManagerImpl.onKeyboardShownAgain():170 #onKeyboardShownAgain scheduled [SD]
+07-22 08:03:02.798  3891 12067 I KeyboardUiManagerImpl: KeyboardUiManagerImpl.onKeyboardShownAgain():173 #onKeyboardShownAgain [SD]
+07-22 08:03:02.798  3891 12067 I KeyboardEventHandler: KeyboardEventHandler.handleFieldChangedEvent():465 Handling FieldChangedEvent: fgPkg=com.eveng2bridge, fieldType=0, interactionType=FIELD_CHANGE [SD]
+07-22 08:03:02.799  3891 12070 I CrossProfileSharedPreferences: CrossProfileSharedPreferences.syncAllAllowedPreferencesInternal():276 Cannot make cross profile calls to full sync preferences
+07-22 08:03:02.799  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@1dc8de0, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:02.799  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@962d899, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:02.799  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@2bdd841, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:02.799  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@5ff11e6, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:02.799  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020534, callback=fmb@e960b35, lastModifier=2, keyCodes=[56], actions=[0]}
+07-22 08:03:02.799  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020534, callback=fmb@d4b1bca, lastModifier=0, keyCodes=[317], actions=[0]}
+07-22 08:03:02.799  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020534, callback=fmb@c208ac3, lastModifier=2, keyCodes=[56], actions=[0]}
+07-22 08:03:02.799  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020534, callback=fmb@9f4af40, lastModifier=0, keyCodes=[317], actions=[0]}
+07-22 08:03:02.799  3891  3891 W AccessPointsManager: AccessPointsManager.addAccessPoint():1124 The holder controller #0x7f0b2947 is not registered
+07-22 08:03:02.799  3891 12067 I PackageStatusChecker: PackageStatusChecker.isPackageSuspended():24 Current package suspended=false [SD]
+07-22 08:03:02.799  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020534, callback=fmb@360058, lastModifier=2, keyCodes=[56], actions=[0]}
+07-22 08:03:02.799  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020534, callback=fmb@72925b1, lastModifier=0, keyCodes=[317], actions=[0]}
+07-22 08:03:02.799  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020534, callback=fmb@6144e79, lastModifier=2, keyCodes=[56], actions=[0]}
+07-22 08:03:02.799  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020534, callback=fmb@12477be, lastModifier=0, keyCodes=[317], actions=[0]}
+07-22 08:03:02.800  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@4c21109, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:02.800  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@dc82f0e, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:02.800  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@3f7101f, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:02.800  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@5825935, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:02.800  3891 12067 I SpeechEnhancementLogger: SpeechEnhancementLogger.logAtInfo():24 Speech enhancement is disabled because flag is disabled [SD]
+07-22 08:03:02.800  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@2bdd841, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:02.800  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@5ff11e6, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:02.800  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@d868f3b, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:02.800  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@4912658, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:02.800  3891  3891 W InputContextProxy: InputContextProxy.applyClientDiffInternal():917 Ignore [FetchSuggestions] diff due to stale request: 953<954, inputStateId=854, lastInputStateId=855
+07-22 08:03:02.800  3891  3891 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():1677 onFinishInputView(false)
+07-22 08:03:02.800  3891  3891 I EmojiAndGlobeKeyExtension2: EmojiAndGlobeKeyExtension2.onDeactivate():153 
+07-22 08:03:02.801  3891  3891 I JarvisExtension: JarvisExtension.onDeactivate():1316 onDeactivate
+07-22 08:03:02.801  3891  3891 I JarvisTriggersManager: JarvisTriggersManager.onDeactivate():785 onDeactivate
+07-22 08:03:02.801  3891  3891 I NgaExtension: NgaExtension.onDeactivate():693 NgaExtension#onDeactivate [SDG]
+07-22 08:03:02.801 13211 13242 D WindowOnBackDispatcher: setOnBackInvokedCallbackInfo: android.view.ImeBackAnimationController@8fbf3a2
+07-22 08:03:02.801  3891  3891 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener hon@86689f0 was not registered for notification class nxb
+07-22 08:03:02.801  3891  3891 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltips():153 Tooltip with id spell_check_add_to_dictionary not found in tooltipManager.
+07-22 08:03:02.801  3891  3891 I NgaVoiceInputHandler: NgaVoiceInputHandler.shutdownInternalLegacy():348 VoiceInputHandler:deactivating with reason: SHUTDOWN_UNIVERSAL_EXTENSION_ON_DEACTIVATE [SDG]
+07-22 08:03:02.801  3891  3891 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener ozw@b3e9819 was not registered for notification class ozx
+07-22 08:03:02.801  3891  3891 I SmartEdit: SmartEdit.unloadModels():144 SmartEdit: unloading models [SDG]
+07-22 08:03:02.801  3891  3891 I NgaInputManager: NgaInputManager.onDeactivate():469 SmartEdit: unloading models false [SDG]
+07-22 08:03:02.801  3891 12086 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():77 Automatic switching disabled because Gboard setting is not shown [SD]
+07-22 08:03:02.801  3891 13144 I LanguageDownloadQueue: LanguageDownloadQueue.performLanguageDownload():107 Skip download for en-CA due to another recent attempt [SD]
+07-22 08:03:02.801  3891  3891 I UniversalDictationUiProvider: UniversalDictationUiProvider.onDeactivate():69 onDeactivate() [UD]
+07-22 08:03:02.801  3891 12086 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():92 Automatic switching disabled because there aren't enough supported keyboard languages [SD]
+07-22 08:03:02.801  1598  1862 D CoreBackPreview: Window{3d335ba u0 com.eveng2bridge/com.eveng2bridge.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@4115809, mPriority=0, mIsAnimationCallback=true, mOverrideBehavior=0}
+07-22 08:03:02.801  3891 12086 I AsrProviderChoice: AsrProviderChoice.setChosenProvider():83 Setting chosen ASR provider to: 6 [SD]
+07-22 08:03:02.801  3891  3891 I AbstractIme: AbstractIme.onDeactivate():212 PasswordIme.onDeactivate()
+07-22 08:03:02.801  3891 12086 I EligibilityChecker: EligibilityChecker.triggerProactiveLanguagePackUpdate():479 Never attempted LP download before, triggering download for potential updates [SD]
+07-22 08:03:02.801  3891 12086 I EligibilityChecker: EligibilityChecker.getDictationConfigEligibilityForLocale():311 Dictation is enabled. workprofile=false [SD]
+07-22 08:03:02.801  3891 12071 I LanguageDownloadQueue: LanguageDownloadQueue.performLanguageDownload():87 Starting language download job for en-CA [SD]
+07-22 08:03:02.801  3891 12086 I EligibilityUtilKt: EligibilityUtilKt.isDictationSupportedInInputField():92 Field type is not set, assuming supported input field. [SD]
+07-22 08:03:02.801  3891  3891 I PrimesLoggerHolder: FrameMetricServiceImpl.stopAsFuture():213 Measurement not found: OnConfigurationChanged
+07-22 08:03:02.801  3891  3891 I GoogleInputMethodService: GoogleInputMethodService.onWindowHidden():2410 
+07-22 08:03:02.802  3891  3891 D ImeBackCallbackSender: Unregister OnBackInvokedCallback at app window (packageName=com.eveng2bridge)
+07-22 08:03:02.802  3891 12071 I LanguageDownloadQueue: LanguageDownloadQueue.performLanguageDownload():107 Skip download for en-CA due to another recent attempt [SD]
+07-22 08:03:02.802  3891 12086 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():77 Automatic switching disabled because Gboard setting is not shown [SD]
+07-22 08:03:02.802  3891  3891 I ImeTracker: system_server:623e308a: onHidden
+07-22 08:03:02.802  3891 12086 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():92 Automatic switching disabled because there aren't enough supported keyboard languages [SD]
+07-22 08:03:02.802  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@3f7101f, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:02.802  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@5825935, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:02.802  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@1688b21, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:02.802  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@6d7b46, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:02.802  3891 12086 I KeyboardEligibilityNotifier: KeyboardEligibilityNotifier.notifyEligibility():76 Keyboard notified that eligibility=ELIGIBLE [SD]
+07-22 08:03:02.802  3891 12086 I KeyboardEventHandler: KeyboardEventHandler.handleJarvisState():318 Handling JarvisState. UiState=IDLE, undo_available=false, can_show_proofread_suggestion=false, can_be_activated=false, more_fixes_available=false, draft_selected_in_drafts_ui_session=false, num_fixes_available=0 [SD]
+07-22 08:03:02.802  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@d868f3b, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:02.802  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@4912658, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:02.802  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@b72a6a3, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:02.802  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@3a8cda0, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:02.802  3891 12086 I KeyboardUiManagerImpl: KeyboardUiManagerImpl.onJarvisState():593 #onJarvisState: # jux@a0668084 isProofreadEnabled true [SD]
+07-22 08:03:02.803  3891 12103 I KeyboardEventHandler: KeyboardEventHandler.handleJarvisState():318 Handling JarvisState. UiState=IDLE, undo_available=false, can_show_proofread_suggestion=false, can_be_activated=true, more_fixes_available=false, draft_selected_in_drafts_ui_session=false, num_fixes_available=0 [SD]
+07-22 08:03:02.803  3891 12103 I KeyboardUiManagerImpl: KeyboardUiManagerImpl.onJarvisState():593 #onJarvisState: # jux@df95006e isProofreadEnabled true [SD]
+07-22 08:03:02.803  3891 12103 I KeyboardEventHandler: KeyboardEventHandler.handleKeyboardVisibilityEvent():219 Handling KeyboardVisibilityEvent: KEYBOARD_CLOSED [SD]
+07-22 08:03:02.803 13211 13211 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ViewRootImpl$$ExternalSyntheticLambda14@7602dde
+07-22 08:03:02.803  1598  1598 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.804 13211 13242 D WindowOnBackDispatcher: setOnBackInvokedCallbackInfo: android.view.ViewRootImpl$$ExternalSyntheticLambda14@7602dde
+07-22 08:03:02.804  1598  4704 D CoreBackPreview: Window{3d335ba u0 com.eveng2bridge/com.eveng2bridge.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@42b6a0e, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+07-22 08:03:02.804  3891 12069 I KeyboardEventHandler: KeyboardEventHandler.handleJarvisState():318 Handling JarvisState. UiState=IDLE, undo_available=false, can_show_proofread_suggestion=false, can_be_activated=false, more_fixes_available=false, draft_selected_in_drafts_ui_session=false, num_fixes_available=0 [SD]
+07-22 08:03:02.804  3891 12069 I KeyboardUiManagerImpl: KeyboardUiManagerImpl.onJarvisState():593 #onJarvisState: # jux@a0668084 isProofreadEnabled true [SD]
+07-22 08:03:02.811  1598  2761 I ImeTracker: system_server:142b375d: onRequestHide at ORIGIN_SERVER reason IME_REQUESTED_CHANGED_LISTENER fromUser false displayId 0
+07-22 08:03:02.812  1598  1704 I ImeTracker: system_server:142b375d: onCancelled at PHASE_SERVER_SHOULD_HIDE
+07-22 08:03:02.813  3891  3891 I NgaStateManager: NgaStateManager.setAssistantDictationEligibility():188 AssistantDictationEligibility = 1 [SDG]
+07-22 08:03:02.813  3891  3891 I NgaStateManager: NgaStateManager.buildConfigEligibilityPerLanguageTag():306 AssistantDictationEligibility(config, en-CA) = 1 [SDG]
+07-22 08:03:02.813  3891  3891 I NgaStateManager: NgaStateManager.setAssistantDictationEligibility():197 AssistantDictationEligibility(inputField) = 1 [SDG]
+07-22 08:03:02.813  3891  3891 I NgaInputHandlerFactory: NgaInputHandlerFactory.restorePrimary():138 restoring primary [SDG]
+07-22 08:03:02.813  3891  3891 I NgaVoiceInputHandlerSwitcher: NgaVoiceInputHandlerSwitcher.restorePrimary():251 not switching to primary. fallback is null [SDG]
+07-22 08:03:02.813  3891  3891 I NgaExtension: NgaExtension.onDictatingStateChanged():932 Dictating state changed: dictating=false, status=0 [SDG]
+07-22 08:03:02.814  3891  3891 W NgaExtension: NgaExtension.handleUiCommand():1017 cannot update UI in state NgaState{connected=true, keyboardVisible=false, dictationEligible=true, currentFieldEligibilityUpToDate=true, dictating=false, languageIndicatorVisible=false, keyboardTypeSupported=true, config=# jts@ada24d4a, clientType=1, eligibilityByLanguageTag={en-CA=1}, currentEligibility=1, autoStarted=false} [SDG]
+07-22 08:03:02.814  3891  3891 I NgaStateManager: NgaStateManager.setAssistantDictationEligibility():188 AssistantDictationEligibility = 1 [SDG]
+07-22 08:03:02.814  3891  3891 I NgaStateManager: NgaStateManager.buildConfigEligibilityPerLanguageTag():306 AssistantDictationEligibility(config, en-CA) = 1 [SDG]
+07-22 08:03:02.814  3891  3891 I NgaStateManager: NgaStateManager.setAssistantDictationEligibility():197 AssistantDictationEligibility(inputField) = 1 [SDG]
+07-22 08:03:02.814  3891  3891 I NgaInputHandlerFactory: NgaInputHandlerFactory.restorePrimary():138 restoring primary [SDG]
+07-22 08:03:02.814  3891  3891 I NgaVoiceInputHandlerSwitcher: NgaVoiceInputHandlerSwitcher.restorePrimary():251 not switching to primary. fallback is null [SDG]
+07-22 08:03:02.814  3891  3891 I KeyboardModeUtils: KeyboardModeUtils.getKeyboardBottomOffset():435 inch: 0.350000 ydpi: 408.472992 adjustKeyboardBottomByDisplaySize: false currentDensityDpi: 390 defaultDensityDpi: 390 keyboardBottomToScreenPx: 142 keyboardBottomToNavBarPx: 25 navBarHeight: 117
+07-22 08:03:02.814  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:02.814  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:02.814  3891  3891 I KeyboardViewManager: KeyboardViewManager.updateKeyboardBottomFrame():518 Set bottomFrameHeight = 25 while holderPaddingBottom = 25; navigationHeight = 117
+07-22 08:03:02.907  1279  1279 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS="''"; exec logcat'
+07-22 08:03:02.914  1598  1598 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.919  1598  1598 W AccessibilityManagerService:  wait for adding window timeout: 393
+07-22 08:03:02.949  2507  3073 V WindowManagerShell: Received remote transition finished callback for (#719)
+07-22 08:03:02.949  2507  2537 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#719) android.os.BinderProxy@40f4137@0
+07-22 08:03:02.951  2507  2950 D WallpaperService: onVisibilityChanged(false): com.android.systemui.wallpapers.ImageWallpaper$CanvasEngine@ed71257
+07-22 08:03:02.951  2507  2537 V WindowManagerShell: Track 0 became idle
+07-22 08:03:02.951  2507  2537 V WindowManagerShell: All active transition animations finished
+07-22 08:03:02.952  1598  1695 V WindowManager: Finish Transition (#719): created at 07-22 08:03:02.395 collect-started=0.101ms request-sent=7.381ms started=9.529ms ready=28.506ms sent=30.01ms commit=13.098ms finished=554.839ms
+07-22 08:03:02.954  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.954  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.954  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.954  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.954  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.954  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.954  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.954  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.954  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:02.957 22032 22032 D VRI[NexusLauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false
+07-22 08:03:02.959 22032 22032 D BaseActivity: Launcher flags updated: [] -[state_started]
+07-22 08:03:02.959 22032 22032 D BaseDepthController: setSurface:
+07-22 08:03:02.959 22032 22032 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+07-22 08:03:02.959 22032 22032 D BaseDepthController: 	mBaseSurface: null
+07-22 08:03:02.959 22032 22032 D BaseDepthController: mSurface is null and mCurrentBlur is: 73
+07-22 08:03:02.959 22032 22032 D KeyboardStateManager: hideKeyboard
+07-22 08:03:02.959 22032 22032 D KeyboardStateManager: isImeShown: true
+07-22 08:03:02.959 22032 22032 D KeyboardStateManager: hideKeyboard: calling wic.hide() because isImeShown is true
+07-22 08:03:02.959 22032 22032 D InsetsController: hide(ime())
+07-22 08:03:02.959 22032 22032 I ImeTracker: com.google.android.apps.nexuslauncher:234ef553: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false userId 0 displayId 0
+07-22 08:03:02.959 22032 22032 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+07-22 08:03:02.959 22032 22032 D StatsLog: LAUNCHER_ALLAPPS_KEYBOARD_CLOSED
+07-22 08:03:02.959 22032 22032 D StatsLog: LAUNCHER_ONSTOP
+07-22 08:03:02.959 22032 22087 D OneSearchSuggestProvider: Initiating graceful shutdown of binder channel.
+07-22 08:03:02.960 22032 22032 D StatsLog: LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
+07-22 08:03:02.960 22032 22088 D GmsPlayProvider: Initiating graceful shutdown of binder channel.
+07-22 08:03:02.960 22032 22032 D SmartspaceInteractor: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+07-22 08:03:02.960 22032 22041 I libbinder.IPCThreadState: oneway function results for code 2 on binder at 0xb40000782ab1fde0 will be dropped but finished with status UNKNOWN_TRANSACTION
+07-22 08:03:02.961 30102 30102 I PlayCloudSearchChimeraS: Stopping the server
+07-22 08:03:02.962 30102 30102 I PlayCloudSearchLifeCycl: Stopping the GRPC server
+07-22 08:03:02.962 22032 28280 I libbinder.IPCThreadState: oneway function results for code 2 on binder at 0xb40000782ab90460 will be dropped but finished with status UNKNOWN_TRANSACTION
+07-22 08:03:02.962 22032 22088 D GmsPlayProvider: Binder channel was terminated gracefully.
+07-22 08:03:02.962  1598  2265 W JobScheduler.JobStatus: Exempted app com.august.luna considered buggy
+07-22 08:03:02.962  1598  2265 W JobScheduler.JobStatus: Exempted app com.august.luna considered buggy
+07-22 08:03:02.962  4458  5032 I AiAiEcho: AmbientDataPredictorImpl No tracked ambient data found for ID: null; for event type: 7, skipping event processing.
+07-22 08:03:02.963 22032 22087 D OneSearchSuggestProvider: Binder channel was terminated gracefully.
+07-22 08:03:02.964 22032 22032 D SmartspaceInteractor: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+07-22 08:03:02.967  4458  5032 I AiAiEcho: AmbientDataPredictorImpl No tracked ambient data found for ID: null; for event type: 7, skipping event processing.
+07-22 08:03:03.055 13211 13220 I om.eveng2bridge: Compiler allocated 5599KB to compile void android.view.ViewRootImpl.performTraversals(long)
+07-22 08:03:03.081  1262  1262 D AOC     : A3:MSG: controller.cc, 933: SysMem: ipc: C-F1-Ar, cmd ID: 0x00c8, tag: 0x73, rc: 0
+07-22 08:03:03.082  1262  1262 D AOC     : A3:MSG: controller.cc, 933: SysMem: ipc: C-F1-Ar, cmd ID: 0x00c8, tag: 0x74, rc: 0
+07-22 08:03:03.093  2507  2567 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+07-22 08:03:03.114 30102 30140 I FontLog : (REDACTED) Received query %s, URI %s
+07-22 08:03:03.115 30102 30140 I FontLog : (REDACTED) Query [%s] resolved to %s
+07-22 08:03:03.123 30102 30140 I FontLog : (REDACTED) Fetch %s end status %s
+07-22 08:03:03.124  1598  1598 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:03.127 30102 32700 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+07-22 08:03:03.130 30102 32700 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+07-22 08:03:03.153  4745  4745 I flutter : [38;5;135m08:03:03.153 [I] [EvConnect::BleG2CmdProto] Send cmd - serviceId: UX_DEVICE_SETTINGS_APP_ID, commandId: BASE_CONNECT_HEART_BEAT(14), magicNum = 230[0m
+07-22 08:03:03.153  4745  4745 I flutter : [38;5;135m08:03:03.153 [I] [EvConnect:BleG2CmdService] Send data: E0:1E:CD:29:52:99, psType = BleG2PsType.common, serviceId = UX_DEVICE_SETTINGS_APP_ID, cmdId = 14, magicNum = 230, pending = 0[0m
+07-22 08:03:03.153  4745  4745 I flutter : [38;5;135m08:03:03.153 [I] [EvConnect:BleG2CmdService] Send cmd - E0:1E:CD:29:52:99, syncId = 228, magicId = 230, single packet sending, total packets: 1[0m
+07-22 08:03:03.153  4745  4745 I flutter : [38;5;135m08:03:03.153 [I] [EvConnect:BleG2CmdService] Send cmd - E0:1E:CD:29:52:99, syncId = 228, magicId = 230, packet 1/1, payload:  7 bytes[0m
+07-22 08:03:03.154 15419 15454 W bt_osi_alarm: system/osi/src/alarm.cc:245 alarm_cancel: alarm is null
+07-22 08:03:03.154  4745  4745 I BleDevice: Send cmd: E0:1E:CD:29:52:99 is success = true, name=Even G2_32_R_295299, type=0, data length=17
+07-22 08:03:03.207  4745  4745 I flutter : [38;5;135m08:03:03.206 [I] [EvConnect:BleG2CmdService] PB:: Response data: E0:1E:CD:29:52:99, serviceId = UX_DEVICE_SETTINGS_APP_ID, cmdId = 14, syncId = 214, magicId = 230, resultCode = 0, data length = 17}[0m
+07-22 08:03:03.207  4745  4745 I flutter : [38;5;135m08:03:03.207 [I] [EvConnect:BleG2CmdService] PB:: Response data: E0:1E:CD:29:52:99: syncId = 228, magicId = 230, single packet sending confirmed, status: BleCmdStatus.success[0m
+07-22 08:03:03.207  4745  4745 I flutter : [38;5;135m08:03:03.207 [I] [EvConnect:BleG2CmdService] Wait for packet response - E0:1E:CD:29:52:99, syncId = 228, magicId = 230, status = BleCmdStatus.success, duration = 54 ms[0m
+07-22 08:03:03.207  4745  4745 I flutter : [38;5;135m08:03:03.207 [I] [EvConnect:BleG2CmdService] Send data: E0:1E:CD:29:52:99, psType = BleG2PsType.common, serviceId = UX_DEVICE_SETTINGS_APP_ID, cmdId = 14, finished status = BleCmdStatus.success[0m
+07-22 08:03:03.207  4745  4745 I flutter : [38;5;135m08:03:03.207 [I] [EvConnect:BleG2Service] G2 - Heartbeat: E0:1E:CD:29:52:99, cmd = SUCCESS[0m
+07-22 08:03:03.208  4745  4745 I flutter : [38;5;135m08:03:03.207 [I] [EvConnect:BleG2Service] G2 - Heartbeat: E0:1E:CD:29:52:99, send right taskBlock finished result: true[0m
+07-22 08:03:03.208  4745  4745 I flutter : [38;5;135m08:03:03.208 [I] [EvConnect:BleG2Service] Main Device Heartbeat listen: E0:1E:CD:29:52:99, result = true[0m
+07-22 08:03:03.209  4745  4745 I flutter : [38;5;135m08:03:03.208 [I] [Native] BleManager::Receive cmd(old): E0:1E:CD:29:52:99, type=0, length=17, chartsType=2[0m
+07-22 08:03:03.303  1598  1598 W AccessibilityManagerService:  wait for adding window timeout: 9
+07-22 08:03:03.407  3891 12069 I KeyboardEventHandler: KeyboardEventHandler.handleKeyboardHidden():296 Keyboard closed, ending dictation. [SD]
+07-22 08:03:03.770  1598  2277 D HintManagerService: Starts cleaning for 10202
+07-22 08:03:03.777  4376  4628 I ewsq    : HDM. appOpsListener android:record_audio com.google.android.inputmethod.latin
+07-22 08:03:03.778  4376  4628 I ewsq    : HDM. Ignoring irrelevant audio permission changes for package com.google.android.inputmethod.latin
+07-22 08:03:03.805  3891 12095 I KeyboardActiveSessionStreamManager: KeyboardActiveSessionStreamManager.closeStream():110 Closing stream. [SDG]
+07-22 08:03:03.813  3891 12095 I Interaction: Interaction$KeyboardEventStreamObserver.onCompleted():141 Interaction#61 completed by the client [SD]
+07-22 08:03:03.814  3891 12067 I Interaction: Interaction.shutdownAndForget$java_com_google_android_libraries_inputmethod_voice_smartdictation_service_interaction_interaction():92 Shutting down Interaction#61 [SD]
+07-22 08:03:03.815  3891 12067 I KeyboardActiveSessionStreamManager: KeyboardActiveSessionStreamManager$AssistantEventObserver.onCompleted():240 Assistant event stream completed. [SDG]
+07-22 08:03:03.815  3891 12067 I InteractionManager: InteractionManager.forgetInteraction$java_com_google_android_libraries_inputmethod_voice_smartdictation_service_interaction_interaction():50 Forgetting Interaction#61 [SD]
+07-22 08:03:03.944   995   995 I WifiHAL : Creating message to get link statistics; iface = 47
+07-22 08:03:03.955 19739 19742 I pixel-thermal: VIRTUAL-SKIN-CPU-HIGH:29.3726 raw data: VIRTUAL-SKIN:29372.6 VIRTUAL-SKIN-CPU-HIGH:29372.6 
+07-22 08:03:03.955 19739 19742 I pixel-thermal: VIRTUAL-SKIN-CHARGE-WIRED:30.1691 raw data: VIRTUAL-SKIN-CHARGE-WIRED:30169 
+07-22 08:03:03.958 19739 19742 I pixel-thermal: VIRTUAL-SKIN-MODEL: model_input: [29308.00 29625.00 28160.00 28982.00 30048.00 29316.00 30158.00 31306.00 28683.00 ]
+07-22 08:03:03.959 19739 19742 I native  : I0000 00:00:1784721783.958758   19742 thermal_tflite_wrapper.cc:270] ThermalTfliteInvoke
+07-22 08:03:03.959 19739 19742 I pixel-thermal: VIRTUAL-SKIN-MODEL: model_output: [29721.6 ]
+07-22 08:03:03.959 19739 19742 I pixel-thermal: VIRTUAL-SKIN-MODEL: predicted_value: [29721.6 ]
+07-22 08:03:03.960 19739 19742 I pixel-thermal: STATS-UPDATOR:0 raw data: STATS-UPDATOR:0 VIRTUAL-SKIN-LEGACY:29565.7 VIRTUAL-SKIN-MODEL:29721.6 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:-62.1074 charging_therm:29308 flash_therm:28982 inner_disp_therm:29625 north_therm:30048 outer_disp_therm:28160 quiet_therm:29316 rfpa_therm:30158 soc_therm:31306 usb_pwr_therm:28683 
+07-22 08:03:03.960 19739 19742 I pixel-thermal: VIRTUAL-SKIN-CPU-LIGHT-ODPM:29.3726 raw data: VIRTUAL-SKIN:29372.6 VIRTUAL-SKIN-CPU-LIGHT-ODPM:29372.6 
+07-22 08:03:03.961 19739 19742 I pixel-thermal: VIRTUAL-SKIN-CPU-ODPM:29.3726 raw data: VIRTUAL-SKIN:29372.6 VIRTUAL-SKIN-CPU-ODPM:29372.6 
+07-22 08:03:03.961 19739 19742 I pixel-thermal: VIRTUAL-SKIN-HINT:29.3726 raw data: VIRTUAL-SKIN:29372.6 VIRTUAL-SKIN-HINT:29372.6 
+07-22 08:03:03.961 19739 19742 I pixel-thermal: VIRTUAL-SKIN-INNER-DISPLAY:29.7638 raw data: VIRTUAL-SKIN-INNER-DISPLAY:29763.8 
+07-22 08:03:03.961 19739 19742 I pixel-thermal: cellular-emergency:29.3726 raw data: cellular-emergency:29372.6 
+07-22 08:03:03.962 19739 19742 I pixel-thermal: VIRTUAL-SKIN-BOTTOM-SPEAKER: model_input: [29308.00 29625.00 28160.00 28982.00 30048.00 29316.00 30158.00 31306.00 28683.00 ]
+07-22 08:03:03.962 19739 19742 I native  : I0000 00:00:1784721783.962140   19742 thermal_tflite_wrapper.cc:270] ThermalTfliteInvoke
+07-22 08:03:03.962 19739 19742 I pixel-thermal: VIRTUAL-SKIN-BOTTOM-SPEAKER: model_output: [28062.1 ]
+07-22 08:03:03.962 19739 19742 I pixel-thermal: VIRTUAL-SKIN-BOTTOM-SPEAKER: predicted_value: [28062.1 ]
+07-22 08:03:03.962 19739 19742 I pixel-thermal: VIRTUAL-SKIN-BOTTOM-SPEAKER:28.0621 raw data: VIRTUAL-SKIN-BOTTOM-SPEAKER:28062.1 charging_therm:29308 flash_therm:28982 inner_disp_therm:29625 north_therm:30048 outer_disp_therm:28160 quiet_therm:29316 rfpa_therm:30158 soc_therm:31306 usb_pwr_therm:28683 
+07-22 08:03:03.962 19739 19742 I pixel-thermal: VIRTUAL-SKIN-CHARGE-PERSIST:30.1691 raw data: VIRTUAL-SKIN-CHARGE-PERSIST:30169 
+07-22 08:03:03.962 19739 19742 I pixel-thermal: VIRTUAL-SKIN-SOC:29.3726 raw data: VIRTUAL-SKIN:29372.6 VIRTUAL-SKIN-SOC:29372.6 
+07-22 08:03:03.963 19739 19742 I pixel-thermal: VIRTUAL-SKIN-CPU-MID:29.3726 raw data: VIRTUAL-SKIN:29372.6 VIRTUAL-SKIN-CPU-MID:29372.6 
+07-22 08:03:03.963 19739 19742 I pixel-thermal: VIRTUAL-SKIN-TOP-SPEAKER: model_input: [29308.00 29625.00 28160.00 28982.00 30048.00 29316.00 30158.00 31306.00 28683.00 ]
+07-22 08:03:03.963 19739 19742 I native  : I0000 00:00:1784721783.963719   19742 thermal_tflite_wrapper.cc:270] ThermalTfliteInvoke
+07-22 08:03:03.963 19739 19742 I pixel-thermal: VIRTUAL-SKIN-TOP-SPEAKER: model_output: [27497.2 ]
+07-22 08:03:03.963 19739 19742 I pixel-thermal: VIRTUAL-SKIN-TOP-SPEAKER: predicted_value: [27497.2 ]
+07-22 08:03:03.964 19739 19742 I pixel-thermal: VIRTUAL-SKIN-TOP-SPEAKER:27.4972 raw data: VIRTUAL-SKIN-TOP-SPEAKER:27497.2 charging_therm:29308 flash_therm:28982 inner_disp_therm:29625 north_therm:30048 outer_disp_therm:28160 quiet_therm:29316 rfpa_therm:30158 soc_therm:31306 usb_pwr_therm:28683 
+07-22 08:03:03.964 19739 19742 I pixel-thermal: VIRTUAL-SKIN:29.3726 raw data: VIRTUAL-SKIN:29372.6 
+07-22 08:03:03.994   995   995 I WifiHAL : Getting cached scan results, iface handle = 0xb400006fe9ceda50
+07-22 08:03:03.996   995   995 E WifiHAL : Creating message to get cached scan results
+07-22 08:03:04.005   995   995 I WifiHAL : In GetCachedScanResultsCommand::handleResponse
+07-22 08:03:04.170   914   914 W TracingMuxer: type=1400 audit(0.0:16388): avc:  denied  { write } for  name="traced_producer" dev="tmpfs" ino=1421 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0
+07-22 08:03:04.388   508 13101 D SurfaceFlinger: setDesiredMode 4619827677550801153 {mode={fps=60.00 Hz, modePtr={id=0, vsyncRate=60.00 Hz, peakRefreshRate=60.00 Hz}}, emitEvent=false, force=false}
+07-22 08:03:04.391   508   508 D SurfaceFlinger: initiateModeChange 4619827677550801153 {mode={fps=60.00 Hz, modePtr={id=0, vsyncRate=60.00 Hz, peakRefreshRate=60.00 Hz}}, emitEvent=false, force=false}
+07-22 08:03:04.393   509 31076 D hwc-pixel-display: SetActiveConfigInternal: config: 76 powermode: 1
+07-22 08:03:04.404  1262  1262 D AOC     : A3:MSG: controller.cc, 933: SysMem: ipc: C-F1-Ar, cmd ID: 0x00c8, tag: 0x75, rc: 0
+07-22 08:03:04.404  1262  1262 D AOC     : A3:MSG: controller.cc, 933: SysMem: ipc: C-F1-Ar, cmd ID: 0x00c8, tag: 0x76, rc: 0
+07-22 08:03:04.411   915   932 I CHRE    : @ 68508.601: [AR] still: 41.568626
+07-22 08:03:04.412   915   932 I CHRE    : @ 68508.602: [cc] onArResult activity=4, conf=425
+07-22 08:03:05.158  4745  4745 I flutter : [38;5;135m08:03:05.157 [I] [EvConnect::BleG2CmdProto] Send cmd - serviceId: UX_DEVICE_SETTINGS_APP_ID, commandId: BASE_CONNECT_HEART_BEAT(14), magicNum = 231[0m
+07-22 08:03:05.160  4745  4745 I flutter : [38;5;135m08:03:05.159 [I] [EvConnect:BleG2CmdService] Send data: D4:E4:1A:2D:D6:50, psType = BleG2PsType.common, serviceId = UX_DEVICE_SETTINGS_APP_ID, cmdId = 14, magicNum = 231, pending = 0[0m
+07-22 08:03:05.161  4745  4745 I flutter : [38;5;135m08:03:05.161 [I] [EvConnect:BleG2CmdService] Send cmd - D4:E4:1A:2D:D6:50, syncId = 229, magicId = 231, single packet sending, total packets: 1[0m
+07-22 08:03:05.162  4745  4745 I flutter : [38;5;135m08:03:05.162 [I] [EvConnect:BleG2CmdService] Send cmd - D4:E4:1A:2D:D6:50, syncId = 229, magicId = 231, packet 1/1, payload:  7 bytes[0m
+07-22 08:03:05.170 15419 15454 W bt_osi_alarm: system/osi/src/alarm.cc:245 alarm_cancel: alarm is null
+07-22 08:03:05.170  4745  4745 I BleDevice: Send cmd: D4:E4:1A:2D:D6:50 is success = true, name=Even G2_32_L_2DD650, type=0, data length=17
+07-22 08:03:05.178  1262  1262 D AOC     : A3:MSG: controller.cc, 933: SysMem: ipc: C-F1-Ar, cmd ID: 0x00c8, tag: 0x77, rc: 0
+07-22 08:03:05.179  1262  1262 D AOC     : A3:MSG: controller.cc, 933: SysMem: ipc: C-F1-Ar, cmd ID: 0x00c8, tag: 0x78, rc: 0
+07-22 08:03:05.276  4745  4745 I flutter : [38;5;135m08:03:05.276 [I] [EvConnect:BleG2CmdService] PB:: Response data: D4:E4:1A:2D:D6:50, serviceId = UX_DEVICE_SETTINGS_APP_ID, cmdId = 14, syncId = 206, magicId = 231, resultCode = 0, data length = 17}[0m
+07-22 08:03:05.277  4745  4745 I flutter : [38;5;135m08:03:05.277 [I] [EvConnect:BleG2CmdService] PB:: Response data: D4:E4:1A:2D:D6:50: syncId = 229, magicId = 231, single packet sending confirmed, status: BleCmdStatus.success[0m
+07-22 08:03:05.278  4745  4745 I flutter : [38;5;135m08:03:05.278 [I] [EvConnect:BleG2CmdService] Wait for packet response - D4:E4:1A:2D:D6:50, syncId = 229, magicId = 231, status = BleCmdStatus.success, duration = 116 ms[0m
+07-22 08:03:05.278  4745  4745 I flutter : [38;5;135m08:03:05.278 [I] [EvConnect:BleG2CmdService] Send data: D4:E4:1A:2D:D6:50, psType = BleG2PsType.common, serviceId = UX_DEVICE_SETTINGS_APP_ID, cmdId = 14, finished status = BleCmdStatus.success[0m
+07-22 08:03:05.279  4745  4745 I flutter : [38;5;135m08:03:05.278 [I] [EvConnect:BleG2Service] G2 - Heartbeat: D4:E4:1A:2D:D6:50, cmd = SUCCESS[0m
+07-22 08:03:05.279  4745  4745 I flutter : [38;5;135m08:03:05.279 [I] [EvConnect:BleG2Service] G2 - Heartbeat: D4:E4:1A:2D:D6:50, send left taskBlock finished result: true[0m
+07-22 08:03:05.279  4745  4745 I flutter : [38;5;135m08:03:05.279 [I] [EvConnect:BleG2Service] Main Device Heartbeat listen: E0:1E:CD:29:52:99, result = true[0m
+07-22 08:03:05.280  4745  4745 I flutter : [38;5;135m08:03:05.280 [I] [Native] BleManager::Receive cmd(old): D4:E4:1A:2D:D6:50, type=0, length=17, chartsType=2[0m
+07-22 08:03:05.387  1262  1262 D AOC     : A3:MSG: usf_sensor.cc, 1920: USF: Received start sampling request for Virtual Ambient Light (active:1).
+07-22 08:03:05.388  1262  1262 D AOC     : A3:MSG: virtual_alsp_sensor.cc, 664: USF: VALSP: Start sampling: period = 4167000, latency = 1000000000.
+07-22 08:03:05.388  1262  1262 D AOC     : A3:MSG: usf_sensor.cc, 1920: USF: Received start sampling request for TMD3743 Ambient Light (active:3).
+07-22 08:03:05.392  1262  1262 D AOC     : A3:MSG: usf_sensor.cc, 1920: USF: Received start sampling request for VD6282 Rear Light Sensor (active:2).
+07-22 08:03:05.400   915   932 I CHRE    : @ 68509.603: [Wallaby] Starting sensors
+07-22 08:03:05.402   915   932 I CHRE    : @ 68509.606: [WallabyLGP] ProxManager:Update: Disabled --> Ready, event=Enable, event_val=1
+07-22 08:03:05.402   915   932 I CHRE    : @ 68509.606: [Wallaby] Starting accel
+07-22 08:03:05.402   915   932 I CHRE    : @ 68509.606: [WallabySM] MotionManager:Update: Disabled --> Running, event=Enable, event_val=1
+07-22 08:03:06.182  1261  1261 W TracingMuxer: type=1400 audit(0.0:16389): avc:  denied  { write } for  name="traced_producer" dev="tmpfs" ino=1421 scontext=u:r:gxp_logging:s0 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0
+07-22 08:03:06.392   915   932 I CHRE    : @ 68510.606: [WallabyPD] 	Device (0x201)  >>> stationary-unspecified  - not-in-pocket <<< Config: Optical-Only FCN 
+07-22 08:03:06.393   915   932 I CHRE    : @ 68510.606: [Wallaby] PocketEvent Pos: 0x201 -> 0x201, IsHostAwake: 1
+07-22 08:03:06.434   922   922 W TracingMuxer: type=1400 audit(0.0:16390): avc:  denied  { write } for  name="traced_producer" dev="tmpfs" ino=1421 scontext=u:r:hal_neuralnetworks_darwinn:s0 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0
+07-22 08:03:06.503   995   995 I WifiHAL : Creating message to get link statistics; iface = 47
+07-22 08:03:06.551   995  2472 I WifiHAL : Getting cached scan results, iface handle = 0xb400006fe9ceda50
+07-22 08:03:06.551   995  2472 E WifiHAL : Creating message to get cached scan results
+07-22 08:03:06.554   995  2472 I WifiHAL : In GetCachedScanResultsCommand::handleResponse
+--------- beginning of crash
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: FATAL EXCEPTION: DefaultDispatcher-worker-2
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: Process: com.eveng2bridge, PID: 13211
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: java.net.BindException: Address already in use
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at sun.nio.ch.Net.bind0(Native Method)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at sun.nio.ch.Net.bind(Net.java:442)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at sun.nio.ch.Net.bind(Net.java:434)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:143)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:600)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:579)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:380)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda$1$lambda$0(NettyApplicationEngine.kt:296)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.ktor.server.netty.EventLoopGroupProxy$Companion.$r8$lambda$XgnKz7L6tCWRUaIAa7SVURwtFE4(NettyApplicationEngine.kt:0)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.ktor.server.netty.EventLoopGroupProxy$Companion$$ExternalSyntheticLambda1.run(D8$$SyntheticClass:2)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:1571)
+07-22 08:03:06.732 13211 13240 E AndroidRuntime: 	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [StandaloneCoroutine{Cancelling}@db2687, Dispatchers.IO]
+07-22 08:03:06.745  1598 13274 I DropBoxManagerService: add tag=data_app_crash isTagEnabled=true flags=0x2
+07-22 08:03:06.759  1598  2761 W ActivityTaskManager:   Force finishing activity com.eveng2bridge/.MainActivity
+07-22 08:03:06.759  1598  2761 W TransitionChain: Combining AR.finish-force-crash into #720(CLOSE|R|0x10) from finishTopCrash
+07-22 08:03:06.760  2507  2537 V WindowManagerShell: Transition requested (#720): android.os.BinderProxy@4abcacc TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=886 effectiveUid=10444 seqId=0 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.eveng2bridge/.MainActivity } baseActivity=ComponentInfo{com.eveng2bridge/com.eveng2bridge.MainActivity} topActivity=ComponentInfo{com.eveng2bridge/com.eveng2bridge.MainActivity} origActivity=null realActivity=ComponentInfo{com.eveng2bridge/com.eveng2bridge.MainActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=68504160 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@7e7b6a4} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{ab7b115 com.eveng2bridge.MainActivity} launchCookies=[android.os.BinderProxy@18ca7c2] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 159 - 1080, 2247) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 16, debugId = 720 }
+07-22 08:03:06.761  2507  2537 V ShellDesktopMode: DesktopTasksController: skipping handleRequest reason=triggerTask's display doesn't support desktop mode
+07-22 08:03:06.763  1598  2761 V WindowManager: Defer transition id=720 for TaskFragmentTransaction=android.os.Binder@cc14958
+07-22 08:03:06.764   508 13101 D SurfaceFlinger: setDesiredMode 4619827677550801153 {mode={fps=120.00 Hz, modePtr={id=1, vsyncRate=120.00 Hz, peakRefreshRate=120.00 Hz}}, emitEvent=false, force=false}
+07-22 08:03:06.766   508   508 D SurfaceFlinger: initiateModeChange 4619827677550801153 {mode={fps=120.00 Hz, modePtr={id=1, vsyncRate=120.00 Hz, peakRefreshRate=120.00 Hz}}, emitEvent=false, force=false}
+07-22 08:03:06.767   509 31076 D hwc-pixel-display: SetActiveConfigInternal: config: 77 powermode: 1
+07-22 08:03:06.771 22032 22032 D BaseActivity: Launcher flags updated: [state_started] +[state_started]
+07-22 08:03:06.771 22032 22032 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_user_active] +[state_resumed|state_user_active]
+07-22 08:03:06.772 22032 22032 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_user_active] +[]
+07-22 08:03:06.772 22032 22032 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_user_active] +[state_deferred_resumed]
+07-22 08:03:06.772 22032 22032 D StatsLog: LAUNCHER_ONRESUME
+07-22 08:03:06.772 22032 22032 D ConnectorProvider: Connector disabled by gantry flag.
+07-22 08:03:06.772 22032 22032 D SearchSessionManager: notifyEvent: queryLength=2 targetId=SESSION_INFO:0:toast:SURFACE_VISIBLE eventType=1
+07-22 08:03:06.772 13211 13240 I Process : Sending signal. PID: 13211 SIG: 9
+07-22 08:03:06.772 22032 22088 D ConnectorProvider: Connector disabled by gantry flag.
+07-22 08:03:06.772 22032 22088 D StatsLog: LAUNCHER_GOOGLE_SEARCH_GMS_PLAY_INIT_CHANNEL
+07-22 08:03:06.773  2507  2537 D WindowManagerShell: setLauncherKeepClearAreaHeight: visible=true, height=461
+07-22 08:03:06.774  4458  5032 I AiAiEcho: Predicting[17]: { Feature:1, creation:2026-07-22T16:00:00Z, expiry:2026-07-22T16:00:00Z, isExpired: true}, { Feature:1, creation:2026-07-22T17:00:00Z, expiry:2026-07-22T17:00:00Z, isExpired: true}, { Feature:1, creation:2026-07-22T14:00:00Z, expiry:2026-07-22T14:00:00Z, isExpired: true}, { Feature:1, creation:2026-07-22T15:00:00Z, expiry:2026-07-22T15:00:00Z, isExpired: true}, { Feature:2, creation:2026-07-22T16:30:00Z, expiry:2026-07-22T12:04:01Z, isExpired: true}, { Feature:2, creation:2026-07-22T12:30:00Z, expiry:2026-07-22T12:04:01Z, isExpired: true}, { Feature:2, creation:2026-07-23T17:30:00Z, expiry:2026-07-22T12:04:01Z, isExpired: true}, { Feature:2, creation:2026-07-22T18:00:00Z, expiry:2026-07-22T12:04:01Z, isExpired: true}, { Feature:2, creation:2026-07-23T16:30:00Z, expiry:2026-07-22T12:04:01Z, isExpired: true}, { Feature:2, creation:2026-07-23T15:30:00Z, expiry:2026-07-22T12:04:01Z, isExpired: true}, { Feature:2, creation:2026-07-23T13:30:00Z, expiry:2026-07-22T12:04:01Z, isExpired: true}, { Feature:2, creation:2026-07-22T13:00:00Z, expiry:2026-07-22T12:04:01Z, isExpired: true}, { Feature:2, creation:2026-07-22T13:30:00Z, expiry:2026-07-22T12:04:01Z, isExpired: true}, { Feature:2, creation:2026-07-23T13:00:00Z, expiry:2026-07-22T12:04:01Z, isExpired: true}, { Feature:1, creation:2026-07-22T12:00:00Z, expiry:2026-07-22T13:00:00Z, isExpired: false}, { Feature:1, creation:2026-07-22T13:00:00Z, expiry:2026-07-22T13:00:00Z, isExpired: true}, { Feature:1, creation:2026-07-22T11:17:34.628Z, expiry:2026-07-22T11:59:59.999Z, isExpired: true}
+07-22 08:03:06.774  4458  5032 I AiAiEcho: [CONTEXT sampling_count=5 ]
+07-22 08:03:06.774  4458  5032 I AiAiEcho: EchoTargets: Feature:1
+07-22 08:03:06.774  4458  5032 I AiAiEcho: Filtered by AiAi flag check: 
+07-22 08:03:06.774  4458  5032 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+07-22 08:03:06.775  4458  5032 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+07-22 08:03:06.775 22032 22050 D QuickstepModelDelegate: notifyAppTargetEvent action=1 launchLocation=
+07-22 08:03:06.776  1598  2790 V WindowManager: Continue transition id=720 for TaskFragmentTransaction=android.os.Binder@cc14958
+07-22 08:03:06.777 22032 22087 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=n3{delegate=h3{logId=55, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=q9.x0@d0dff89
+07-22 08:03:06.779 22032 22088 D GmsPlayProvider: Created the binder channel successfully for end point component =ComponentInfo{com.google.android.gms/com.google.android.gms.play.cloud.search.PlayCloudSearchEndpointService} , mChannel=n3{delegate=h3{logId=57, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=com.google.android.gms.play.cloud.search.grpc.io.action.BIND%20cmp=com.google.android.gms/.play.cloud.search.PlayCloudSearchEndpointService%20%7D%5D}} , mConnection=r9.u@429cba8
+07-22 08:03:06.779  4458  5032 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 1 (types=[1])
+07-22 08:03:06.784 22032 22032 D SmartspaceInteractor: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=6}
+07-22 08:03:06.785  1598  1669 D WindowManager: setClientSurface Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#6628)/@0x4f44e9c for 281a92a com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity
+07-22 08:03:06.786  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.786  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.786  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.786  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.786  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.786  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.786  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.786  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.786  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.787 22032 22032 I Surface : Creating surface for consumer unnamed-22032-62 with slotExpansion=1 for 64 slots
+07-22 08:03:06.787 22032 22032 I Surface : Creating surface for consumer VRI[NexusLauncherActivity]#25(BLAST Consumer)25 with slotExpansion=1 for 64 slots
+07-22 08:03:06.788 22032 22032 D BaseDepthController: setSurface:
+07-22 08:03:06.788 22032 22032 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+07-22 08:03:06.788 22032 22032 D BaseDepthController: 	mBaseSurface: Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#6628)/@0xc81da5
+07-22 08:03:06.788 22032 22032 V BaseDepthController: Applying blur: 73 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#6628)/@0xc81da5 applyImmediately: false
+07-22 08:03:06.789 22032 22032 D BaseDepthController: shouldBlurWorkspace: true targetState: AllApps currentStableState: AllApps mCurrentBlur: 73 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{8f8e6dc V.ED..... .......D 0,0-1080,2364 #7f0a0493 app:id/workspace}, com.android.launcher3.Hotseat{a5c22e3 V.ED..... .......D 0,1903-1080,2364 #7f0a01f8 app:id/hotseat}]
+07-22 08:03:06.794  1598  1598 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.795  2507  2950 D WallpaperService: onVisibilityChanged(true): com.android.systemui.wallpapers.ImageWallpaper$CanvasEngine@ed71257
+07-22 08:03:06.800  1598  1709 V SharedSurfaceAnimation: Checking SharedSurface matching for: ComponentInfo{com.eveng2bridge/com.eveng2bridge.MainActivity}, user= 0
+07-22 08:03:06.800  1598  1709 V SharedSurfaceAnimation:   No matching provider found.
+07-22 08:03:06.802  3891  3891 W InputChannel-JNI: Channel already disposed.
+07-22 08:03:06.803  1598  2299 W InputDispatcher: channel '3d335ba com.eveng2bridge/com.eveng2bridge.MainActivity' ~ Consumer closed input channel or an error occurred.  events=0x9
+07-22 08:03:06.803  1598  2790 I ImeTracker: com.eveng2bridge:c02d4ede: onRequestHide at ORIGIN_SERVER reason HIDE_REMOVE_CLIENT fromUser false userId 0 displayId 0
+07-22 08:03:06.803  1598  2299 E InputDispatcher: channel '3d335ba com.eveng2bridge/com.eveng2bridge.MainActivity' ~ Channel is unrecoverably broken and will be disposed!
+07-22 08:03:06.803  1598  2790 I ImeTracker: com.eveng2bridge:c02d4ede: onCancelled at PHASE_SERVER_SHOULD_HIDE
+07-22 08:03:06.803   611   611 W libprocessgroup: Failed to apply SCHED_QOS_NONE task profile
+07-22 08:03:06.803   611   611 E powerhal-libperfmgr: Failed to remove task profiles for tid:13244
+07-22 08:03:06.803   611   611 W libprocessgroup: Failed to apply SCHED_QOS_NONE task profile
+07-22 08:03:06.803   611   611 E powerhal-libperfmgr: Failed to remove task profiles for tid:13245
+07-22 08:03:06.804   611   611 W libprocessgroup: Failed to apply SCHED_QOS_NONE task profile
+07-22 08:03:06.804   611   611 E powerhal-libperfmgr: Failed to remove task profiles for tid:13231
+07-22 08:03:06.804  1598  4406 I ActivityManager: Process com.eveng2bridge (pid 13211) has died: fg  TOP 
+07-22 08:03:06.806  2507  2909 V WindowManagerShell: onTransitionReady(transaction=6863357814533)
+07-22 08:03:06.806  2507  2537 V WindowManagerShell: onTransitionReady (#720) android.os.BinderProxy@4abcacc: {id=720 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[
+07-22 08:03:06.806  2507  2537 V WindowManagerShell:         {m=CLOSE f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=886#6606)/@0x368fc2a sb=Rect(0, 0 - 1080, 2364) eb=Rect(0, 0 - 1080, 2364) epz=Point(1080, 2364) d=0 taskParent=-1 winMode=1 userId=0},
+07-22 08:03:06.806  2507  2537 V WindowManagerShell:         {m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=1#35)/@0x3045a1b sb=Rect(0, 0 - 1080, 2364) eb=Rect(0, 0 - 1080, 2364) epz=Point(1080, 2364) d=0 taskParent=-1 winMode=1 userId=0},
+07-22 08:03:06.806  2507  2537 V WindowManagerShell:         {m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{ef15816}#39)/@0x830c7b8 sb=Rect(0, 0 - 1080, 2364) eb=Rect(0, 0 - 1080, 2364) epz=Point(1080, 2364) d=0}
+07-22 08:03:06.806  2507  2537 V WindowManagerShell:     ]}
+07-22 08:03:06.806  2507  2537 V WindowManagerShell: FocusTransitionObserver: Updating focus state for transition #720
+07-22 08:03:06.806  2507  2537 D WindowManagerShell: FocusTransitionObserver: Focus updated on displayId=0 to taskId=1
+07-22 08:03:06.806  2507  2537 V WindowManagerShell: FocusTransitionObserver: Notifying local listeners of task focus change: taskId=886, isFocusedOnDisplay=false, isFocusedGlobally=false
+07-22 08:03:06.806  2507  2537 V WindowManagerShell: FocusTransitionObserver: Notifying local listeners of task focus change: taskId=1, isFocusedOnDisplay=true, isFocusedGlobally=true
+07-22 08:03:06.806  2507  2537 V RecentTasksController: Notify recent tasks changed: 2
+07-22 08:03:06.806  2507  2537 V ShellDesktopMode: DesktopModeLogger: taskInfo map after processing changes 0
+07-22 08:03:06.806  2507  2537 D ShellDesktopMode: DesktopTaskChangeListener: onTaskMovingToFront for taskId=1, displayId=0 - desktop not supported
+07-22 08:03:06.806  2507  2537 D ShellDesktopMode: DesktopTaskChangeListener: onTaskClosing for taskId=886, displayId=0 - desktop not supported
+07-22 08:03:06.807  2507  2537 V WindowManagerShell: Playing animation for (#720) android.os.BinderProxy@4abcacc@0
+07-22 08:03:06.807  1279  1279 I adbd    : Remote process closed the socket (on MSG_PEEK)
+07-22 08:03:06.807  2507  2537 D ShellSplitScreen: startAnimation: transition=720 isSplitActive=false
+07-22 08:03:06.807  2507  2537 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+07-22 08:03:06.807  2507  2537 V ShellDesktopMode: DesktopMixedTransitionHandler: No pending desktop transition
+07-22 08:03:06.807  2507  2537 V ShellDesktopMode: DesktopHomeScreenPeekTransitionHandler: startAnimation
+07-22 08:03:06.807  2507  2537 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=720 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{m=CLOSE f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=886#6606)/@0x368fc2a sb=Rect(0, 0 - 1080, 2364) eb=Rect(0, 0 - 1080, 2364) epz=Point(1080, 2364) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=1#35)/@0x3045a1b sb=Rect(0, 0 - 1080, 2364) eb=Rect(0, 0 - 1080, 2364) epz=Point(1080, 2364) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{ef15816}#39)/@0x830c7b8 sb=Rect(0, 0 - 1080, 2364) eb=Rect(0, 0 - 1080, 2364) epz=Point(1080, 2364) d=0}]}
+07-22 08:03:06.807  2507  2537 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@eb88d5d windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@294b6d2, appThread = android.app.IApplicationThread$Stub$Proxy@17203a3, debugName = overlayBackTransition, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@eb88d5d windowingMode=undefined isCrossDisplayMove=false}]} }}
+07-22 08:03:06.807  2507  2537 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@db966a0, appThread = android.app.IApplicationThread$Stub$Proxy@4f5a259, debugName = LauncherToDream, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} }}
+07-22 08:03:06.807  2507  2537 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@de36e1e, appThread = android.app.IApplicationThread$Stub$Proxy@e9736ff, debugName = QuickstepDisplayMove, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} }}
+07-22 08:03:06.807  2507  2537 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@15e4ccc, appThread = android.app.IApplicationThread$Stub$Proxy@2550b15, debugName = QuickstepLaunchHome, filter = {types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} }}
+07-22 08:03:06.807  2507  2537 D RemoteTransitionHandler: Found filterPair{{types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@15e4ccc, appThread = android.app.IApplicationThread$Stub$Proxy@2550b15, debugName = QuickstepLaunchHome, filter = {types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} }}
+07-22 08:03:06.807  2507  2537 V WindowManagerShell:  Delegate animation for (#720) to RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@15e4ccc, appThread = android.app.IApplicationThread$Stub$Proxy@2550b15, debugName = QuickstepLaunchHome, filter = {types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} }
+07-22 08:03:06.808 17418 17418 I fuza    : Created gRPC endpoint for service class com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService
+07-22 08:03:06.809  4458  5032 I AiAiEcho: AmbientDataPredictorImpl No tracked ambient data found for ID: null; for event type: 6, skipping event processing.
+07-22 08:03:06.810 22032 22032 I SsBaseTemplateCard: setFormattedContentDescription: text=14°C, iconDescription=Cloudy, contentDescription=Cloudy, 14°C
+07-22 08:03:06.810 22032 22032 D SsBaseTemplateCard: Passed-in item info is null
+07-22 08:03:06.810 22032 22032 D SsBaseTemplateCard: Passed-in item info is null
+07-22 08:03:06.810 22032 22032 I SsBaseTemplateCard: Secondary card pane is null
+07-22 08:03:06.811 22032 22032 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+07-22 08:03:06.812  1598  4704 I WindowManager: WIN DEATH: Window{3d335ba u0 com.eveng2bridge/com.eveng2bridge.MainActivity}
+07-22 08:03:06.813   876   876 I Zygote  : Process 13211 exited due to signal 9 (Killed)
+07-22 08:03:06.814 22032 22032 D LauncherStateManager: StateManager.cancelAnimation: animation ongoing: false, partial trace:
+07-22 08:03:06.814 22032 22032 D LauncherStateManager: 	at com.android.launcher3.statemanager.StateManager.setCurrentAnimation(go/retraceme 45ad6e5beb1418bff578d62e6d1e03b48edc0da4c954c0470980b78f471cd4db:59)
+07-22 08:03:06.814 22032 22032 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager.createWallpaperOpenAnimations(go/retraceme 45ad6e5beb1418bff578d62e6d1e03b48edc0da4c954c0470980b78f471cd4db:757)
+07-22 08:03:06.814 22032 22032 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager$WallpaperOpenLauncherAnimationRunner.onAnimationStart(go/retraceme 45ad6e5beb1418bff578d62e6d1e03b48edc0da4c954c0470980b78f471cd4db:135)
+07-22 08:03:06.814 22032 22032 D b/311077782: LauncherAnimationRunner.setAnimation
+07-22 08:03:06.815  1598  1695 V WindowManager: Sent Transition (#720) createdAt=07-22 08:03:06.759 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=886 effectiveUid=10444 seqId=0 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.eveng2bridge/.MainActivity } baseActivity=ComponentInfo{com.eveng2bridge/com.eveng2bridge.MainActivity} topActivity=ComponentInfo{com.eveng2bridge/com.eveng2bridge.MainActivity} origActivity=null realActivity=ComponentInfo{com.eveng2bridge/com.eveng2bridge.MainActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=68504160 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{a95686f Task{eb206a1 #886 type=standard A=10444:com.eveng2bridge}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{c49797c com.eveng2bridge.MainActivity} launchCookies=[android.os.BinderProxy@34b205] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 159 - 1080, 2247) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 16, debugId = 720 }
+07-22 08:03:06.815  1598  1695 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] flags= 0 errorCallbackToken=null taskFragmentOrganizer=null }
+07-22 08:03:06.815  1598  1695 V WindowManager:     info={id=720 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[
+07-22 08:03:06.815  1598  1695 V WindowManager:         {WCT{RemoteToken{a95686f Task{eb206a1 #886 type=standard A=10444:com.eveng2bridge}}} m=CLOSE f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=886#6606)/@0x3e22850 sb=Rect(0, 0 - 1080, 2364) eb=Rect(0, 0 - 1080, 2364) epz=Point(1080, 2364) d=0 taskParent=-1 winMode=1 userId=0},
+07-22 08:03:06.815  1598  1695 V WindowManager:         {WCT{RemoteToken{d37fb4f Task{13373c2 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=1#35)/@0x3213c5f sb=Rect(0, 0 - 1080, 2364) eb=Rect(0, 0 - 1080, 2364) epz=Point(1080, 2364) d=0 taskParent=-1 winMode=1 userId=0},
+07-22 08:03:06.815  1598  1695 V WindowManager:         {m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{ef15816}#39)/@0x71a002d sb=Rect(0, 0 - 1080, 2364) eb=Rect(0, 0 - 1080, 2364) epz=Point(1080, 2364) d=0}
+07-22 08:03:06.815  1598  1695 V WindowManager:     ]}
+07-22 08:03:06.816  1598  2530 W ActivityTaskManager: setRunningRemoteTransition: no process for null
+07-22 08:03:06.816  2507  2537 V WindowManagerShell:  animated by com.android.wm.shell.transition.RemoteTransitionHandler@1f157da
+07-22 08:03:06.819  1598  1731 I libprocessgroup: Removed cgroup /sys/fs/cgroup/apps/uid_10444/pid_13211
+07-22 08:03:06.822 30102 30102 I GmsCoreXrpcWrapper: (REDACTED) Creating a custom channel provider with trafficStatsTag=%d trafficStatsUid=%d
+07-22 08:03:06.826 22032 22032 D VRI[NexusLauncherActivity]: WindowInsets changed: ime:null 
+07-22 08:03:06.831 30102 30102 I PlayCloudSearchChimeraS: Starting the server
+07-22 08:03:06.833 30102 30102 I PlayCloudSearchLifeCycl: Starting the GRPC server
+07-22 08:03:06.836  1598  1598 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.838 22032 22032 W ImeBackCallbackProxy: Ime callback not found. Ignoring unregisterReceivedCallback. callbackId: 215451951 remaining callbacks: 0
+07-22 08:03:06.838 22032 22032 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_window_focused|state_user_active] +[state_window_focused]
+07-22 08:03:06.838 22032 22032 D ExtendedEditText: onWindowFocusChanged: hasWindowFocus=true
+07-22 08:03:06.839 22032 22032 D ExtendedEditText: handleCreateInputConnection: ic=com.android.internal.inputmethod.EditableInputConnection@5173123, mHasPendingShowKeyboardRequest=false
+07-22 08:03:06.842 30102 30102 I PlayCloudSearchChimeraS: onBind called
+07-22 08:03:06.843  1598  2265 W JobScheduler.JobStatus: Exempted app com.august.luna considered buggy
+07-22 08:03:06.843  1598  2265 W JobScheduler.JobStatus: Exempted app com.august.luna considered buggy
+07-22 08:03:06.845 22032 22032 I Launcher.IconCache: Icon update not supported for com.google.android.apps.nexuslauncher.allapps.SearchActionItemInfo
+07-22 08:03:06.846  1598  4406 E TransitionChain: Can't collect into a chain with no transition
+07-22 08:03:06.846  1598  4406 E TransitionChain: Can't collect into a chain with no transition
+07-22 08:03:06.847 22032 22032 I Launcher.IconCache: Icon update not supported for com.google.android.apps.nexuslauncher.allapps.SearchActionItemInfo
+07-22 08:03:06.848 22032 22032 I Launcher.IconCache: Icon update not supported for com.google.android.apps.nexuslauncher.allapps.SearchActionItemInfo
+07-22 08:03:06.849 15419 15419 I HidDeviceService: unregisterAppUid(): uid=10444
+07-22 08:03:06.849 15419 15419 W HidDeviceService: unregisterAppUid(): caller UID doesn't match user UID
+07-22 08:03:06.849  2507  2537 V RecentTasksController: Notify recent tasks changed: 1
+07-22 08:03:06.849 22032 22032 I Launcher.IconCache: Icon update not supported for com.google.android.apps.nexuslauncher.allapps.SearchActionItemInfo
+07-22 08:03:06.853 22032 22032 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+07-22 08:03:06.853  1598  1598 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.854  1598  2307 I ImeTracker: com.google.android.apps.nexuslauncher:71a684fc: onRequestShow at ORIGIN_SERVER reason ATTACH_NEW_INPUT fromUser false userId 0 displayId 0
+07-22 08:03:06.854  1598  2357 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+07-22 08:03:06.855  3891  3891 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2276 
+07-22 08:03:06.855  1598  2357 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+07-22 08:03:06.855  1598  2357 D InetDiagMessage: Destroyed live tcp sockets for uids={10444} in 21ms
+07-22 08:03:06.856  1598  2307 W ProcessStats: Tracking association SourceState{1ba88af com.google.android.inputmethod.latin/10202 BFgs #202907} whose proc state 4 is better than process ProcessState{f45d05a com.google.android.tts/10224 pkg=com.google.android.tts} proc state 14 (52 skipped)
+07-22 08:03:06.857  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.857  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.857  3891  3891 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1460 onStartInput(EditorInfo{EditorInfo{packageName=com.google.android.apps.nexuslauncher, inputType=220001, inputTypeString=Normal[MultiLine], enableLearning=true, autoCorrection=true, autoComplete=true, imeOptions=42000003, privateImeOptions=com.google.android.inputmethod.latin.appSupportsSmartComposeAndDel,com.google.android.inputmethod.latin.canary.appSupportsSmartComposeAndDel,com.google.android.inputmethod.latin.dev.appSupportsSmartComposeAndDel, actionName=SEARCH, actionLabel=null, initialSelStart=2, initialSelEnd=2, initialCapsMode=0, label=null, fieldId=2131362333, fieldName=null, extras=Bundle[mParcelledData.dataSize=168], hintText=non-empty, hintLocales=[]}}, false)
+07-22 08:03:06.857  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.857  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.857  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.857  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.857  3891  3891 I LatinIMEBase: LatinIMEBase.updateInputViewCoverNavigation():317 Update input view padding, isNavbarOverInputWindow=true, bottom inset=117
+07-22 08:03:06.857  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.857  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.857  1188 11299 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.858 22032 22032 I HomeScreenFilesUtils: Paste not supported by feature flag
+07-22 08:03:06.858  3891  3891 I StylusModule: StylusModule.onUpdateToolType():774 Update tool type = 1
+07-22 08:03:06.858  1598  2357 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+07-22 08:03:06.858  3891 12103 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():129 repeatCheckTimes = 0, locked = false
+07-22 08:03:06.858  3891  3891 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1546 onStartInputView(EditorInfo{EditorInfo{packageName=com.google.android.apps.nexuslauncher, inputType=220001, inputTypeString=Normal[MultiLine], enableLearning=true, autoCorrection=true, autoComplete=true, imeOptions=42000003, privateImeOptions=com.google.android.inputmethod.latin.appSupportsSmartComposeAndDel,com.google.android.inputmethod.latin.canary.appSupportsSmartComposeAndDel,com.google.android.inputmethod.latin.dev.appSupportsSmartComposeAndDel, actionName=SEARCH, actionLabel=null, initialSelStart=2, initialSelEnd=2, initialCapsMode=0, label=null, fieldId=2131362333, fieldName=null, extras=Bundle[{androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true}], hintText=non-empty, hintLocales=[]}}, false)
+07-22 08:03:06.860  3891  3891 I KeyboardHeightUtil: KeyboardHeightUtil.getOemKeyboardHeightRatio():81 systemKeyboardHeightRatio:1.000000.
+07-22 08:03:06.861  3891  3891 I InputBundleManager: InputBundleManager.startInput():356 startInput2 restarting=false
+07-22 08:03:06.861  3891  3891 I InputBundleManager: InputBundleManager.loadActiveInputBundleId():552 loadActiveInputBundleId: en-CA, ime_english_canada
+07-22 08:03:06.861  3891  3891 I InputBundle: InputBundle.activateIme():598 activateIme: INACTIVE, keyboardType=prime
+07-22 08:03:06.861  1598  2357 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+07-22 08:03:06.861  1598  2357 D InetDiagMessage: Destroyed live tcp sockets for uids={20444} in 5ms
+07-22 08:03:06.862  3891  3891 I AbstractIme: AbstractIme.onActivate():94 LatinIme.onActivate() : EditorInfo = EditorInfo{packageName=com.google.android.apps.nexuslauncher, inputType=220001, inputTypeString=Normal[MultiLine], enableLearning=true, autoCorrection=true, autoComplete=true, imeOptions=42000003, privateImeOptions=com.google.android.inputmethod.latin.appSupportsSmartComposeAndDel,com.google.android.inputmethod.latin.canary.appSupportsSmartComposeAndDel,com.google.android.inputmethod.latin.dev.appSupportsSmartComposeAndDel, actionName=SEARCH, actionLabel=null, initialSelStart=2, initialSelEnd=2, initialCapsMode=0, label=null, fieldId=2131362333, fieldName=null, extras=Bundle[{androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true}], hintText=non-empty, hintLocales=[]}, IncognitoMode = false, DeviceLocked = false
+07-22 08:03:06.862  3891  3891 I InputBundle: InputBundle.consumeEvent():1052 Skip consuming an event as keyboard status is INACTIVE
+07-22 08:03:06.863  1598  2307 W InputChannel-JNI: Channel already disposed.
+07-22 08:03:06.863  3891 12103 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():129 repeatCheckTimes = 1, locked = false
+07-22 08:03:06.864  3891  3891 I Delight5Facilitator: Delight5Facilitator.initializeForIme():745 initializeForIme() : Locale = [en_CA], layout = qwerty
+07-22 08:03:06.864  4376  4628 I ewsq    : HDM. appOpsListener android:record_audio com.google.android.inputmethod.latin
+07-22 08:03:06.864  4376  4628 I ewsq    : HDM. Ignoring irrelevant audio permission changes for package com.google.android.inputmethod.latin
+07-22 08:03:06.864  3891  3891 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1278 inline flag updated to:false
+07-22 08:03:06.865  3891  3891 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1278 inline flag updated to:false
+07-22 08:03:06.865 22032 22032 I HomeScreenFilesUtils: Paste not supported by feature flag
+07-22 08:03:06.865  1598  1704 W ActivityManager: setHasOverlayUi called on unknown pid: 13211
+07-22 08:03:06.867  1598  2530 W PackageConfigPersister: App-specific configuration not found for packageName: com.google.android.apps.nexuslauncher and userId: 0
+07-22 08:03:06.867  3891  4045 I CrossProfileSharedPreferences: CrossProfileSharedPreferences.maybeRunSyncTaskAfterFullSyncComplete():218 Full sync is not complete when incremental sync is called, trigger full sync
+07-22 08:03:06.867  1598  1704 V WindowManager: Unknown focus tokens, dropping reportFocusChanged
+07-22 08:03:06.868  3891  3891 I InputBundle: InputBundle.consumeEvent():1052 Skip consuming an event as keyboard status is INACTIVE
+07-22 08:03:06.869  3891  3891 I LatinIme: LatinIme.resetInputContext():2288 resetInputContext(): reason=1, externalEditsInfo=ExternalEditsInfo{action=0, offset=-1, textLength=0, originalTextLength=0, hasEdits=false}
+07-22 08:03:06.869  3891  3891 I InputBundle: InputBundle.consumeEvent():1052 Skip consuming an event as keyboard status is INACTIVE
+07-22 08:03:06.870  2507  2537 V RecentTasksController: Notify recent tasks changed: 1
+07-22 08:03:06.870  3891  3891 I InputBundle: InputBundle.activateKeyboard():653 activateKeyboard: ACTIVE, type=KeyboardTypeAndPayload(keyboardType=prime, payload=null)
+07-22 08:03:06.870  3891  3891 I KeyboardWrapper: KeyboardWrapper.activateKeyboard():592 activateKeyboard(): type=prime, status=INACTIVE, imeDef=ImeDef{stringId=ime_english_canada, language=en-CA, languageTag=en-CA, processedConditions={enable_pk_simulator=false, enable_number_row=true, device=phone, true=true, writing_helper_enable_by_word_revert=true}, className=com.google.android.apps.inputmethod.libs.edittracker.EditTrackingImeWrapper, label=0, keyEventInterpreter=null, inlineComposing=true, autoCapital=true, announceAutoSelectedCandidate=true, statusIcon=0, indicatorIcon=0, indicatorLabel=null, displayAppCompletions=true, extraValues=otq{#0x7f0b02fc=TypedValue{t=0x3/d=0x0 "com.google.android.apps.inputmethod.libs.latin5.LatinIme"}}, processors=com.google.android.libraries.inputmethod.metadata.ProcessorsDef@739c681, unacceptableMetaKeys=4098, languageSpecificSettings=0, asciiCapable=true, alwaysShowSuggestions=false, useAsciiPasswordKeyboard=false, keyboardGroupDef=KeyboardGroupDef(variant=qwerty, variantLabel=0, pkLanguageTag=, pkLayoutType=, dynamicLayout=null, layoutSpecificSettings=[], layoutSpecificTheme=2132083596, order=0, supportsSplitMode=true, supportsOneHandedMode=true, isVariantNameMandatory=false, keyboardDefInfos={prime=KeyboardDefInfo(kbType=prime, initialStates=0, keyboardDefs=[2132215290, 2132215953], extraValues=otq{}), digit=KeyboardDefInfo(kbType=digit, initialStates=0, keyboardDefs=[2132215914], extraValues=otq{}), symbol=KeyboardDefInfo(kbType=symbol, initialStates=0, keyboardDefs=[2132216099], extraValues=otq{})}, overrideKeyboardXmlConditions=com.google.android.libraries.inputmethod.metadata.OverrideKeyboardXmlConditionsDef@b6d725c), phenotypeFlagId=0, localizationLanguageTag=null, supportsInlineSuggestion=false}
+07-22 08:03:06.870  3891  3891 I KeyboardManager: KeyboardManager.requestKeyboard():249 Creating keyboard prime, imeId=ime_english_canada, cacheKey=theme,!gsf,!pgsf,!use_system_font,BORDER,FLAVOR_DPI=XXHDPI,IS_LIGHT,KEYBOARD_WIDTH_CATEGORY=NORMAL,KEY_BORDER_SHAPE=1,LIGHT_THEME=true,PHYSICAL_DIAGONAL=6.295603,POPUP,SCREEN_SHORTEST_WIDTH=443,SCREEN_SHORTEST_WIDTH_NO_SCALE=443,SW400DP,XXHDPI,bottom4dp,enable_popup_on_keypress=true,keyboard_height_48_mm,non_linear_scale,noshadow,overlay_builtin_dynamic_color_light_base.binarypb:gm3-light-fff9f9f9-ff000000-af0cec28ed134d48091512734177b8e1,pgsans,silkpopup
+07-22 08:03:06.871  3891  3891 I KeyboardDefManager: KeyboardDefManager.requestKeyboardDef():128 requestKeyboardDef(): type=prime, info=ouy{defIds=[#0x7f1705fa, #0x7f170891], defIdsCacheKey=[2132215290, 2132215953]}
+07-22 08:03:06.871  3891  3891 I KeyboardDefManager: KeyboardDefManager.requestKeyboardDef():195 requestKeyboardDef(): getOrCreate from cache, info=ouy{defIds=[#0x7f1705fa, #0x7f170891], defIdsCacheKey=[2132215290, 2132215953]}
+07-22 08:03:06.871  3891  3891 I KeyboardDefManager: KeyboardDefManager$Companion$addFutureCallbackForKeyboardDefReceiver$1.onSuccess():425 requestKeyboardDef onSuccess(): info=ouy{defIds=[#0x7f1705fa, #0x7f170891], defIdsCacheKey=[2132215290, 2132215953]}
+07-22 08:03:06.871  3891  3891 I KeyboardWrapper: KeyboardWrapper.onKeyboardReady():226 onKeyboardReady(): type=prime(prime), kb=com.google.android.apps.inputmethod.latin.keyboard.LatinPrimeKeyboard@24d92eb
+07-22 08:03:06.871  3891  3891 I KeyboardWrapper: KeyboardWrapper.doActivateKeyboard():624 doActivateKeyboard(): prime
+07-22 08:03:06.871  3891  4045 W ModuleManager: ModuleManager.loadModule():634 Module qtw is not available
+07-22 08:03:06.871  3891 12070 I CrossProfileSharedPreferences: CrossProfileSharedPreferences.syncAllAllowedPreferencesInternal():276 Cannot make cross profile calls to full sync preferences
+07-22 08:03:06.872 22032 22032 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+07-22 08:03:06.872  1598  4385 I ImeTracker: system_server:7b58b80c: onRequestHide at ORIGIN_SERVER reason IME_REQUESTED_CHANGED_LISTENER fromUser false displayId 0
+07-22 08:03:06.874  2507  2537 V RecentTasksController: generateList(getRecentTasks)
+07-22 08:03:06.874  2507  2537 V RecentTasksController: initializeDesksMap - allDeskIds: []
+07-22 08:03:06.874  2507  2537 V RecentTasksController: Task 886 is not an active desktop task
+07-22 08:03:06.874  2507  2537 V RecentTasksController: Added fullscreen task: 886
+07-22 08:03:06.874  2507  2537 V RecentTasksController: Task 878 is not an active desktop task
+07-22 08:03:06.874  2507  2537 V RecentTasksController: Added fullscreen task: 878
+07-22 08:03:06.874  2507  2537 V RecentTasksController: Task 882 is not an active desktop task
+07-22 08:03:06.874  2507  2537 V RecentTasksController: Added fullscreen task: 882
+07-22 08:03:06.874  2507  2537 V RecentTasksController: generateList - complete
+07-22 08:03:06.875 22032 22048 D PreloadThumbnailUseCase: Preloading thumbnails for task ids: [[id=882 windowingMode=1 user=0 lastActiveTime=67190618 lastFocusedTime=67131301] null, [id=878 windowingMode=1 user=0 lastActiveTime=68052143 lastFocusedTime=67191279] null, [id=886 windowingMode=1 user=0 lastActiveTime=68508373 lastFocusedTime=68504043] null]
+07-22 08:03:06.876  3891  3891 I KeyboardViewHelper: KeyboardViewHelper.getView():180 Get view with height ratio:1.000000
+07-22 08:03:06.878  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:06.878  3891  3891 W Keyboard: Keyboard.getKeyboardViewHelper():608 null helper is returned: keyboardDef=out{processedConditions={device=phone, enable_pk_simulator=false, android_software_xr_api_spatial=false, free_cursor=false, enable_free_cursor_by_long_press_space=true, enable_scrub_move=true, layout_9key_split=false, expressions=normal, language=en-CA, variant=qwerty, show_comma_key=true, show_period_key=true, keyboard_mode=normal, pref_enable_flick_symbols=false, show_secondary_digits=false, enable_secondary_symbols=true, enable_number_row=true}, globalConditions={global_theme_key=theme,!gsf,!pgsf,!use_system_font,BORDER,FLAVOR_DPI=XXHDPI,IS_LIGHT,KEYBOARD_WIDTH_CATEGORY=NORMAL,KEY_BORDER_SHAPE=1,LIGHT_THEME=true,PHYSICAL_DIAGONAL=6.295603,POPUP,SCREEN_SHORTEST_WIDTH=443,SCREEN_SHORTEST_WIDTH_NO_SCALE=443,SW400DP,XXHDPI,bottom4dp,enable_popup_on_keypress=true,keyboard_height_48_mm,non_linear_scale,noshadow,overlay_builtin_dynamic_color_light_base.binarypb:gm3-light-fff9f9f9-ff000000-af0cec28ed134d48091512734177b8e1,pgsans,silkpopup, global_locale=en_CA, global_density_dpi=390, global_orientation=1}, className=.latin.keyboard.LatinPrimeKeyboard, resourceIds=[#0x7f1705fa, #0x7f170891], initialStates=0, keyboardViewDefs=[ovk{direction=null, id=#0x7f0b023f, isScalable=true, layoutId=#0x7f0e02c4, type=BODY, touchable=true, defaultShow=true}, ovk{direction=null, id=#0x7f0b023f, isScalable=false, layoutId=#0x7f0e021f, type=FLOATING_CANDIDATES, touchable=false, defaultShow=false}, ovk{direction=LOCALE, id=#0x7f0b023f, isScalable=false, layoutId=#0x7f0e0528, type=HEADER, touchable=true, defaultShow=true}], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x7f0e0619, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=26388279066624}, type=WIDGET, helpersCreated={HEADER=ofc@1c58104, BODY=ofc@b7f56ed, FLOATING_CANDIDATES=ofc@a026922}, context.getResources().getConfiguration(): {1.2 302mcc220mnc [en_CA] ldltr sw443dp w443dp h970dp 390dpi nrml long compactNeeded hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2364) mAppBounds=Rect(0, 0 - 1080, 2364) mMaxBounds=Rect(0, 0 - 1080, 2364) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.95 fontWeightAdjustment=0}
+07-22 08:03:06.878  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:06.879  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.880  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.880  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.880  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.880  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.880  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.880  1598  2307 W InputMethodManagerService: Delegator package does not match. Ignoring startStylusHandwriting
+07-22 08:03:06.880  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.880  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.880  1188  1311 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.881 19739 19739 I pixel-thermal: VIRTUAL-SKIN-CHARGE-PERSIST:30.2728 raw data: CLOSE_WEIGHT:1 IS_WLC:0 NO_WLC:1 OPEN_WEIGHT:0 VIRTUAL-SKIN-CHARGE-CLOSE:29272.8 VIRTUAL-SKIN-CHARGE-CLOSE-SUB-0:28987.4 VIRTUAL-SKIN-CHARGE-CLOSE-SUB-1:29272.8 VIRTUAL-SKIN-CHARGE-CLOSE-SUB-2:27889.2 VIRTUAL-SKIN-CHARGE-LEGACY:29272.8 VIRTUAL-SKIN-CHARGE-OPEN:29665.7 VIRTUAL-SKIN-CHARGE-OPEN-SUB-0:29426.7 VIRTUAL-SKIN-CHARGE-OPEN-SUB-1:29665.7 VIRTUAL-SKIN-CHARGE-OPEN-SUB-2:28820.7 VIRTUAL-SKIN-CHARGE-PERSIST:30272.8 VIRTUAL-SKIN-CHARGE-WLC-CLOSE:29482.4 VIRTUAL-SKIN-CHARGE-WLC-LEGACY:29482.4 VIRTUAL-SKIN-CHARGE-WLC-OPEN:29648.4 WLC_CHECK:1 charging_therm:29441 flash_therm:28980 inner_brightness:0 inner_disp_therm:29692 north_therm:30072 outer_disp_therm:28282 quiet_therm:29359 rfpa_therm:30308 soc_therm:31570 thb_hda:0 
+07-22 08:03:06.881 19739 19739 I pixel-thermal: VIRTUAL-SKIN-TOP-SPEAKER:27.4972 raw data: VIRTUAL-SKIN-TOP-SPEAKER:27497.2 
+07-22 08:03:06.882 19739 19739 I pixel-thermal: BG-TASKS-THROTTLING-HINT:0 raw data: BG-TASKS-THROTTLING-EXP-PROPERTY:1 BG-TASKS-THROTTLING-HINT:0 BG_TASKS_THROTTLING_COUNT:1 BG_TASKS_THROTTLING_LEVEL:0 CLOSE_WEIGHT:1 IS_BG_TASKS_THROTTLING_ACTIVE:0 IS_CHARGING:0 OPEN_WEIGHT:0 VIRTUAL-SKIN:29512.2 VIRTUAL-SKIN-CLOSE:29642.5 VIRTUAL-SKIN-CLOSE-SUB-0:29642.5 VIRTUAL-SKIN-CLOSE-SUB-1:29390.8 VIRTUAL-SKIN-CLOSE-SUB-2:29205.1 VIRTUAL-SKIN-CLOSE-SUB-3:29374.7 VIRTUAL-SKIN-CLOSE-SUB-4:29229.4 VIRTUAL-SKIN-LEGACY:29642.5 VIRTUAL-SKIN-LEGACY-MODEL-DIFF:-79.0605 VIRTUAL-SKIN-LEGACY-SHUTDOWN:0 VIRTUAL-SKIN-MODEL:29721.6 VIRTUAL-SKIN-MODEL-CLAMPED:29721.6 VIRTUAL-SKIN-MODEL-LEGACY-DIFF:79.0605 VIRTUAL-SKIN-MODEL-UPDATED:29512.2 VIRTUAL-SKIN-MODEL-UPPER-CLAMPED:29721.6 VIRTUAL-SKIN-OPEN:29818.1 VIRTUAL-SKIN-OPEN-SUB-0:29614.9 VIRTUAL-SKIN-OPEN-SUB-1:29818.1 VIRTUAL-SKIN-OPEN-SUB-2:29537.9 VIRTUAL-SKIN-OPEN-SUB-3:29814.8 VIRTUAL-SKIN-OPEN-SUB-4:29583.9 VT_LEGACY_WEIGHT:0 VT_MODEL_WEIGHT:1 battery_capacity:96 charging_therm:29441 flash_therm:28980 inner_disp_therm:29692 north_therm:30072 outer_disp_therm:28282 quiet_therm:29359 rfpa_therm:30308 soc_therm:31570 thb_hda:0 usb_pwr_therm:28662 
+07-22 08:03:06.882 19739 19739 I pixel-thermal: VIRTUAL-USB-THROTTLING:0 raw data: USB-MINUS-CHARGING:-779 VIRTUAL-USB-THROTTLING:0 usb_pwr_therm:28662 
+07-22 08:03:06.884 19739 19739 I pixel-thermal: VIRTUAL-SKIN-BOTTOM-SPEAKER:28.0621 raw data: VIRTUAL-SKIN-BOTTOM-SPEAKER:28062.1 
+07-22 08:03:06.884 19739 19739 I pixel-thermal: cellular-emergency:29.5122 raw data: VIRTUAL-SKIN:29512.2 cellular-emergency:29512.2 
+07-22 08:03:06.884 19739 19739 I pixel-thermal: VIRTUAL-SKIN-OUTER-DISPLAY:27.4177 raw data: VIRTUAL-SKIN-OUTER-DISPLAY:27417.7 
+07-22 08:03:06.884 19739 19739 I pixel-thermal: VIRTUAL-SKIN-INNER-DISPLAY:29.8181 raw data: VIRTUAL-SKIN-INNER-DISPLAY:29818.1 VIRTUAL-SKIN-OPEN:29818.1 
+07-22 08:03:06.884 19739 19739 I pixel-thermal: VIRTUAL-SKIN:29.5122 raw data: VIRTUAL-SKIN:29512.2 
+07-22 08:03:06.884 19739 19739 I pixel-thermal: VIRTUAL-USB-UI:0 raw data: USB-MINUS-CHARGING:-779 VIRTUAL-USB-UI:0 usb_pwr_therm:28662 
+07-22 08:03:06.885 19739 19739 I pixel-thermal: VIRTUAL-SKIN-CHARGE-WIRED:30.2728 raw data: NO_WLC:1 VIRTUAL-SKIN-CHARGE-LEGACY:29272.8 VIRTUAL-SKIN-CHARGE-WIRED:30272.8 
+07-22 08:03:06.885 19739 19739 I pixel-thermal: DEVICE-SCREEN-AOD-OFF-HINT:0 raw data: AA_ACTIVE_PROPERTY:0 DEVICE-SCREEN-AOD-OFF-HINT:0 VIRTUAL-SKIN:29512.2 
+07-22 08:03:06.885  1598  1695 D HintManagerService: Sent cleanup message for uid 10202
+07-22 08:03:06.887  5028 12079 V ACCESSIBILITY: CLICK - text: ev; viewId: com.google.android.apps.nexuslauncher:id/input
+07-22 08:03:06.887  5028 12079 V JOAOMGCD: AutoInput-CLICK - text: ev; viewId: com.google.android.apps.nexuslauncher:id/input
+07-22 08:03:06.894  3891  3891 I InputBundleManager: InputBundleManager.startInput():371 startInput() with KeyboardTypeAndPayload(keyboardType=prime, payload=null)
+07-22 08:03:06.895  3891  3891 I PkModeUpdater: PkModeUpdater.onActivate():95 End PK mode: disablePkMode=false, entry=nyk{languageTag=en-CA, variant=qwerty, hasLocalizedResources=true, conditionCacheKey=_android_software_xr_api_spatial=false_app_first_start_timestamp=1754628319122_device=phone_device_size=default_enable_free_cursor_by_long_press_space=true_enable_number_row=true_enable_number_row_in_password=true_enable_pk_simulator=false_enable_pk_simulator_setting=false_enable_scrub_move=true_enable_secondary_digits=true_enable_secondary_symbols=true_expressions=normal_four_or_more_letter_rows=false_free_cursor=false_keyboard_font_size_setting=_keyboard_mode=normal_language=en-CA_layout_9key_split=false_orientation=portrait_physical_keyboard=nokeys_pk_simulator_vk_ready=false_pref_enable_flick_symbols=false_rtl_layout=false_show_comma_key=true_show_period_key=true_show_secondary_digits=false_show_suggestion_strip=true_show_suggestions=true_split_with_duplicate_keys=true_true=true_variant=qwerty_writing_helper_enable_by_word_revert=true, imeDef.stringId=ime_english_canada, imeDef.className=com.google.android.apps.inputmethod.libs.edittracker.EditTrackingImeWrapper, imeDef.languageTag=en-CA}, editorInfo=android.view.inputmethod.EditorInfo@532de06
+07-22 08:03:06.895  3891  3891 I AccessoryInputModeManager: AccessoryInputModeManager.onModeStarted():356 Accessory input mode started: null
+07-22 08:03:06.895  3891  3891 W SupplementaryKeyboardsWrapper: SupplementaryKeyboardsWrapper.deactivateKeyboard():162 keyboard accessory_candidates_consumer is not activated before!
+07-22 08:03:06.895  3891  3891 I EmojiAndGlobeKeyExtension2: EmojiAndGlobeKeyExtension2.onActivate():146 
+07-22 08:03:06.896  5028 12079 V LASTMESSAGEo: Received last update com.joaomgcd.accessibility.inputaction.b@224d7507
+07-22 08:03:06.896  3891  3891 I JarvisAccessPointCooperativeModeHelper: JarvisAccessPointCooperativeModeHelper.onActivate():177 onActivate
+07-22 08:03:06.896  3891  3891 I JarvisTriggersManager: JarvisTriggersManager.onActivate():243 onActivate
+07-22 08:03:06.896  3891  3891 I JarvisHelper: JarvisHelper.activateAutoFixItChipForEditor():146 Disabled in app by flag
+07-22 08:03:06.897  3891  3891 I JarvisExtension: JarvisExtension.onActivate():393 onActivate
+07-22 08:03:06.897  3891  3891 W JarvisPromptGenAiRequestHandlerFactory: JarvisPromptGenAiRequestHandlerFactory.createGenAiRequestHandler():37 Private Inference Handler is requested, but build flavor is not supported. Falling back to default server-based GenAI request handler. Some feature may not work as expected.
+07-22 08:03:06.897  3891 12101 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():72 parseKeyboardGroupDef() 2132214002 -> 0_resource_name_obfuscated : WaitTime = 0 ms : RunTime = 0 ms
+07-22 08:03:06.899  3891  3891 I KeyboardModeUtils: KeyboardModeUtils.getKeyboardBottomOffset():435 inch: 0.350000 ydpi: 408.472992 adjustKeyboardBottomByDisplaySize: false currentDensityDpi: 390 defaultDensityDpi: 390 keyboardBottomToScreenPx: 142 keyboardBottomToNavBarPx: 25 navBarHeight: 117
+07-22 08:03:06.899  1598  4704 I ActivityManager: Background started FGS: Allowed [callingPackage: com.joaomgcd.autoinput; callingUid: 10476; uidState: FGS ; uidBFSL: [BFSL]; BFGS denied: false; intent: Intent { act=com.twofortyfouram.locale.intent.action.REQUEST_QUERY flg=0x10000001 xflg=0x4 cmp=net.dinglisch.android.taskerm/com.joaomgcd.taskerm.plugin.ServiceRequestQuery (has extras) }; code:ACTIVITY_STARTER; tempAllowListReason:<,reasonCode:SYSTEM_ALLOW_LISTED,duration:9223372036854775807,callingUid:-1>; allowWiu:52; targetSdkVersion:35; callerTargetSdkVersion:36; startForegroundCount:0; bindFromPackage:null; isBindService:false]
+07-22 08:03:06.899  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:06.899  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:06.899  3891  3891 I KeyboardViewManager: KeyboardViewManager.updateKeyboardBottomFrame():518 Set bottomFrameHeight = 25 while holderPaddingBottom = 25; navigationHeight = 117
+07-22 08:03:06.899  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:06.899  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:06.899  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:06.899  3891  3891 W ExtensionWrapper: ExtensionWrapper.setExtensionViewVisibility():878 interface oiy is not activate
+07-22 08:03:06.899  1598  4704 W ForegroundServiceTypeLoggerModule: Foreground service start for UID: 10474 does not have any types
+07-22 08:03:06.899  3891  3891 I NgaExtension: NgaExtension.onActivate():652 NgaExtension#onActivate [SDG]
+07-22 08:03:06.899  3891  3891 I NgaVoiceInputHandlerSwitcher: NgaVoiceInputHandlerSwitcher.restorePrimary():251 not switching to primary. fallback is null [SDG]
+07-22 08:03:06.899  3891  3891 I NgaVoiceInputHandler: NgaVoiceInputHandler.maybeCreateInputManager():260 VoiceInputHandler:activating [SDG]
+07-22 08:03:06.899  3891  3891 I CompositeIntentClassifier: CompositeIntentClassifier.<init>():49 Determined SmartEdit intent-classifier threshold: 0.900000 [SDG]
+07-22 08:03:06.899  3891  3891 I MobileBertIntentClassifier: MobileBertIntentClassifier.<init>():174 Successfully loaded native lib mobilebert_classifier_android_jni
+07-22 08:03:06.900  3891  3891 I ModelessCommandDetector: ModelessCommandDetector.<init>():86 Created modeless command detector with language code en [SDG]
+07-22 08:03:06.900  3891  3891 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener pad@9d99b60 was not registered for notification class pae
+07-22 08:03:06.900  3891  3891 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener ozw@b3e9819 was not registered for notification class ozx
+07-22 08:03:06.900  3891  3891 I NgaExtension: NgaExtension.onActivate():678 NgaExtension: interaction type=4 [SDG]
+07-22 08:03:06.900  3891  3891 I UniversalDictationUiProvider: UniversalDictationUiProvider.onActivate():63 onActivate() [UD]
+07-22 08:03:06.901  3891 12095 I DictationHelper: DictationHelper.keyboardActiveSession():96 #keyboardActiveSession [SD]
+07-22 08:03:06.901  3891  3891 I VoiceImeUtils: VoiceImeUtils.shouldStartVoiceInputAutomaticallyInCurrentInputBox():154 No private IME option set to start voice input. [RD]
+07-22 08:03:06.901  3891  3891 I GoogleInputMethodService: GoogleInputMethodService.onWindowShown():2418 
+07-22 08:03:06.902  3891 13103 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():129 repeatCheckTimes = 1, locked = false
+07-22 08:03:06.902  3891  3891 D ImeBackCallbackSender: Register OnBackInvokedCallback with priority=-1 at app window (packageName=com.google.android.apps.nexuslauncher)
+07-22 08:03:06.902  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020534, callback=fmb@c208ac3, lastModifier=2, keyCodes=[56], actions=[0]}
+07-22 08:03:06.902  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020534, callback=fmb@9f4af40, lastModifier=0, keyCodes=[317], actions=[0]}
+07-22 08:03:06.902  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020534, callback=fmb@68c954c, lastModifier=2, keyCodes=[56], actions=[0]}
+07-22 08:03:06.902  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020534, callback=fmb@420e995, lastModifier=0, keyCodes=[317], actions=[0]}
+07-22 08:03:06.902  3891  3891 W AccessPointsManager: AccessPointsManager.addAccessPoint():1124 The holder controller #0x7f0b2947 is not registered
+07-22 08:03:06.902  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020534, callback=fmb@6144e79, lastModifier=2, keyCodes=[56], actions=[0]}
+07-22 08:03:06.902  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020534, callback=fmb@12477be, lastModifier=0, keyCodes=[317], actions=[0]}
+07-22 08:03:06.902  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020534, callback=fmb@76d0aaa, lastModifier=2, keyCodes=[56], actions=[0]}
+07-22 08:03:06.903  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020534, callback=fmb@b93ba38, lastModifier=0, keyCodes=[317], actions=[0]}
+07-22 08:03:06.903  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@1688b21, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:06.903  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@6d7b46, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:06.903  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@ff38a11, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:06.903  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@8e92776, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:06.903  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@b72a6a3, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:06.903  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@3a8cda0, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:06.903  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@8ff177, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:06.903 22032 22032 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@59dd695
+07-22 08:03:06.903  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@1e641e4, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:06.904 22032 22073 D WindowOnBackDispatcher: setOnBackInvokedCallbackInfo: android.view.ImeBackAnimationController@59dd695
+07-22 08:03:06.904  1598  4610 D CoreBackPreview: Window{281a92a u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@62b5c9, mPriority=0, mIsAnimationCallback=true, mOverrideBehavior=0}
+07-22 08:03:06.904  3891  4045 I CrossProfileSharedPreferences: CrossProfileSharedPreferences.maybeRunSyncTaskAfterFullSyncComplete():218 Full sync is not complete when incremental sync is called, trigger full sync
+07-22 08:03:06.907  3891  3891 I Surface : Creating surface for consumer unnamed-3891-61 with slotExpansion=1 for 64 slots
+07-22 08:03:06.907  3891  3891 I Surface : Creating surface for consumer VRI[InputMethod]#61(BLAST Consumer)61 with slotExpansion=1 for 64 slots
+07-22 08:03:06.907  5028 13187 D EventBus: No subscribers registered for event class com.joaomgcd.log.k
+07-22 08:03:06.907  5028 13187 D EventBus: No subscribers registered for event class org.greenrobot.eventbus.NoSubscriberEvent
+07-22 08:03:06.907  1598  4610 D WindowManager: setClientSurface Surface(name=VRI-InputMethod#6639)/@0xfe0d4ce for f0f2d1d InputMethod
+07-22 08:03:06.911  1598  2288 D AccessibilityManagerService: .getAccessibilityShortcutTargets {shortcutType=1, userId=0}
+07-22 08:03:06.911  1598  2288 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{com.android.server.accessibility.MagnificationController}, new:[com.android.server.accessibility.MagnificationController]
+07-22 08:03:06.916  1598  2764 W ForegroundServiceTypeLoggerModule: FGS stop call for: 10474 has no types!
+07-22 08:03:06.918   611  2979 E powerhal-libperfmgr: Error: shouldn't report duration during pause state.
+07-22 08:03:06.925  3891 13144 I SystemHapticSettings: SystemHapticSettings.updateSystemVibrationState():63 update vibration state: false
+07-22 08:03:06.925  3891 12067 I InteractionManager: InteractionManager$startInteraction$2.invokeSuspend():37 #startInteraction [SD]
+07-22 08:03:06.925  3891 12067 I Interaction: Interaction.start():57 Starting Interaction#62 [SD]
+07-22 08:03:06.925  3891  3891 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():1677 onFinishInputView(false)
+07-22 08:03:06.925  3891 12067 I KeyboardEventHandler: KeyboardEventHandler.handleKeyboardVisibilityEvent():219 Handling KeyboardVisibilityEvent: KEYBOARD_OPENED [SD]
+07-22 08:03:06.926  3891 12103 I SpeechEnhancementLogger: SpeechEnhancementLogger.logAtInfo():24 Speech enhancement is disabled because flag is disabled [SD]
+07-22 08:03:06.926  3891 12067 I PackageStatusChecker: PackageStatusChecker.isPackageSuspended():24 Current package suspended=false [SD]
+07-22 08:03:06.926  3891 13144 I CrossProfileSharedPreferences: CrossProfileSharedPreferences.syncAllAllowedPreferencesInternal():276 Cannot make cross profile calls to full sync preferences
+07-22 08:03:06.926  3891  3891 I EmojiAndGlobeKeyExtension2: EmojiAndGlobeKeyExtension2.onDeactivate():153 
+07-22 08:03:06.926  3891  3891 I JarvisExtension: JarvisExtension.onDeactivate():1316 onDeactivate
+07-22 08:03:06.926  3891  3891 I JarvisTriggersManager: JarvisTriggersManager.onDeactivate():785 onDeactivate
+07-22 08:03:06.927  3891  3891 I NgaExtension: NgaExtension.onDeactivate():693 NgaExtension#onDeactivate [SDG]
+07-22 08:03:06.927  3891  3891 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener hon@86689f0 was not registered for notification class nxb
+07-22 08:03:06.927  3891  3891 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltips():153 Tooltip with id spell_check_add_to_dictionary not found in tooltipManager.
+07-22 08:03:06.927  3891  3891 I NgaVoiceInputHandler: NgaVoiceInputHandler.shutdownInternalLegacy():348 VoiceInputHandler:deactivating with reason: SHUTDOWN_UNIVERSAL_EXTENSION_ON_DEACTIVATE [SDG]
+07-22 08:03:06.927  3891  3891 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener ozw@b3e9819 was not registered for notification class ozx
+07-22 08:03:06.927  3891  3891 I SmartEdit: SmartEdit.unloadModels():144 SmartEdit: unloading models [SDG]
+07-22 08:03:06.927  3891  3891 I NgaInputManager: NgaInputManager.onDeactivate():469 SmartEdit: unloading models false [SDG]
+07-22 08:03:06.927  3891  3891 I UniversalDictationUiProvider: UniversalDictationUiProvider.onDeactivate():69 onDeactivate() [UD]
+07-22 08:03:06.928  3891  3891 I InputBundle: InputBundle.consumeEvent():1052 Skip consuming an event as keyboard status is INACTIVE
+07-22 08:03:06.928  3891  3891 I AbstractIme: AbstractIme.onDeactivate():212 LatinIme.onDeactivate()
+07-22 08:03:06.929  3891  3891 I PrimesLoggerHolder: FrameMetricServiceImpl.stopAsFuture():213 Measurement not found: OnConfigurationChanged
+07-22 08:03:06.929  3891  3891 I GoogleInputMethodService: GoogleInputMethodService.onWindowHidden():2410 
+07-22 08:03:06.929  3891  3891 D ImeBackCallbackSender: Unregister OnBackInvokedCallback at app window (packageName=com.google.android.apps.nexuslauncher)
+07-22 08:03:06.929 22032 22032 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): com.android.launcher3.uioverrides.QuickstepLauncher$2@59a4562
+07-22 08:03:06.930  3891  3891 I ImeTracker: system_server:7b58b80c: onHidden
+07-22 08:03:06.930  3891  3891 W InputContextProxy: InputContextProxy.applyClientDiffInternal():917 Ignore [FetchSuggestions] diff due to stale request: 957<958, inputStateId=857, lastInputStateId=858
+07-22 08:03:06.930  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@ff38a11, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:06.930  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@8e92776, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:06.930  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@340c129, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:06.930  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@c22ecae, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:06.930 22032 22073 D WindowOnBackDispatcher: setOnBackInvokedCallbackInfo: com.android.launcher3.uioverrides.QuickstepLauncher$2@59a4562
+07-22 08:03:06.930  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@8ff177, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:06.930  3891 12067 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():77 Automatic switching disabled because Gboard setting is not shown [SD]
+07-22 08:03:06.930  3891  3891 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pup{labelResId=2132020539, callback=fmb@1e641e4, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:06.930  3891 12067 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():92 Automatic switching disabled because there aren't enough supported keyboard languages [SD]
+07-22 08:03:06.930  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@2abd5dc, lastModifier=2, keyCodes=[32], actions=[0]}
+07-22 08:03:06.930  3891  3891 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pup{labelResId=2132020539, callback=fmb@27b46e5, lastModifier=0, keyCodes=[319], actions=[0]}
+07-22 08:03:06.930  3891 12067 I AsrProviderChoice: AsrProviderChoice.setChosenProvider():83 Setting chosen ASR provider to: 6 [SD]
+07-22 08:03:06.931  3891 12067 I EligibilityChecker: EligibilityChecker.triggerProactiveLanguagePackUpdate():479 Never attempted LP download before, triggering download for potential updates [SD]
+07-22 08:03:06.931  3891 12067 I EligibilityChecker: EligibilityChecker.getDictationConfigEligibilityForLocale():311 Dictation is enabled. workprofile=false [SD]
+07-22 08:03:06.931  3891 12067 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():77 Automatic switching disabled because Gboard setting is not shown [SD]
+07-22 08:03:06.931  3891  3891 I InputBundle: InputBundle.consumeEvent():1048 Skip consuming an event as imeStatus is INACTIVE
+07-22 08:03:06.931  3891 12067 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():92 Automatic switching disabled because there aren't enough supported keyboard languages [SD]
+07-22 08:03:06.931  3891 12067 I KeyboardEligibilityNotifier: KeyboardEligibilityNotifier.notifyEligibility():76 Keyboard notified that eligibility=ELIGIBLE [SD]
+07-22 08:03:06.931  3891 12067 I KeyboardUiManagerImpl: KeyboardUiManagerImpl.onKeyboardShown():156 #onKeyboardShown scheduled [SD]
+07-22 08:03:06.931  3891 12067 I KeyboardUiManagerImpl: KeyboardUiManagerImpl.onKeyboardShown():159 #onKeyboardShown [SD]
+07-22 08:03:06.931  3891 12067 I KeyboardEventHandler: KeyboardEventHandler.handleFieldChangedEvent():465 Handling FieldChangedEvent: fgPkg=com.google.android.apps.nexuslauncher, fieldType=2.2e+06, interactionType=FIELD_CHANGE [SD]
+07-22 08:03:06.931  3891  3891 I KeyboardModeUtils: KeyboardModeUtils.getKeyboardBottomOffset():435 inch: 0.350000 ydpi: 408.472992 adjustKeyboardBottomByDisplaySize: false currentDensityDpi: 390 defaultDensityDpi: 390 keyboardBottomToScreenPx: 142 keyboardBottomToNavBarPx: 25 navBarHeight: 117
+07-22 08:03:06.931  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:06.931  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:06.931  3891  3891 I KeyboardViewManager: KeyboardViewManager.updateKeyboardBottomFrame():518 Set bottomFrameHeight = 25 while holderPaddingBottom = 25; navigationHeight = 117
+07-22 08:03:06.931  3891 12067 I PackageStatusChecker: PackageStatusChecker.isPackageSuspended():24 Current package suspended=false [SD]
+07-22 08:03:06.931  3891 13103 I SpeechEnhancementLogger: SpeechEnhancementLogger.logAtInfo():24 Speech enhancement is disabled because flag is disabled [SD]
+07-22 08:03:06.931  3891 12071 I LanguageDownloadQueue: LanguageDownloadQueue.performLanguageDownload():87 Starting language download job for en-CA [SD]
+07-22 08:03:06.931 30102 13282 I GmsNetworkEngineImageFe: warmup called
+07-22 08:03:06.931  1598  2530 D CoreBackPreview: Window{281a92a u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@d734afc, mPriority=0, mIsAnimationCallback=true, mOverrideBehavior=0}
+07-22 08:03:06.932 30102 13282 I GmsNetworkEngineImageFe: fetchImage called
+07-22 08:03:06.932  3891  3891 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltips():153 Tooltip with id undo_access_point_promotion_banner not found in tooltipManager.
+07-22 08:03:06.932 30102 13282 I GmsNetworkEngineImageFe: (REDACTED) image url: %s
+07-22 08:03:06.932  3891 12071 I LanguageDownloadQueue: LanguageDownloadQueue.performLanguageDownload():107 Skip download for en-CA due to another recent attempt [SD]
+07-22 08:03:06.932  3891 12103 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():77 Automatic switching disabled because Gboard setting is not shown [SD]
+07-22 08:03:06.932  3891 12103 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():92 Automatic switching disabled because there aren't enough supported keyboard languages [SD]
+07-22 08:03:06.932  1598  4610 D ImeInsetsSourceProvider: showImePostLayout aborted, serverVisible: false, frozen: false, mWin is: non-null, isDrawn: true, mGivenInsetsPending: false, imeLayeringTarget: Window{281a92a u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}, controlTarget: Window{281a92a u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}
+07-22 08:03:06.932  1598  4610 D ImeInsetsSourceProvider: controlTarget == DisplayContent.imeControlTarget: true, hasPendingControls: false, leash is: non-null
+07-22 08:03:06.933  3891 12103 I AsrProviderChoice: AsrProviderChoice.setChosenProvider():83 Setting chosen ASR provider to: 6 [SD]
+07-22 08:03:06.933  3891 12103 I EligibilityChecker: EligibilityChecker.triggerProactiveLanguagePackUpdate():479 Never attempted LP download before, triggering download for potential updates [SD]
+07-22 08:03:06.933  3891 12103 I EligibilityChecker: EligibilityChecker.getDictationConfigEligibilityForLocale():311 Dictation is enabled. workprofile=false [SD]
+07-22 08:03:06.933  1598  4610 I ImeTracker: com.google.android.apps.nexuslauncher:71a684fc: onFailed at PHASE_SERVER_ABORT_SHOW_IME_POST_LAYOUT
+07-22 08:03:06.933  3891 12070 I LanguageDownloadQueue: LanguageDownloadQueue.performLanguageDownload():87 Starting language download job for en-CA [SD]
+07-22 08:03:06.933  3891 12103 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():77 Automatic switching disabled because Gboard setting is not shown [SD]
+07-22 08:03:06.933  3891 12103 I MultilangConditionManagerImpl: MultilangConditionManagerImpl.isAutomaticSwitchingEnabled():92 Automatic switching disabled because there aren't enough supported keyboard languages [SD]
+07-22 08:03:06.933  3891 12103 I KeyboardEligibilityNotifier: KeyboardEligibilityNotifier.notifyEligibility():76 Keyboard notified that eligibility=ELIGIBLE [SD]
+07-22 08:03:06.933  3891 12070 I LanguageDownloadQueue: LanguageDownloadQueue.performLanguageDownload():107 Skip download for en-CA due to another recent attempt [SD]
+07-22 08:03:06.933  3891 12103 I KeyboardEventHandler: KeyboardEventHandler.handleJarvisState():318 Handling JarvisState. UiState=IDLE, undo_available=false, can_show_proofread_suggestion=false, can_be_activated=true, more_fixes_available=false, draft_selected_in_drafts_ui_session=false, num_fixes_available=0 [SD]
+07-22 08:03:06.933  3891 12103 I KeyboardUiManagerImpl: KeyboardUiManagerImpl.onJarvisState():593 #onJarvisState: # jux@df95006e isProofreadEnabled true [SD]
+07-22 08:03:06.933  3891 13103 I KeyboardEventHandler: KeyboardEventHandler.handleKeyboardVisibilityEvent():219 Handling KeyboardVisibilityEvent: KEYBOARD_CLOSED [SD]
+07-22 08:03:06.933  3891 13103 I KeyboardEventHandler: KeyboardEventHandler.handleJarvisState():318 Handling JarvisState. UiState=IDLE, undo_available=false, can_show_proofread_suggestion=false, can_be_activated=false, more_fixes_available=false, draft_selected_in_drafts_ui_session=false, num_fixes_available=0 [SD]
+07-22 08:03:06.933  1598  1598 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.933  3891 13103 I KeyboardUiManagerImpl: KeyboardUiManagerImpl.onJarvisState():593 #onJarvisState: # jux@a0668084 isProofreadEnabled true [SD]
+07-22 08:03:06.934  1598  1598 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.935  3891  3891 I NgaStateManager: NgaStateManager.setAssistantDictationEligibility():188 AssistantDictationEligibility = 1 [SDG]
+07-22 08:03:06.935  3891  3891 I NgaStateManager: NgaStateManager.buildConfigEligibilityPerLanguageTag():306 AssistantDictationEligibility(config, en-CA) = 1 [SDG]
+07-22 08:03:06.935  3891  3891 I NgaStateManager: NgaStateManager.setAssistantDictationEligibility():197 AssistantDictationEligibility(inputField) = 1 [SDG]
+07-22 08:03:06.935  3891  3891 I NgaInputHandlerFactory: NgaInputHandlerFactory.restorePrimary():138 restoring primary [SDG]
+07-22 08:03:06.935  3891  3891 I NgaVoiceInputHandlerSwitcher: NgaVoiceInputHandlerSwitcher.restorePrimary():251 not switching to primary. fallback is null [SDG]
+07-22 08:03:06.935  3891  3891 I NgaExtension: NgaExtension.onDictatingStateChanged():932 Dictating state changed: dictating=false, status=0 [SDG]
+07-22 08:03:06.935  3891  3891 W NgaExtension: NgaExtension.handleUiCommand():1017 cannot update UI in state NgaState{connected=true, keyboardVisible=false, dictationEligible=true, currentFieldEligibilityUpToDate=true, dictating=false, languageIndicatorVisible=false, keyboardTypeSupported=true, config=# jts@ada24d4a, clientType=1, eligibilityByLanguageTag={en-CA=1}, currentEligibility=1, autoStarted=false} [SDG]
+07-22 08:03:06.935  1598  1598 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+07-22 08:03:06.935  3891  3891 I NgaStateManager: NgaStateManager.setAssistantDictationEligibility():188 AssistantDictationEligibility = 1 [SDG]
+07-22 08:03:06.935  3891  3891 I NgaStateManager: NgaStateManager.buildConfigEligibilityPerLanguageTag():306 AssistantDictationEligibility(config, en-CA) = 1 [SDG]
+07-22 08:03:06.936  3891  3891 I NgaStateManager: NgaStateManager.setAssistantDictationEligibility():197 AssistantDictationEligibility(inputField) = 1 [SDG]
+07-22 08:03:06.936  3891  3891 I NgaInputHandlerFactory: NgaInputHandlerFactory.restorePrimary():138 restoring primary [SDG]
+07-22 08:03:06.936  3891  3891 I NgaVoiceInputHandlerSwitcher: NgaVoiceInputHandlerSwitcher.restorePrimary():251 not switching to primary. fallback is null [SDG]
+07-22 08:03:06.936  3891  3891 I KeyboardModeUtils: KeyboardModeUtils.getKeyboardBottomOffset():435 inch: 0.350000 ydpi: 408.472992 adjustKeyboardBottomByDisplaySize: false currentDensityDpi: 390 defaultDensityDpi: 390 keyboardBottomToScreenPx: 142 keyboardBottomToNavBarPx: 25 navBarHeight: 117
+07-22 08:03:06.936  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:06.936  3891  3891 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 261 height for app when ime window height:2088, header height:117 and isFullscreenMode:false, so the max keyboard body height is:1710
+07-22 08:03:06.936  3891  3891 I KeyboardViewManager: KeyboardViewManager.updateKeyboardBottomFrame():518 Set bottomFrameHeight = 25 while holderPaddingBottom = 25; navigationHeight = 117
+07-22 08:03:06.939  1598  4385 D AccessibilityManagerService: .getAccessibilityShortcutTargets {shortcutType=1, userId=0}
+07-22 08:03:06.939  1598  4385 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{com.android.server.accessibility.MagnificationController}, new:[com.android.server.accessibility.MagnificationController]
+07-22 08:03:06.940  1598  4385 I PackageManager: getInstalledPackages: callingUid=10174 flags=0 updatedFlags=786432 userId=0
+07-22 08:03:06.997 30102 13282 I PlayCloudSearchServiceI: (REDACTED) getCompletions called on thread %s
+07-22 08:03:06.997 30102 13282 I PlayCloudSearchServiceI: (REDACTED) Searching for query <%s> with account <%s>
+07-22 08:03:06.997 30102 13282 I PlayCloudSearchServiceI: (REDACTED) result_count not specified, defaulting to %d...
+07-22 08:03:07.023 17418 17464 D WM-Processor: Processor cancelling 7a553f2c-87f2-47a3-aca5-562a7df830d7
+07-22 08:03:07.023 17418 17464 D WM-Processor: WorkerWrapper could not be found for 7a553f2c-87f2-47a3-aca5-562a7df830d7
+07-22 08:03:07.024 17418 17464 D WM-SystemJobScheduler: Cancelling work ID 7a553f2c-87f2-47a3-aca5-562a7df830d7, Job ID 99836
+07-22 08:03:07.024  1598  2530 W JobScheduler.JobStatus: Exempted app com.august.luna considered buggy
+07-22 08:03:07.027 30102 13152 I NearbyMediums: Found Fast Ble Advertisements :
+07-22 08:03:07.027 30102 13152 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x49 0x36 0x56 0x54 0x11 0x34 0xd2 0xe0 0x53 0x45 0x83 0x11 0xac 0xa0 0xbb 0x4e 0x4d 0x73 0x47 0x4f 0x99 0x45 ], deviceToken=[ 0x9f 0xd2 ], rxAdvertisement=null } : 1 times.
+07-22 08:03:07.027 30102 13152 I NearbyMediums: Total 1 fast advertisements from 1 unique advertisers.
+07-22 08:03:07.027 30102 13152 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+07-22 08:03:07.027 17418 17464 I WM-GreedyScheduler: Ignoring schedule request in non-main process
+07-22 08:03:07.042 17418 17464 D WM-SystemJobScheduler: Scheduling work ID 19c9266e-3cf4-47dd-9c78-955a2fb050d0 (com.google.apps.tiktok.contrib.work.TikTokListenableWorker), Job ID 99837
+07-22 08:03:07.054 17418 17464 I WM-GreedyScheduler: Ignoring schedule request in a secondary process
+07-22 08:03:07.059   995  2472 I WifiHAL : Creating message to get link statistics; iface = 47
+07-22 08:03:07.097   995  2472 I WifiHAL : Getting cached scan results, iface handle = 0xb400006fe9ceda50
+07-22 08:03:07.097   995  2472 E WifiHAL : Creating message to get cached scan results
+07-22 08:03:07.101   995  2472 I WifiHAL : In GetCachedScanResultsCommand::handleResponse
+07-22 08:03:07.127  2507  2909 V WindowManagerShell: Received remote transition finished callback for (#720)
+07-22 08:03:07.127  2507  2537 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#720) android.os.BinderProxy@4abcacc@0
+07-22 08:03:07.129  1598  4610 E libbinder.IPCThreadState: Binder transaction failure. id: 25722581, cmd: BR_DEAD_REPLY (29189), error: -22 (Invalid argument)
+07-22 08:03:07.129  1598  4610 W ActivityManager: pid 1598 system sent binder code 7 with flags 1 and got error -32
+07-22 08:03:07.130  1598  4610 W WindowManager: Exception thrown during dispatchAppVisibility Window{3d335ba u0 com.eveng2bridge/com.eveng2bridge.MainActivity EXITING}
+07-22 08:03:07.130  1598  4610 W WindowManager: android.os.DeadObjectException
+07-22 08:03:07.130  1598  4610 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+07-22 08:03:07.130  1598  4610 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:674)
+07-22 08:03:07.130  1598  4610 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:603)
+07-22 08:03:07.130  1598  4610 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3485)
+07-22 08:03:07.130  1598  4610 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1254)
+07-22 08:03:07.130  1598  4610 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:392)
+07-22 08:03:07.130  1598  4610 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5821)
+07-22 08:03:07.130  1598  4610 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1659)
+07-22 08:03:07.130  1598  4610 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1238)
+07-22 08:03:07.130  1598  4610 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:530)
+07-22 08:03:07.130  1598  4610 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:265)
+07-22 08:03:07.130  1598  4610 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:236)
+07-22 08:03:07.130  1598  4610 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1328)
+07-22 08:03:07.130  1598  4610 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1282)
+07-22 08:03:07.130  1598  4610 W Process : Unable to open /proc/13211/status
+07-22 08:03:07.135  1598  1695 V WindowManager: Finish Transition (#720): created at 07-22 08:03:06.759 collect-started=0.105ms request-sent=0.292ms started=4.66ms ready=17.017ms sent=42.53ms commit=17.787ms finished=370.045ms
+07-22 08:03:07.136  2507  2537 V WindowManagerShell: Track 0 became idle
+07-22 08:03:07.136  2507  2537 V WindowManagerShell: All active transition animations finished
+07-22 08:03:07.138  2507  2537 V ShellTaskOrganizer: Task vanished taskId=886
+07-22 08:03:07.138  2507  2537 V ShellTaskOrganizer: Fullscreen Task Vanished: #886
+07-22 08:03:07.138  2507  2537 V ShellDesktopMode: Task Vanished: #886 closed=true
+07-22 08:03:07.138  2507  2537 V RecentTasksController: Notify recent tasks changed: 1
+07-22 08:03:07.139  2507  2537 D ShellDesktopMode: AppToWebRepository: Task 886 is vanishing. Removing task data from repository
+07-22 08:03:07.139 22032 22032 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+07-22 08:03:07.139  2507  2537 V AppCompat: SingleSurfaceLetterboxController: []
+07-22 08:03:07.139  2507  2537 V AppCompat: MultiSurfaceLetterboxController: []
+07-22 08:03:07.139  2507  2537 V AppCompat: LetterboxInputController: []
+07-22 08:03:07.139  2507  2537 V AppCompat: RoundedCornersLetterboxController: {}
+07-22 08:03:07.140  1598  2469 I Surface : Creating surface for consumer unnamed-1598-367 with slotExpansion=1 for 64 slots
+07-22 08:03:07.140  1598  2469 I Surface : Creating surface for consumer ImageReader-864x1891f1m1-1598-229 with slotExpansion=1 for 64 slots
+07-22 08:03:07.140 22032 22032 D RecentsView: onTaskRemoved: 886, not handling task stack changes
+07-22 08:03:07.140 22032 22032 D RecentsView: onTaskRemoved: 886, not handling task stack changes
+07-22 08:03:07.142  1598  2469 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+07-22 08:03:07.148 30102 30292 I cn_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@a965a70
+07-22 08:03:07.151  1598  2469 E ConsumerBase: [ImageReader-864x1891f1m1-1598-229] abandonLocked: ConsumerBase is abandoned!
+07-22 08:03:07.153   508   508 E BpTransactionCompletedListener: Failed to transact (-32)
+07-22 08:03:07.164 30102 13119 I PlayCloudSearchServiceI: (REDACTED) Number of app suggestions returned from xRPC call: %d
+07-22 08:03:07.190 30102 13119 I PlayCloudSearchServiceI: (REDACTED) Number of app suggestions after filtering: %d
+07-22 08:03:07.312  1598  2276 D ActivityManager: freezing 11853 com.google.android.apps.turbo
+07-22 08:03:07.315  1598  2357 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+07-22 08:03:07.316  1598  2357 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+07-22 08:03:07.316  1598  2357 D InetDiagMessage: Destroyed live tcp sockets for uids={10146} in 1ms
+07-22 08:03:07.324   497 29919 W android.system.suspend-service: BPF wakelock stats failed, falling back to sysfs: Success
+07-22 08:03:07.327 19739 19739 I pixel-thermal: VIRTUAL-SKIN:29.5122 raw data: VIRTUAL-SKIN:29512.2 
+07-22 08:03:07.328  1598  1704 W AccessibilityWindowsPopulator: Windows change within in 2 frames continuously over 500 ms and notify windows changed immediately
+07-22 08:03:07.328 19739 19739 I pixel-thermal: VIRTUAL-SKIN:29.5122 raw data: VIRTUAL-SKIN:29512.2 
+07-22 08:03:07.328  2652  2982 I TemperatureStateSource: temperature was set
+07-22 08:03:07.329  2652  2982 D ImpulseStateSource: Notify clients: 5616
+07-22 08:03:07.329  2652  2982 D ImpulseConnection: bindService: com.google.android.apps.turbo
+07-22 08:03:07.334  1598  4385 D ActivityManager: sync unfroze 11853 com.google.android.apps.turbo for 6
+07-22 08:03:07.356  1598  1664 I system_server: NativeAlloc concurrent mark compact GC freed 63MB AllocSpace bytes, 63(1304KB) LOS objects, 79% free, 102MB/512MB, paused 2.992ms,9.471ms total 550.561ms
+07-22 08:03:07.357  2652  2652 D ImpulseConnection: onServiceConnected: ComponentInfo{com.google.android.apps.turbo/com.google.android.apps.turbo.adaptiveplatform.impulse.ImpulseClientService} service is null false
+07-22 08:03:07.365 30102 13287 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+07-22 08:03:07.376 30102 13287 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+07-22 08:03:07.391   915   932 I CHRE    : @ 68511.606: [WallabyPD] 	Device (0x201)  >>> stationary-unspecified  - not-in-pocket <<< Config: Optical-Only FCN 
+07-22 08:03:07.391   915   932 I CHRE    : @ 68511.606: [Wallaby] PocketEvent Pos: 0x201 -> 0x201, IsHostAwake: 1
+07-22 08:03:07.428  1598  1598 W AccessibilityManagerService:  wait for adding window timeout: 9
+07-22 08:03:07.432  1598  1598 W AccessibilityManagerService:  wait for adding window timeout: 9
+07-22 08:03:07.433  1598  1598 W AccessibilityManagerService:  wait for adding window timeout: 9
+07-22 08:03:07.535  3891 12101 I KeyboardEventHandler: KeyboardEventHandler.handleKeyboardHidden():296 Keyboard closed, ending dictation. [SD]
+07-22 08:03:07.661  1262  1262 D AOC     : A3:MSG: icm456xy_device.cc, 443: USF: Device: type: 4, p/l: 0 ns/ 9223372036854775807 ns, O/WM/I: 100/6/17
+07-22 08:03:07.662  1262  1262 D AOC     : A3:MSG: usf_sensor.cc, 1920: USF: Received start sampling request for ICM45631 Motion Detect (active:1).
+07-22 08:03:07.663  1262  1262 D AOC     : A3:MSG: icm456xy_device.cc, 443: USF: Device: type: 3, p/l: 640000000 ns/ 0 ns, O/WM/I: 100/6/17
+07-22 08:03:07.663  1262  1262 D AOC     : A3:MSG: motion_state_sensor.cc, 328: USF: MoSt: MotionDetect sampling started with sampling ID 12478.
+07-22 08:03:07.665  1262  1262 D AOC     : A3:MSG: usf_sensor.cc, 1920: USF: Received start sampling request for ICM45631 Motion Detect (active:2).
+07-22 08:03:07.665  1262  1262 D AOC     : A3:MSG: usf_sensor.cc, 1935: USF: Received stop sampling request for ICM45631 FreeFall Detect (active:0).
+07-22 08:03:07.667  1262  1262 D AOC     : A3:MSG: icm456xy_device.cc, 443: USF: Device: type: 5, p/l: 0 ns/ 9223372036854775807 ns, O/WM/I: 100/6/17
+07-22 08:03:07.888  4376  4628 I ewsq    : HDM. appOpsListener android:record_audio com.google.android.inputmethod.latin
+07-22 08:03:07.889  4376  4628 I ewsq    : HDM. Ignoring irrelevant audio permission changes for package com.google.android.inputmethod.latin
+07-22 08:03:07.893  1598  2277 D HintManagerService: Starts cleaning for 10202
+07-22 08:03:07.931  3891 12095 I KeyboardActiveSessionStreamManager: KeyboardActiveSessionStreamManager.closeStream():110 Closing stream. [SDG]
+07-22 08:03:07.932  3891 12095 I Interaction: Interaction$KeyboardEventStreamObserver.onCompleted():141 Interaction#62 completed by the client [SD]
+07-22 08:03:07.933  3891 12069 I Interaction: Interaction.shutdownAndForget$java_com_google_android_libraries_inputmethod_voice_smartdictation_service_interaction_interaction():92 Shutting down Interaction#62 [SD]
+07-22 08:03:07.933  3891 12069 I KeyboardActiveSessionStreamManager: KeyboardActiveSessionStreamManager$AssistantEventObserver.onCompleted():240 Assistant event stream completed. [SDG]
+07-22 08:03:07.933  3891 12069 I InteractionManager: InteractionManager.forgetInteraction$java_com_google_android_libraries_inputmethod_voice_smartdictation_service_interaction_interaction():50 Forgetting Interaction#62 [SD]

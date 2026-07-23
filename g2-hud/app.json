@@ -1,0 +1,25 @@
+{
+  "package_id": "com.garmin.hud",
+  "edition": "202601",
+  "name": "Garmin HUD",
+  "version": "1.0.18",
+  "min_app_version": "0.1.0",
+  "min_sdk_version": "0.0.7",
+  "tagline": "Garmin Watch HUD",
+  "description": "Live HUD streaming data from Garmin watch bridge.",
+  "author": "Developer",
+  "entrypoint": "index.html",
+  "permissions": [
+    {
+      "name": "network",
+      "desc": "Connects to local Android bridge server for streaming data",
+      "whitelist": [
+        "127.0.0.1",
+        "localhost"
+      ]
+    }
+  ],
+  "supported_languages": [
+    "en"
+  ]
+}

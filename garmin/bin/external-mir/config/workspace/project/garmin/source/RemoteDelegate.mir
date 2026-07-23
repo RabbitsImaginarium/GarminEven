@@ -1,0 +1,48 @@
+[ @file = "/config/workspace/project/garmin/source/RemoteDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/config/workspace/project/garmin/source/RemoteDelegate.mc"; @line = 3; @symbol_classdef = [RemoteDelegate,3,6,20]; @symbol_extends<0> = [WatchUi,3,29,36]; @symbol_extends<1> = [BehaviorDelegate,3,37,53]; ]
+class RemoteDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/config/workspace/project/garmin/source/RemoteDelegate.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "/config/workspace/project/garmin/source/RemoteDelegate.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "/config/workspace/project/garmin/source/RemoteDelegate.mc"; @line = 4; @position = 16; @symbol_vardef = [_view,4,16,21]; ]
+    private
+    var _view;
+    [ @file = "/config/workspace/project/garmin/source/RemoteDelegate.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; @symbol_param<0> = [view,6,24,28]; ]
+    function initialize(view) as Void {
+_config_workspace_project_garmin_source_RemoteDelegate_mc_6_30_9_4_start:
+[ "/config/workspace/project/garmin/source/RemoteDelegate.mc" 7 8 ]
+        symbol [ BehaviorDelegate %tmp.2 7 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 7 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/config/workspace/project/garmin/source/RemoteDelegate.mc" 8 8 ]
+        %tmp.4 = lgetv %view;
+        symbol [ view %tmp.4 8 16 20 ];
+        symbol [ _view ? 8 8 13 ];
+        putv self :_view %tmp.4;
+_config_workspace_project_garmin_source_RemoteDelegate_mc_6_30_9_4_stop:
+    }
+    [ @file = "/config/workspace/project/garmin/source/RemoteDelegate.mc"; @line = 11; @symbol_functiondef = [onSelect,11,13,21]; ]
+    function onSelect() {
+_config_workspace_project_garmin_source_RemoteDelegate_mc_11_24_14_4_start:
+[ "/config/workspace/project/garmin/source/RemoteDelegate.mc" 12 8 ]
+        symbol [ _view %tmp.2 12 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ toggleRecording %tmp.3 12 14 29 ];
+        %tmp.3 = getv function %tmp.2 :toggleRecording;
+        invoke %tmp.2 %tmp.3();
+[ "/config/workspace/project/garmin/source/RemoteDelegate.mc" 13 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+_config_workspace_project_garmin_source_RemoteDelegate_mc_11_24_14_4_stop:
+    }
+}
+[ @file = "/config/workspace/project/garmin/source/RemoteDelegate.mc"; @line = 1; ]
+<init> {
+}

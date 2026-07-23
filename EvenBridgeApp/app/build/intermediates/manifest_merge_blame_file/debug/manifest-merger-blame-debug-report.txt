@@ -1,0 +1,118 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.eveng2bridge"
+4    android:versionCode="2"
+5    android:versionName="1.0.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:3:5-67
+11-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:3:22-64
+12    <uses-permission android:name="android.permission.BLUETOOTH" />
+12-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:4:5-68
+12-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:4:22-65
+13
+14    <permission
+14-->[androidx.core:core:1.12.0] /config/.gradle/caches/transforms-3/da024fe9a862a975dbe894dae3fd994a/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+15        android:name="com.eveng2bridge.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.12.0] /config/.gradle/caches/transforms-3/da024fe9a862a975dbe894dae3fd994a/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.12.0] /config/.gradle/caches/transforms-3/da024fe9a862a975dbe894dae3fd994a/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.eveng2bridge.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.12.0] /config/.gradle/caches/transforms-3/da024fe9a862a975dbe894dae3fd994a/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.12.0] /config/.gradle/caches/transforms-3/da024fe9a862a975dbe894dae3fd994a/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+19
+20    <queries>
+20-->[com.garmin.connectiq:ciq-companion-app-sdk:2.4.0] /config/.gradle/caches/transforms-3/2c3d2bbd79c3ff826969697b66b30a5b/transformed/ciq-companion-app-sdk-2.4.0/AndroidManifest.xml:11:5-13:15
+21        <package android:name="com.garmin.android.apps.connectmobile" />
+21-->[com.garmin.connectiq:ciq-companion-app-sdk:2.4.0] /config/.gradle/caches/transforms-3/2c3d2bbd79c3ff826969697b66b30a5b/transformed/ciq-companion-app-sdk-2.4.0/AndroidManifest.xml:12:9-73
+21-->[com.garmin.connectiq:ciq-companion-app-sdk:2.4.0] /config/.gradle/caches/transforms-3/2c3d2bbd79c3ff826969697b66b30a5b/transformed/ciq-companion-app-sdk-2.4.0/AndroidManifest.xml:12:18-70
+22    </queries>
+23
+24    <application
+24-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:6:5-19:19
+25        android:allowBackup="true"
+25-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:7:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.12.0] /config/.gradle/caches/transforms-3/da024fe9a862a975dbe894dae3fd994a/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+27        android:debuggable="true"
+28        android:extractNativeLibs="false"
+29        android:icon="@mipmap/ic_launcher"
+29-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:8:9-43
+30        android:label="EvenBridge"
+30-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:9:9-35
+31        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+31-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:10:9-65
+32        <activity
+32-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:11:9-18:20
+33            android:name="com.eveng2bridge.MainActivity"
+33-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:12:13-41
+34            android:exported="true" >
+34-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:13:13-36
+35            <intent-filter>
+35-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:14:13-17:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:15:17-69
+36-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:15:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:16:17-77
+38-->/config/workspace/project/EvenBridgeApp/app/src/main/AndroidManifest.xml:16:27-74
+39            </intent-filter>
+40        </activity>
+41
+42        <provider
+42-->[androidx.emoji2:emoji2:1.2.0] /config/.gradle/caches/transforms-3/e1d10f7c61dcde337e910047b0418d05/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+43            android:name="androidx.startup.InitializationProvider"
+43-->[androidx.emoji2:emoji2:1.2.0] /config/.gradle/caches/transforms-3/e1d10f7c61dcde337e910047b0418d05/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+44            android:authorities="com.eveng2bridge.androidx-startup"
+44-->[androidx.emoji2:emoji2:1.2.0] /config/.gradle/caches/transforms-3/e1d10f7c61dcde337e910047b0418d05/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+45            android:exported="false" >
+45-->[androidx.emoji2:emoji2:1.2.0] /config/.gradle/caches/transforms-3/e1d10f7c61dcde337e910047b0418d05/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+46            <meta-data
+46-->[androidx.emoji2:emoji2:1.2.0] /config/.gradle/caches/transforms-3/e1d10f7c61dcde337e910047b0418d05/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+47                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+47-->[androidx.emoji2:emoji2:1.2.0] /config/.gradle/caches/transforms-3/e1d10f7c61dcde337e910047b0418d05/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+48                android:value="androidx.startup" />
+48-->[androidx.emoji2:emoji2:1.2.0] /config/.gradle/caches/transforms-3/e1d10f7c61dcde337e910047b0418d05/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+49            <meta-data
+49-->[androidx.lifecycle:lifecycle-process:2.4.1] /config/.gradle/caches/transforms-3/3bff672b794506c7eeb3ea5ede2b0972/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+50                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+50-->[androidx.lifecycle:lifecycle-process:2.4.1] /config/.gradle/caches/transforms-3/3bff672b794506c7eeb3ea5ede2b0972/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+51                android:value="androidx.startup" />
+51-->[androidx.lifecycle:lifecycle-process:2.4.1] /config/.gradle/caches/transforms-3/3bff672b794506c7eeb3ea5ede2b0972/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+52        </provider>
+53
+54        <service
+54-->[com.garmin.connectiq:ciq-companion-app-sdk:2.4.0] /config/.gradle/caches/transforms-3/2c3d2bbd79c3ff826969697b66b30a5b/transformed/ciq-companion-app-sdk-2.4.0/AndroidManifest.xml:16:9-23:19
+55            android:name="com.garmin.android.connectiq.IQGarminBindingService"
+55-->[com.garmin.connectiq:ciq-companion-app-sdk:2.4.0] /config/.gradle/caches/transforms-3/2c3d2bbd79c3ff826969697b66b30a5b/transformed/ciq-companion-app-sdk-2.4.0/AndroidManifest.xml:17:13-79
+56            android:enabled="true"
+56-->[com.garmin.connectiq:ciq-companion-app-sdk:2.4.0] /config/.gradle/caches/transforms-3/2c3d2bbd79c3ff826969697b66b30a5b/transformed/ciq-companion-app-sdk-2.4.0/AndroidManifest.xml:18:13-35
+57            android:exported="true" >
+57-->[com.garmin.connectiq:ciq-companion-app-sdk:2.4.0] /config/.gradle/caches/transforms-3/2c3d2bbd79c3ff826969697b66b30a5b/transformed/ciq-companion-app-sdk-2.4.0/AndroidManifest.xml:19:13-36
+58            <intent-filter>
+58-->[com.garmin.connectiq:ciq-companion-app-sdk:2.4.0] /config/.gradle/caches/transforms-3/2c3d2bbd79c3ff826969697b66b30a5b/transformed/ciq-companion-app-sdk-2.4.0/AndroidManifest.xml:20:13-22:29
+59                <action android:name="com.garmin.android.connectiq.GARMIN_BINDING_SERVICE_ACTION" />
+59-->[com.garmin.connectiq:ciq-companion-app-sdk:2.4.0] /config/.gradle/caches/transforms-3/2c3d2bbd79c3ff826969697b66b30a5b/transformed/ciq-companion-app-sdk-2.4.0/AndroidManifest.xml:21:17-101
+59-->[com.garmin.connectiq:ciq-companion-app-sdk:2.4.0] /config/.gradle/caches/transforms-3/2c3d2bbd79c3ff826969697b66b30a5b/transformed/ciq-companion-app-sdk-2.4.0/AndroidManifest.xml:21:25-98
+60            </intent-filter>
+61        </service>
+62
+63        <activity
+63-->[com.garmin.connectiq:ciq-companion-app-sdk:2.4.0] /config/.gradle/caches/transforms-3/2c3d2bbd79c3ff826969697b66b30a5b/transformed/ciq-companion-app-sdk-2.4.0/AndroidManifest.xml:25:9-29:85
+64            android:name="com.garmin.android.connectiq.AutoUIDialogHostActivity"
+64-->[com.garmin.connectiq:ciq-companion-app-sdk:2.4.0] /config/.gradle/caches/transforms-3/2c3d2bbd79c3ff826969697b66b30a5b/transformed/ciq-companion-app-sdk-2.4.0/AndroidManifest.xml:26:13-81
+65            android:excludeFromRecents="true"
+65-->[com.garmin.connectiq:ciq-companion-app-sdk:2.4.0] /config/.gradle/caches/transforms-3/2c3d2bbd79c3ff826969697b66b30a5b/transformed/ciq-companion-app-sdk-2.4.0/AndroidManifest.xml:27:13-46
+66            android:exported="false"
+66-->[com.garmin.connectiq:ciq-companion-app-sdk:2.4.0] /config/.gradle/caches/transforms-3/2c3d2bbd79c3ff826969697b66b30a5b/transformed/ciq-companion-app-sdk-2.4.0/AndroidManifest.xml:28:13-37
+67            android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar" />
+67-->[com.garmin.connectiq:ciq-companion-app-sdk:2.4.0] /config/.gradle/caches/transforms-3/2c3d2bbd79c3ff826969697b66b30a5b/transformed/ciq-companion-app-sdk-2.4.0/AndroidManifest.xml:29:13-82
+68    </application>
+69
+70</manifest>
