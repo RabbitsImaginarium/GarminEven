@@ -1,155 +1,133 @@
-import { waitForEvenAppBridge } from 'https://cdn.jsdelivr.net/npm/@evenrealities/even_hub_sdk@0.0.12/+esm';
+import { waitForEvenAppBridge } from '@evenrealities/even_hub_sdk';
 
 const WS_URL = "ws://127.0.0.1:8080/ws";
 let bridge = null;
-let isContainerCreated = false;
-let rxCount = 0;
 
-function logStatus(msg) {
-    console.log("[Status]", msg);
-    const el = document.getElementById("status");
-    if (el) el.innerText = msg;
-}
-
-function logWs(msg) {
-    console.log("[WS]", msg);
-    const el = document.getElementById("ws-debug");
-    if (el) el.innerText = msg;
-}
-
-function formatPace(paceVal) {
-    const num = parseFloat(paceVal);
-    if (isNaN(num) || num <= 0.0 || num > 30.0) {
-        return "--:--";
+function logDebug(msg) {
+    console.log(msg);
+    const logEl = document.getElementById("debug-log");
+    if (logEl) {
+        logEl.innerHTML += `\n[${new Date().toISOString().split('T')[1].slice(0,-1)}] ${msg}`;
+        logEl.scrollTop = logEl.scrollHeight;
     }
-    const mins = Math.floor(num);
-    const secs = Math.round((num - mins) * 60);
-    return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+}
+
+function createMetricBitmap(paceStr, hrStr, detailsStr) {
+    const canvas = document.createElement('canvas');
+    canvas.width = 200;
+    canvas.height = 100;
+    const ctx = canvas.getContext('2d', { willReadFrequently: true });
+
+    // Black maps to transparent on the HUD
+    ctx.fillStyle = "#000000";
+    ctx.fillRect(0, 0, 200, 100);
+
+    // White maps to the active green monochrome pixels
+    ctx.fillStyle = "#FFFFFF";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "top";
+
+    // Top two lines: Pace and Heart Rate (larger font)
+    ctx.font = "bold 24px monospace";
+    ctx.fillText(paceStr, 100, 8);
+    ctx.fillText(hrStr, 100, 40);
+
+    // Bottom line: Distance and Time (smaller font)
+    ctx.font = "bold 15px monospace";
+    ctx.fillText(detailsStr, 100, 76);
+
+    const imgData = ctx.getImageData(0, 0, 200, 100).data;
+    const rawBytes = new Array(20000); 
+    for (let i = 0; i < 20000; i++) {
+        rawBytes[i] = imgData[i * 4]; 
+    }
+    return rawBytes;
+}
+
+async function updateGlassesDisplay(pace, hr, details) {
+    if (!bridge) return;
+    const imageBytes = createMetricBitmap(pace, hr, details);
+    try {
+        await bridge.updateImageRawData({ 
+            containerID: 5, 
+            containerName: "pace_img", 
+            imageData: imageBytes 
+        });
+        logDebug(`Pushed display update: ${pace} | ${hr} | ${details}`);
+    } catch (err) {
+        logDebug(`Update error: ${err.message}`);
+    }
+}
+
+function connectWebSocket() {
+    let socket;
+    try {
+        socket = new WebSocket(WS_URL);
+        logDebug("Connecting WebSocket...");
+    } catch (e) { return; }
+
+    socket.onmessage = (e) => {
+        try {
+            const t = JSON.parse(e.data);
+            const paceStr = t.pace ? `${t.pace} min/km` : "6:30 min/km";
+            const hrStr   = t.hr ? `${t.hr} bpm` : "82 bpm";
+            const distStr = t.distance ? `${t.distance} km` : "5.72 km";
+            const timeStr = t.time ? t.time : "5:45";
+            
+            updateGlassesDisplay(paceStr, hrStr, `${distStr} | ${timeStr}`);
+        } catch (err) {}
+    };
+    socket.onclose = () => setTimeout(connectWebSocket, 3000);
 }
 
 async function initGlasses() {
     try {
-        logStatus("Connecting Bridge...");
+        logDebug("Waiting for Even App Bridge...");
         bridge = await waitForEvenAppBridge();
-        
-        // Text Container Setup for HUD
-        const startupPayload = {
-            containerTotalNum: 1,
+        logDebug("Bridge connected successfully.");
+
+        const payload = {
+            containerTotalNum: 2,
             textObject: [{
-                containerID: 1,
-                containerName: "garmin_hud_text",
-                isEventCapture: 1,
-                zOrderIndex: 1,
-                xPosition: 0,
-                yPosition: 0,
-                width: 576,
-                height: 288,
-                content: "WAITING FOR DATA..."
+                xPosition: 100, 
+                yPosition: 80, 
+                width: 240, 
+                height: 60, 
+                containerID: 4, 
+                containerName: 'status-text', 
+                content: 'Ready', 
+                isEventCapture: 1
+            }],
+            imageObject: [{
+                xPosition: 10, 
+                yPosition: 10, 
+                width: 200, 
+                height: 100,
+                containerID: 5, 
+                containerName: 'pace_img'
             }]
         };
 
-        const res = await bridge.createStartUpPageContainer(startupPayload);
+        logDebug(`\n--- INITIALIZING HUD ---`);
+        let res = await bridge.createStartUpPageContainer(payload);
+        logDebug(`=> Create Code Result: ${res}`);
+
         if (res === 0) {
-            isContainerCreated = true;
-            logStatus("Text HUD Ready on Lenses");
+            logDebug("HUD Initialized! Pushing layout...");
+            // Push the requested static layout on boot
+            await updateGlassesDisplay("6:30 min/km", "82 bpm", "5.72 km | 5:45");
+            connectWebSocket();
         } else {
-            logStatus(`SDK Container Fail: ${res}`);
+            logDebug("Validation failed. Check payload schema.");
         }
+
     } catch (e) {
-        logStatus("SDK Error: " + (e.stack || e.message));
+        logDebug("Bridge Init Error: " + (e.stack || e.message));
     }
 }
 
-function updateGlassesDisplay(paceStr, hr, distance, time) {
-    if (!bridge || !isContainerCreated) return;
-
-    // Clean multi-line layout for the lenses
-    const formattedText = `${paceStr} min/km\n\n${hr} BPM\n\n${distance} km   ${time}`;
-
-    bridge.textContainerUpgrade({
-        containerID: 1,
-        containerName: "garmin_hud_text",
-        content: formattedText
-    }).then(res => {
-        logStatus(`Glasses Update OK (${res})`);
-    }).catch(err => {
-        logStatus(`Upgrade Error: ${err.message || err}`);
-        console.error("Text Upgrade error:", err);
-    });
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initGlasses);
+} else {
+    initGlasses();
 }
-
-function connectBridge() {
-    logWs(`Connecting to ${WS_URL}...`);
-    
-    let socket;
-    try {
-        socket = new WebSocket(WS_URL);
-    } catch (e) {
-        logWs("WS Connect Fail: " + e.message);
-        return;
-    }
-
-    socket.onopen = () => {
-        logWs("WS Connected! Waiting for packet...");
-    };
-
-    socket.onmessage = (e) => {
-        try {
-            rxCount++;
-            const t = JSON.parse(e.data);
-            
-            const rawPace = t.pace !== undefined ? t.pace : "--:--";
-            const paceStr = typeof rawPace === 'number' ? formatPace(rawPace) : rawPace.replace(" min/km", "");
-            
-            const hr = t.hr !== undefined ? t.hr : "--";
-            const distance = t.distance !== undefined ? t.distance : "0.00";
-            const time = t.time !== undefined ? t.time : "0:00";
-
-            // Update local phone DOM preview
-            const paceEl = document.getElementById("pace-display");
-            const hrEl = document.getElementById("hr-display");
-            const distEl = document.getElementById("dist-display");
-            const timeEl = document.getElementById("time-display");
-
-            if (paceEl) paceEl.innerText = paceStr;
-            if (hrEl) hrEl.innerText = `${hr} bpm`;
-            if (distEl) distEl.innerText = distance;
-            if (timeEl) timeEl.innerText = time;
-            
-            logWs(`Packets Received: ${rxCount} | Pace: ${paceStr}`);
-
-            // Make sure UI remains visible on phone
-            document.body.style.opacity = 1;
-
-            // Push updated text to HUD
-            updateGlassesDisplay(paceStr, hr, distance, time);
-
-            /* 
-             * BLACKOUT TIMEOUT DISABLED FOR TESTING
-             * 
-             * if (blackoutTimeout) {
-             *     clearTimeout(blackoutTimeout);
-             * }
-             * blackoutTimeout = setTimeout(() => {
-             *     triggerBlackout();
-             * }, 5000);
-             */
-
-        } catch (err) {
-            logWs("WS JSON Parse Error");
-            console.error("WS Parse Error:", err);
-        }
-    };
-
-    socket.onerror = (err) => {
-        logWs("WS Error: Cannot reach port 8080");
-    };
-
-    socket.onclose = () => {
-        logWs("WS Disconnected. Reconnecting in 3s...");
-        setTimeout(connectBridge, 3000);
-    };
-}
-
-initGlasses();
-connectBridge();

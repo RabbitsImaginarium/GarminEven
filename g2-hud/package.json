@@ -1,0 +1,8 @@
+{
+  "name": "garmin-hud-test",
+  "version": "1.0.8",
+  "type": "module",
+  "dependencies": {
+    "@evenrealities/even_hub_sdk": "^0.0.12"
+  }
+}
