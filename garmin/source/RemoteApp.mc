@@ -138,35 +138,52 @@ class RemoteView extends WatchUi.View {
     function onUpdate(dc as Graphics.Dc) as Void {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 
-        var width = dc.getWidth();
-        var height = dc.getHeight();
+        // Outer Orange Accent Ring
+        dc.setPenWidth(4);
+        dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
+        dc.drawCircle(208, 208, 195);
+
+        // Top: PACE
+        dc.setColor(0x55AAFF, Graphics.COLOR_TRANSPARENT); 
+        dc.drawText(208, 55, Graphics.FONT_XTINY, "PACE", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(208, 75, Graphics.FONT_NUMBER_HOT, formatPace(_lastPace), Graphics.TEXT_JUSTIFY_CENTER);
+
+        // Middle Divider Line
+        dc.setPenWidth(2);
+        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawLine(208, 175, 208, 255);
+
+        // Middle Left: DISTANCE
+        dc.setColor(0x55AAFF, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(106, 175, Graphics.FONT_XTINY, "DISTANCE", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(106, 195, Graphics.FONT_NUMBER_MEDIUM, _elapsedDistance.format("%.2f"), Graphics.TEXT_JUSTIFY_CENTER);
+
+        // Middle Right: TIMER
+        dc.setColor(0x55AAFF, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(310, 175, Graphics.FONT_XTINY, "TIMER", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(310, 195, Graphics.FONT_NUMBER_MEDIUM, formatTime(_elapsedSeconds), Graphics.TEXT_JUSTIFY_CENTER);
+
+        // Bottom: HR
+        dc.setColor(0x55AAFF, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(175, 295, Graphics.FONT_SMALL, "HR", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        
+        var hrDisplay = _lastHr > 0 ? _lastHr.toString() : "---";
+        dc.drawText(240, 280, Graphics.FONT_NUMBER_HOT, hrDisplay, Graphics.TEXT_JUSTIFY_CENTER);
 
         if (!_isRecording) {
-            dc.drawText(width / 2, height / 2 - 20, Graphics.FONT_MEDIUM, "PRESS SELECT", Graphics.TEXT_JUSTIFY_CENTER);
-            dc.drawText(width / 2, height / 2 + 15, Graphics.FONT_SMALL, "TO START RUN", Graphics.TEXT_JUSTIFY_CENTER);
-            return;
+            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(208, 135, Graphics.FONT_XTINY, "STOPPED - PRESS SELECT", Graphics.TEXT_JUSTIFY_CENTER);
         }
 
-        // Top: Pace
-        var paceStr = formatPace(_lastPace) + " min/km";
-        dc.drawText(width / 2, 50, Graphics.FONT_LARGE, paceStr, Graphics.TEXT_JUSTIFY_CENTER);
-
-        // Center: HR (Shifted down to eliminate dead space in middle)
-        var hrStr = _lastHr.toString() + " bpm";
-        dc.drawText(width / 2, height / 2 - 20, Graphics.FONT_NUMBER_HOT, hrStr, Graphics.TEXT_JUSTIFY_CENTER);
-
-        // Bottom: Distance & Time (Moved up from outer bezel crop)
-        var distStr = _elapsedDistance.format("%.2f") + " km";
-        var timeStr = formatTime(_elapsedSeconds);
-
-        dc.drawText(50, height - 90, Graphics.FONT_MEDIUM, distStr, Graphics.TEXT_JUSTIFY_LEFT);
-        dc.drawText(width - 50, height - 90, Graphics.FONT_MEDIUM, timeStr, Graphics.TEXT_JUSTIFY_RIGHT);
-        
         var txStatus = CommManager.getInstance().txStatus;
         if (txStatus != null) {
-            dc.drawText(width / 2, height - 35, Graphics.FONT_XTINY, "TX: " + txStatus, Graphics.TEXT_JUSTIFY_CENTER);
+            dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(208, 370, Graphics.FONT_XTINY, "TX: " + txStatus, Graphics.TEXT_JUSTIFY_CENTER);
         }
     }
 }

@@ -1,0 +1,1602 @@
+[ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 10; @position = 27; initialized = true; @symbol_vardef = [AppIcon,10,27,34]; @symbol_type<0> = [ResourceId,10,38,48]; ]
+        var AppIcon as ResourceId;
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 13; @symbol_moduledef = [Layouts,13,11,18]; ]
+    module Layouts {
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 13; ]
+        <init> {
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 14; @symbol_functiondef = [MainLayout,14,17,27]; @symbol_param<0> = [dc,14,28,30]; @symbol_param<0>_type<0> = [Graphics,14,34,42]; @symbol_param<0>_type<1> = [Dc,14,43,45]; @symbol_return<0> = [Array,14,50,55]; @symbol_return<1> = [WatchUi,14,56,63]; @symbol_return<2> = [Drawable,14,64,72]; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_config_workspace_project_GarminEven_garmin_gen_006_B3943_00_source_Rez_mcgen_14_74_22_8_start:
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 15 12 ]
+            [ "_config_workspace_project_GarminEven_garmin_gen_006_B3943_00_source_Rez_mcgen_14_74_22_8_start" "_config_workspace_project_GarminEven_garmin_gen_006_B3943_00_source_Rez_mcgen_14_74_22_8_stop" ]
+            %rez_cmp_local_var_dc_getWidth.1 = local;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.1 15 16 45 ];
+            %tmp.1 = lgetv %dc;
+            symbol [ dc %tmp.1 15 48 50 ];
+            symbol [ getWidth %tmp.2 15 51 59 ];
+            %tmp.2 = getv function %tmp.1 :getWidth;
+            %tmp.3 = invoke %tmp.1 %tmp.2();
+            lputv %rez_cmp_local_var_dc_getWidth.1 %tmp.3;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.1 15 16 45 ];
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 17 12 ]
+            [ "_config_workspace_project_GarminEven_garmin_gen_006_B3943_00_source_Rez_mcgen_14_74_22_8_start" "_config_workspace_project_GarminEven_garmin_gen_006_B3943_00_source_Rez_mcgen_14_74_22_8_stop" ]
+            %rez_cmp_local_text_TitleLabel.2 = local;
+            symbol [ rez_cmp_local_text_TitleLabel %rez_cmp_local_text_TitleLabel.2 17 16 45 ];
+            symbol [ WatchUi %tmp.6 17 52 59 ];
+            %tmp.6 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.7 17 60 64 ];
+            %tmp.7 = getv function ? %tmp.6 :Text;
+            %tmp.8 = newd 6;
+            %tmp.10 = const :identifier;
+            symbol [ identifier %tmp.10 17 67 77 const ];
+            %tmp.11 = "TitleLabel";
+            %tmp.12 = dup %tmp.8;
+            %tmp.13 = aputv %tmp.12 %tmp.10 %tmp.11;
+            %tmp.15 = const :locX;
+            symbol [ locX %tmp.15 17 94 98 const ];
+            %tmp.16 = lgetv %rez_cmp_local_var_dc_getWidth.1;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.16 17 101 130 ];
+            %tmp.17 = 0.5;
+            %tmp.18 = mul %tmp.16 %tmp.17;
+            %tmp.19 = dup %tmp.13;
+            %tmp.20 = aputv %tmp.19 %tmp.15 %tmp.18;
+            %tmp.22 = const :locY;
+            symbol [ locY %tmp.22 17 140 144 const ];
+            %tmp.23 = 0;
+            %tmp.24 = dup %tmp.20;
+            %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+            %tmp.27 = const :text;
+            symbol [ text %tmp.27 17 150 154 const ];
+            symbol [ $ %tmp.28 17 156 157 ];
+            %tmp.28 = getm $;
+            symbol [ Rez %tmp.29 17 158 161 ];
+            %tmp.29 = getv %tmp.28 :Rez;
+            symbol [ Strings %tmp.30 17 162 169 ];
+            %tmp.30 = getv %tmp.29 :Strings;
+            symbol [ AppName %tmp.31 17 170 177 ];
+            %tmp.31 = getv %tmp.30 :AppName;
+            %tmp.32 = dup %tmp.25;
+            %tmp.33 = aputv %tmp.32 %tmp.27 %tmp.31;
+            %tmp.35 = const :justification;
+            symbol [ justification %tmp.35 17 180 193 const ];
+            symbol [ Graphics %tmp.36 17 195 203 ];
+            %tmp.36 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.37 17 204 223 ];
+            %tmp.37 = getv %tmp.36 :TEXT_JUSTIFY_CENTER;
+            %tmp.38 = dup %tmp.33;
+            %tmp.39 = aputv %tmp.38 %tmp.35 %tmp.37;
+            %tmp.41 = const :font;
+            symbol [ font %tmp.41 17 226 230 const ];
+            symbol [ Graphics %tmp.42 17 232 240 ];
+            %tmp.42 = getm $.Toybox.Graphics;
+            symbol [ FONT_MEDIUM %tmp.43 17 241 252 ];
+            %tmp.43 = getv %tmp.42 :FONT_MEDIUM;
+            %tmp.44 = dup %tmp.39;
+            %tmp.45 = aputv %tmp.44 %tmp.41 %tmp.43;
+            %tmp.4 = newc %tmp.7 (%tmp.45);
+            lputv %rez_cmp_local_text_TitleLabel.2 %tmp.4;
+            symbol [ rez_cmp_local_text_TitleLabel %rez_cmp_local_text_TitleLabel.2 17 16 45 ];
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 19 12 ]
+            [ "_config_workspace_project_GarminEven_garmin_gen_006_B3943_00_source_Rez_mcgen_14_74_22_8_start" "_config_workspace_project_GarminEven_garmin_gen_006_B3943_00_source_Rez_mcgen_14_74_22_8_stop" ]
+            %rez_cmp_local_text_StatusLabel.3 = local;
+            symbol [ rez_cmp_local_text_StatusLabel %rez_cmp_local_text_StatusLabel.3 19 16 46 ];
+            symbol [ WatchUi %tmp.48 19 53 60 ];
+            %tmp.48 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.49 19 61 65 ];
+            %tmp.49 = getv function ? %tmp.48 :Text;
+            %tmp.50 = newd 6;
+            %tmp.52 = const :identifier;
+            symbol [ identifier %tmp.52 19 68 78 const ];
+            %tmp.53 = "StatusLabel";
+            %tmp.54 = dup %tmp.50;
+            %tmp.55 = aputv %tmp.54 %tmp.52 %tmp.53;
+            %tmp.57 = const :locX;
+            symbol [ locX %tmp.57 19 96 100 const ];
+            %tmp.58 = lgetv %rez_cmp_local_var_dc_getWidth.1;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.58 19 103 132 ];
+            %tmp.59 = 0.5;
+            %tmp.60 = mul %tmp.58 %tmp.59;
+            %tmp.61 = dup %tmp.55;
+            %tmp.62 = aputv %tmp.61 %tmp.57 %tmp.60;
+            %tmp.64 = const :locY;
+            symbol [ locY %tmp.64 19 142 146 const ];
+            %tmp.65 = 50;
+            %tmp.66 = dup %tmp.62;
+            %tmp.67 = aputv %tmp.66 %tmp.64 %tmp.65;
+            %tmp.69 = const :text;
+            symbol [ text %tmp.69 19 153 157 const ];
+            symbol [ $ %tmp.70 19 159 160 ];
+            %tmp.70 = getm $;
+            symbol [ Rez %tmp.71 19 161 164 ];
+            %tmp.71 = getv %tmp.70 :Rez;
+            symbol [ Strings %tmp.72 19 165 172 ];
+            %tmp.72 = getv %tmp.71 :Strings;
+            symbol [ Disconnected %tmp.73 19 173 185 ];
+            %tmp.73 = getv %tmp.72 :Disconnected;
+            %tmp.74 = dup %tmp.67;
+            %tmp.75 = aputv %tmp.74 %tmp.69 %tmp.73;
+            %tmp.77 = const :justification;
+            symbol [ justification %tmp.77 19 188 201 const ];
+            symbol [ Graphics %tmp.78 19 203 211 ];
+            %tmp.78 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.79 19 212 231 ];
+            %tmp.79 = getv %tmp.78 :TEXT_JUSTIFY_CENTER;
+            %tmp.80 = dup %tmp.75;
+            %tmp.81 = aputv %tmp.80 %tmp.77 %tmp.79;
+            %tmp.83 = const :font;
+            symbol [ font %tmp.83 19 234 238 const ];
+            symbol [ Graphics %tmp.84 19 240 248 ];
+            %tmp.84 = getm $.Toybox.Graphics;
+            symbol [ FONT_SMALL %tmp.85 19 249 259 ];
+            %tmp.85 = getv %tmp.84 :FONT_SMALL;
+            %tmp.86 = dup %tmp.81;
+            %tmp.87 = aputv %tmp.86 %tmp.83 %tmp.85;
+            %tmp.46 = newc %tmp.49 (%tmp.87);
+            lputv %rez_cmp_local_text_StatusLabel.3 %tmp.46;
+            symbol [ rez_cmp_local_text_StatusLabel %rez_cmp_local_text_StatusLabel.3 19 16 46 ];
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 21 12 ]
+            %tmp.88 = newa 2 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.88 21 86 91 ];
+            symbol [ WatchUi %tmp.88 21 92 99 ];
+            symbol [ Drawable %tmp.88 21 100 108 ];
+            %tmp.89 = lgetv %rez_cmp_local_text_TitleLabel.2;
+            symbol [ rez_cmp_local_text_TitleLabel %tmp.89 21 20 49 ];
+            %tmp.90 = dup %tmp.88;
+            %tmp.91 = aputv %tmp.90 0 %tmp.89;
+            %tmp.92 = lgetv %rez_cmp_local_text_StatusLabel.3;
+            symbol [ rez_cmp_local_text_StatusLabel %tmp.92 21 51 81 ];
+            %tmp.93 = dup %tmp.91;
+            %tmp.94 = aputv %tmp.93 1 %tmp.92;
+            ret %tmp.94;
+_config_workspace_project_GarminEven_garmin_gen_006_B3943_00_source_Rez_mcgen_14_74_22_8_stop:
+        }
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 25; @symbol_moduledef = [Strings,25,11,18]; ]
+    module Strings {
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 25; ]
+        <init> {
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 26; @position = 27; initialized = true; @symbol_vardef = [Connected,26,27,36]; @symbol_type<0> = [ResourceId,26,40,50]; ]
+        var Connected as ResourceId;
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 27; @position = 27; initialized = true; @symbol_vardef = [Prev,27,27,31]; @symbol_type<0> = [ResourceId,27,35,45]; ]
+        var Prev as ResourceId;
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 28; @position = 27; initialized = true; @symbol_vardef = [Next,28,27,31]; @symbol_type<0> = [ResourceId,28,35,45]; ]
+        var Next as ResourceId;
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 29; @position = 27; initialized = true; @symbol_vardef = [Select,29,27,33]; @symbol_type<0> = [ResourceId,29,37,47]; ]
+        var Select as ResourceId;
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 30; @position = 27; initialized = true; @symbol_vardef = [Disconnected,30,27,39]; @symbol_type<0> = [ResourceId,30,43,53]; ]
+        var Disconnected as ResourceId;
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 31; @position = 27; initialized = true; @symbol_vardef = [AppName,31,27,34]; @symbol_type<0> = [ResourceId,31,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 34; @symbol_moduledef = [Styles,34,11,17]; ]
+    module Styles {
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 34; ]
+        <init> {
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 35; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,35,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 35; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 36; @position = 18; @symbol_constdef = [exclude,36,18,25]; @symbol_type<0> = [Boolean,36,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 39; @symbol_moduledef = [system_size__menu_header,39,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 39; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 40; @position = 18; @symbol_constdef = [width,40,18,23]; @symbol_type<0> = [Number,40,27,33]; ]
+            const width as Number = 416;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 41; @position = 18; @symbol_constdef = [height,41,18,24]; @symbol_type<0> = [Number,41,28,34]; ]
+            const height as Number = 130;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 44; @symbol_moduledef = [system_loc__hint_button_left_bottom,44,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 44; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 45; @position = 18; @symbol_constdef = [x,45,18,19]; @symbol_type<0> = [Number,45,23,29]; ]
+            const x as Number = 16;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 46; @position = 18; @symbol_constdef = [y,46,18,19]; @symbol_type<0> = [Number,46,23,29]; ]
+            const y as Number = 275;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 49; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,49,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 49; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 50; @position = 18; @symbol_constdef = [exclude,50,18,25]; @symbol_type<0> = [Boolean,50,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 53; @symbol_moduledef = [prompt_loc__body_no_title,53,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 53; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 54; @position = 18; @symbol_constdef = [x,54,18,19]; @symbol_type<0> = [Number,54,23,29]; ]
+            const x as Number = 42;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 55; @position = 18; @symbol_constdef = [y,55,18,19]; @symbol_type<0> = [Number,55,23,29]; ]
+            const y as Number = 42;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 58; @symbol_moduledef = [system_icon_dark__about,58,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 58; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 59; @position = 18; @symbol_constdef = [filename,59,18,26]; @symbol_type<0> = [String,59,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_dark__about.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 60; @position = 18; @symbol_constdef = [compress,60,18,26]; @symbol_type<0> = [String,60,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 61; @position = 18; @symbol_constdef = [dithering,61,18,27]; @symbol_type<0> = [String,61,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 62; @position = 18; @symbol_constdef = [automaticPalette,62,18,34]; @symbol_type<0> = [String,62,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 65; @symbol_moduledef = [system_icon_light__question,65,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 65; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 66; @position = 18; @symbol_constdef = [filename,66,18,26]; @symbol_type<0> = [String,66,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_light__question.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 67; @position = 18; @symbol_constdef = [dithering,67,18,27]; @symbol_type<0> = [String,67,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 70; @symbol_moduledef = [system_loc__hint_button_left_top,70,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 70; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 71; @position = 18; @symbol_constdef = [exclude,71,18,25]; @symbol_type<0> = [Boolean,71,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 74; @symbol_moduledef = [prompt_font__title,74,15,33]; ]
+        module prompt_font__title {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 74; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 75 18 ]
+                symbol [ Graphics %tmp.95 75 34 42 ];
+                %tmp.95 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.96 75 43 62 ];
+                %tmp.96 = getv %tmp.95 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.97 75 63 71 ];
+                %tmp.97 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.98 75 72 92 ];
+                %tmp.98 = getv %tmp.97 :TEXT_JUSTIFY_VCENTER;
+                %tmp.99 = bitor %tmp.96 %tmp.98;
+                putv self :justification %tmp.99;
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 76 18 ]
+                symbol [ Graphics %tmp.100 76 25 33 ];
+                %tmp.100 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.101 76 34 44 ];
+                %tmp.101 = getv %tmp.100 :FONT_XTINY;
+                putv self :font %tmp.101;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 75; @position = 18; @symbol_constdef = [justification,75,18,31]; ]
+            const justification;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 76; @position = 18; @symbol_constdef = [font,76,18,22]; ]
+            const font;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 79; @symbol_moduledef = [system_icon_dark__discard,79,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 79; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 80; @position = 18; @symbol_constdef = [filename,80,18,26]; @symbol_type<0> = [String,80,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_dark__discard.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 81; @position = 18; @symbol_constdef = [compress,81,18,26]; @symbol_type<0> = [String,81,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 82; @position = 18; @symbol_constdef = [dithering,82,18,27]; @symbol_type<0> = [String,82,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 83; @position = 18; @symbol_constdef = [automaticPalette,83,18,34]; @symbol_type<0> = [String,83,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 86; @symbol_moduledef = [system_size__menu_item,86,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 86; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 87; @position = 18; @symbol_constdef = [width,87,18,23]; @symbol_type<0> = [Number,87,27,33]; ]
+            const width as Number = 416;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 88; @position = 18; @symbol_constdef = [height,88,18,24]; @symbol_type<0> = [Number,88,28,34]; ]
+            const height as Number = 109;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 91; @symbol_moduledef = [system_color_dark__text,91,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 91; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 93 18 ]
+                symbol [ Graphics %tmp.102 93 31 39 ];
+                %tmp.102 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.103 93 40 57 ];
+                %tmp.103 = getv %tmp.102 :COLOR_TRANSPARENT;
+                putv self :background %tmp.103;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 92; @position = 18; @symbol_constdef = [color,92,18,23]; @symbol_type<0> = [Number,92,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 93; @position = 18; @symbol_constdef = [background,93,18,28]; ]
+            const background;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 96; @symbol_moduledef = [system_icon_destructive__discard,96,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 96; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 97; @position = 18; @symbol_constdef = [filename,97,18,26]; @symbol_type<0> = [String,97,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_destructive__discard.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 98; @position = 18; @symbol_constdef = [dithering,98,18,27]; @symbol_type<0> = [String,98,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 101; @symbol_moduledef = [system_icon_dark__hint_action_menu,101,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 101; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 102; @position = 18; @symbol_constdef = [filename,102,18,26]; @symbol_type<0> = [String,102,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 103; @position = 18; @symbol_constdef = [dithering,103,18,27]; @symbol_type<0> = [String,103,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 106; @symbol_moduledef = [prompt_size__title,106,15,33]; ]
+        module prompt_size__title {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 106; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 107; @position = 18; @symbol_constdef = [width,107,18,23]; @symbol_type<0> = [Number,107,27,33]; ]
+            const width as Number = 333;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 108; @position = 18; @symbol_constdef = [height,108,18,24]; @symbol_type<0> = [Number,108,28,34]; ]
+            const height as Number = 63;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 111; @symbol_moduledef = [confirmation_font__body,111,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 111; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 112 18 ]
+                symbol [ Graphics %tmp.104 112 34 42 ];
+                %tmp.104 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.105 112 43 62 ];
+                %tmp.105 = getv %tmp.104 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.106 112 63 71 ];
+                %tmp.106 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.107 112 72 92 ];
+                %tmp.107 = getv %tmp.106 :TEXT_JUSTIFY_VCENTER;
+                %tmp.108 = bitor %tmp.105 %tmp.107;
+                putv self :justification %tmp.108;
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 113 18 ]
+                symbol [ Graphics %tmp.109 113 25 33 ];
+                %tmp.109 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.110 113 34 43 ];
+                %tmp.110 = getv %tmp.109 :FONT_TINY;
+                putv self :font %tmp.110;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 112; @position = 18; @symbol_constdef = [justification,112,18,31]; ]
+            const justification;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 113; @position = 18; @symbol_constdef = [font,113,18,22]; ]
+            const font;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 116; @symbol_moduledef = [system_color_dark__background,116,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 116; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 117; @position = 18; @symbol_constdef = [color,117,18,23]; @symbol_type<0> = [Number,117,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 118; @position = 18; @symbol_constdef = [background,118,18,28]; @symbol_type<0> = [Number,118,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 121; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,121,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 121; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 122; @position = 18; @symbol_constdef = [filename,122,18,26]; @symbol_type<0> = [String,122,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_destructive__hint_button_left_top.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 123; @position = 18; @symbol_constdef = [dithering,123,18,27]; @symbol_type<0> = [String,123,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 126; @symbol_moduledef = [system_size__launch_icon,126,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 126; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 127; @position = 18; @symbol_constdef = [scaleX,127,18,24]; @symbol_type<0> = [Number,127,28,34]; ]
+            const scaleX as Number = 60;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 128; @position = 18; @symbol_constdef = [scaleY,128,18,24]; @symbol_type<0> = [Number,128,28,34]; ]
+            const scaleY as Number = 60;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 129; @position = 18; @symbol_constdef = [scaleRelativeTo,129,18,33]; @symbol_type<0> = [String,129,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 132; @symbol_moduledef = [confirmation_input__confirm,132,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 132; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 133 18 ]
+                symbol [ WatchUi %tmp.111 133 27 34 ];
+                %tmp.111 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.112 133 35 44 ];
+                %tmp.112 = getv %tmp.111 :KEY_ENTER;
+                putv self :button %tmp.112;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 133; @position = 18; @symbol_constdef = [button,133,18,24]; ]
+            const button;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 136; @symbol_moduledef = [prompt_font__body_with_title,136,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 136; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 137 18 ]
+                symbol [ Graphics %tmp.113 137 34 42 ];
+                %tmp.113 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.114 137 43 62 ];
+                %tmp.114 = getv %tmp.113 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.114;
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 138 18 ]
+                symbol [ Graphics %tmp.115 138 25 33 ];
+                %tmp.115 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.116 138 34 43 ];
+                %tmp.116 = getv %tmp.115 :FONT_TINY;
+                putv self :font %tmp.116;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 137; @position = 18; @symbol_constdef = [justification,137,18,31]; ]
+            const justification;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 138; @position = 18; @symbol_constdef = [font,138,18,22]; ]
+            const font;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 141; @symbol_moduledef = [confirmation_loc__body,141,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 141; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 142; @position = 18; @symbol_constdef = [x,142,18,19]; @symbol_type<0> = [Number,142,23,29]; ]
+            const x as Number = 83;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 143; @position = 18; @symbol_constdef = [y,143,18,19]; @symbol_type<0> = [Number,143,23,29]; ]
+            const y as Number = 83;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 146; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,146,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 146; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 147; @position = 18; @symbol_constdef = [filename,147,18,26]; @symbol_type<0> = [String,147,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_destructive__hint_button_left_bottom.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 148; @position = 18; @symbol_constdef = [dithering,148,18,27]; @symbol_type<0> = [String,148,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 151; @symbol_moduledef = [prompt_color_dark__background,151,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 151; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 152; @position = 18; @symbol_constdef = [color,152,18,23]; @symbol_type<0> = [Number,152,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 153; @position = 18; @symbol_constdef = [background,153,18,28]; @symbol_type<0> = [Number,153,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 156; @symbol_moduledef = [system_icon_destructive__hint_action_menu,156,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 156; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 157; @position = 18; @symbol_constdef = [filename,157,18,26]; @symbol_type<0> = [String,157,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 158; @position = 18; @symbol_constdef = [dithering,158,18,27]; @symbol_type<0> = [String,158,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 161; @symbol_moduledef = [system_loc__hint_action_menu,161,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 161; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 162; @position = 18; @symbol_constdef = [x,162,18,19]; @symbol_type<0> = [Number,162,23,29]; ]
+            const x as Number = 360;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 163; @position = 18; @symbol_constdef = [y,163,18,19]; @symbol_type<0> = [Number,163,23,29]; ]
+            const y as Number = 77;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 166; @symbol_moduledef = [confirmation_icon__hint_confirm,166,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 166; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 167; @position = 18; @symbol_constdef = [filename,167,18,26]; @symbol_type<0> = [String,167,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/confirmation_icon__hint_completion.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 168; @position = 18; @symbol_constdef = [dithering,168,18,27]; @symbol_type<0> = [String,168,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 171; @symbol_moduledef = [system_loc__hint_button_left_middle,171,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 171; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 172; @position = 18; @symbol_constdef = [x,172,18,19]; @symbol_type<0> = [Number,172,23,29]; ]
+            const x as Number = 4;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 173; @position = 18; @symbol_constdef = [y,173,18,19]; @symbol_type<0> = [Number,173,23,29]; ]
+            const y as Number = 173;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 176; @symbol_moduledef = [prompt_size__body_no_title,176,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 176; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 177; @position = 18; @symbol_constdef = [width,177,18,23]; @symbol_type<0> = [Number,177,27,33]; ]
+            const width as Number = 333;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 178; @position = 18; @symbol_constdef = [height,178,18,24]; @symbol_type<0> = [Number,178,28,34]; ]
+            const height as Number = 333;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 181; @symbol_moduledef = [system_icon_light__hint_button_left_top,181,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 181; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 182; @position = 18; @symbol_constdef = [filename,182,18,26]; @symbol_type<0> = [String,182,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_light__hint_button_left_top.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 183; @position = 18; @symbol_constdef = [dithering,183,18,27]; @symbol_type<0> = [String,183,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 186; @symbol_moduledef = [prompt_color_light__background,186,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 186; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 187; @position = 18; @symbol_constdef = [color,187,18,23]; @symbol_type<0> = [Number,187,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 188; @position = 18; @symbol_constdef = [background,188,18,28]; @symbol_type<0> = [Number,188,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 191; @symbol_moduledef = [confirmation_input__delete,191,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 191; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 192 18 ]
+                symbol [ WatchUi %tmp.117 192 27 34 ];
+                %tmp.117 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.118 192 35 44 ];
+                %tmp.118 = getv %tmp.117 :KEY_ENTER;
+                putv self :button %tmp.118;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 192; @position = 18; @symbol_constdef = [button,192,18,24]; ]
+            const button;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 195; @symbol_moduledef = [system_icon_dark__hint_button_left_top,195,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 195; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 196; @position = 18; @symbol_constdef = [filename,196,18,26]; @symbol_type<0> = [String,196,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_dark__hint_button_left_top.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 197; @position = 18; @symbol_constdef = [dithering,197,18,27]; @symbol_type<0> = [String,197,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 200; @symbol_moduledef = [system_input__action_menu,200,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 200; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 201 18 ]
+                symbol [ WatchUi %tmp.119 201 27 34 ];
+                %tmp.119 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.120 201 35 44 ];
+                %tmp.120 = getv %tmp.119 :KEY_ENTER;
+                putv self :button %tmp.120;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 201; @position = 18; @symbol_constdef = [button,201,18,24]; ]
+            const button;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 204; @symbol_moduledef = [system_icon_light__save,204,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 204; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 205; @position = 18; @symbol_constdef = [filename,205,18,26]; @symbol_type<0> = [String,205,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_light__save.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 206; @position = 18; @symbol_constdef = [dithering,206,18,27]; @symbol_type<0> = [String,206,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 209; @symbol_moduledef = [prompt_color_light__body,209,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 209; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 211 18 ]
+                symbol [ Graphics %tmp.121 211 31 39 ];
+                %tmp.121 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.122 211 40 57 ];
+                %tmp.122 = getv %tmp.121 :COLOR_TRANSPARENT;
+                putv self :background %tmp.122;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 210; @position = 18; @symbol_constdef = [color,210,18,23]; @symbol_type<0> = [Number,210,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 211; @position = 18; @symbol_constdef = [background,211,18,28]; ]
+            const background;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 214; @symbol_moduledef = [system_loc__subwindow,214,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 214; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 215; @position = 18; @symbol_constdef = [exclude,215,18,25]; @symbol_type<0> = [Boolean,215,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 218; @symbol_moduledef = [system_icon_light__warning,218,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 218; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 219; @position = 18; @symbol_constdef = [filename,219,18,26]; @symbol_type<0> = [String,219,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_light__warning.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 220; @position = 18; @symbol_constdef = [dithering,220,18,27]; @symbol_type<0> = [String,220,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 223; @symbol_moduledef = [confirmation_color_light__body,223,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 223; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 225 18 ]
+                symbol [ Graphics %tmp.123 225 31 39 ];
+                %tmp.123 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.124 225 40 57 ];
+                %tmp.124 = getv %tmp.123 :COLOR_TRANSPARENT;
+                putv self :background %tmp.124;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 224; @position = 18; @symbol_constdef = [color,224,18,23]; @symbol_type<0> = [Number,224,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 225; @position = 18; @symbol_constdef = [background,225,18,28]; ]
+            const background;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 228; @symbol_moduledef = [confirmation_icon_light__hint_keep,228,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 228; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 229; @position = 18; @symbol_constdef = [filename,229,18,26]; @symbol_type<0> = [String,229,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/confirmation_icon__hint_keep.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 230; @position = 18; @symbol_constdef = [dithering,230,18,27]; @symbol_type<0> = [String,230,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 233; @symbol_moduledef = [activity_color_light__background,233,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 233; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 234; @position = 18; @symbol_constdef = [color,234,18,23]; @symbol_type<0> = [Number,234,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 235; @position = 18; @symbol_constdef = [background,235,18,28]; @symbol_type<0> = [Number,235,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 238; @symbol_moduledef = [system_icon_positive__hint_button_right_top,238,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 238; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 239; @position = 18; @symbol_constdef = [filename,239,18,26]; @symbol_type<0> = [String,239,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 240; @position = 18; @symbol_constdef = [dithering,240,18,27]; @symbol_type<0> = [String,240,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 243; @symbol_moduledef = [system_size__screen,243,15,34]; ]
+        module system_size__screen {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 243; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 244; @position = 18; @symbol_constdef = [width,244,18,23]; @symbol_type<0> = [Number,244,27,33]; ]
+            const width as Number = 416;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 245; @position = 18; @symbol_constdef = [height,245,18,24]; @symbol_type<0> = [Number,245,28,34]; ]
+            const height as Number = 416;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 248; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,248,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 248; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 249; @position = 18; @symbol_constdef = [filename,249,18,26]; @symbol_type<0> = [String,249,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_destructive__hint_button_right_bottom.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 250; @position = 18; @symbol_constdef = [dithering,250,18,27]; @symbol_type<0> = [String,250,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 253; @symbol_moduledef = [system_color_light__background,253,15,45]; ]
+        module system_color_light__background {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 253; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 254; @position = 18; @symbol_constdef = [color,254,18,23]; @symbol_type<0> = [Number,254,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 255; @position = 18; @symbol_constdef = [background,255,18,28]; @symbol_type<0> = [Number,255,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 258; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,258,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 258; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 259; @position = 18; @symbol_constdef = [filename,259,18,26]; @symbol_type<0> = [String,259,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 260; @position = 18; @symbol_constdef = [dithering,260,18,27]; @symbol_type<0> = [String,260,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 263; @symbol_moduledef = [confirmation_loc__hint_confirm,263,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 263; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 264; @position = 18; @symbol_constdef = [x,264,18,19]; @symbol_type<0> = [Number,264,23,29]; ]
+            const x as Number = 338;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 265; @position = 18; @symbol_constdef = [y,265,18,19]; @symbol_type<0> = [Number,265,23,29]; ]
+            const y as Number = 77;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 268; @symbol_moduledef = [activity_color_dark__text,268,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 268; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 270 18 ]
+                symbol [ Graphics %tmp.125 270 31 39 ];
+                %tmp.125 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.126 270 40 57 ];
+                %tmp.126 = getv %tmp.125 :COLOR_TRANSPARENT;
+                putv self :background %tmp.126;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 269; @position = 18; @symbol_constdef = [color,269,18,23]; @symbol_type<0> = [Number,269,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 270; @position = 18; @symbol_constdef = [background,270,18,28]; ]
+            const background;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 273; @symbol_moduledef = [confirmation_input__keep,273,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 273; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 274 18 ]
+                symbol [ WatchUi %tmp.127 274 27 34 ];
+                %tmp.127 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.128 274 35 43 ];
+                %tmp.128 = getv %tmp.127 :KEY_DOWN;
+                putv self :button %tmp.128;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 274; @position = 18; @symbol_constdef = [button,274,18,24]; ]
+            const button;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 277; @symbol_moduledef = [prompt_loc__body_with_title,277,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 277; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 278; @position = 18; @symbol_constdef = [x,278,18,19]; @symbol_type<0> = [Number,278,23,29]; ]
+            const x as Number = 42;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 279; @position = 18; @symbol_constdef = [y,279,18,19]; @symbol_type<0> = [Number,279,23,29]; ]
+            const y as Number = 125;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 282; @symbol_moduledef = [system_icon_dark__search,282,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 282; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 283; @position = 18; @symbol_constdef = [filename,283,18,26]; @symbol_type<0> = [String,283,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_dark__search.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 284; @position = 18; @symbol_constdef = [compress,284,18,26]; @symbol_type<0> = [String,284,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 285; @position = 18; @symbol_constdef = [dithering,285,18,27]; @symbol_type<0> = [String,285,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 286; @position = 18; @symbol_constdef = [automaticPalette,286,18,34]; @symbol_type<0> = [String,286,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 289; @symbol_moduledef = [activity_color_light__text,289,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 289; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 291 18 ]
+                symbol [ Graphics %tmp.129 291 31 39 ];
+                %tmp.129 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.130 291 40 57 ];
+                %tmp.130 = getv %tmp.129 :COLOR_TRANSPARENT;
+                putv self :background %tmp.130;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 290; @position = 18; @symbol_constdef = [color,290,18,23]; @symbol_type<0> = [Number,290,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 291; @position = 18; @symbol_constdef = [background,291,18,28]; ]
+            const background;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 294; @symbol_moduledef = [confirmation_icon__hint_keep,294,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 294; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 295; @position = 18; @symbol_constdef = [filename,295,18,26]; @symbol_type<0> = [String,295,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/confirmation_icon__hint_keep.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 296; @position = 18; @symbol_constdef = [dithering,296,18,27]; @symbol_type<0> = [String,296,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 299; @symbol_moduledef = [system_icon_dark__save,299,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 299; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 300; @position = 18; @symbol_constdef = [filename,300,18,26]; @symbol_type<0> = [String,300,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_dark__save.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 301; @position = 18; @symbol_constdef = [compress,301,18,26]; @symbol_type<0> = [String,301,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 302; @position = 18; @symbol_constdef = [dithering,302,18,27]; @symbol_type<0> = [String,302,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 303; @position = 18; @symbol_constdef = [automaticPalette,303,18,34]; @symbol_type<0> = [String,303,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 306; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,306,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 306; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 307; @position = 18; @symbol_constdef = [filename,307,18,26]; @symbol_type<0> = [String,307,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_destructive__hint_button_left_middle.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 308; @position = 18; @symbol_constdef = [dithering,308,18,27]; @symbol_type<0> = [String,308,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 311; @symbol_moduledef = [system_icon_light__search,311,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 311; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 312; @position = 18; @symbol_constdef = [filename,312,18,26]; @symbol_type<0> = [String,312,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_light__search.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 313; @position = 18; @symbol_constdef = [dithering,313,18,27]; @symbol_type<0> = [String,313,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 316; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,316,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 316; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 317; @position = 18; @symbol_constdef = [filename,317,18,26]; @symbol_type<0> = [String,317,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_dark__hint_button_left_bottom.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 318; @position = 18; @symbol_constdef = [dithering,318,18,27]; @symbol_type<0> = [String,318,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 321; @symbol_moduledef = [system_icon_positive__hint_button_left_top,321,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 321; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 322; @position = 18; @symbol_constdef = [filename,322,18,26]; @symbol_type<0> = [String,322,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_positive__hint_button_left_top.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 323; @position = 18; @symbol_constdef = [dithering,323,18,27]; @symbol_type<0> = [String,323,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 326; @symbol_moduledef = [system_loc__hint_button_right_bottom,326,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 326; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 327; @position = 18; @symbol_constdef = [x,327,18,19]; @symbol_type<0> = [Number,327,23,29]; ]
+            const x as Number = 360;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 328; @position = 18; @symbol_constdef = [y,328,18,19]; @symbol_type<0> = [Number,328,23,29]; ]
+            const y as Number = 275;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 331; @symbol_moduledef = [confirmation_icon_dark__hint_reject,331,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 331; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 332; @position = 18; @symbol_constdef = [filename,332,18,26]; @symbol_type<0> = [String,332,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/confirmation_icon__hint_reject.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 333; @position = 18; @symbol_constdef = [dithering,333,18,27]; @symbol_type<0> = [String,333,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 336; @symbol_moduledef = [confirmation_color_dark__body,336,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 336; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 338 18 ]
+                symbol [ Graphics %tmp.131 338 31 39 ];
+                %tmp.131 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.132 338 40 57 ];
+                %tmp.132 = getv %tmp.131 :COLOR_TRANSPARENT;
+                putv self :background %tmp.132;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 337; @position = 18; @symbol_constdef = [color,337,18,23]; @symbol_type<0> = [Number,337,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 338; @position = 18; @symbol_constdef = [background,338,18,28]; ]
+            const background;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 341; @symbol_moduledef = [confirmation_icon_light__hint_confirm,341,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 341; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 342; @position = 18; @symbol_constdef = [filename,342,18,26]; @symbol_type<0> = [String,342,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/confirmation_icon__hint_completion.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 343; @position = 18; @symbol_constdef = [dithering,343,18,27]; @symbol_type<0> = [String,343,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 346; @symbol_moduledef = [prompt_color_dark__title,346,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 346; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 348 18 ]
+                symbol [ Graphics %tmp.133 348 31 39 ];
+                %tmp.133 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.134 348 40 57 ];
+                %tmp.134 = getv %tmp.133 :COLOR_TRANSPARENT;
+                putv self :background %tmp.134;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 347; @position = 18; @symbol_constdef = [color,347,18,23]; @symbol_type<0> = [Number,347,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 348; @position = 18; @symbol_constdef = [background,348,18,28]; ]
+            const background;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 351; @symbol_moduledef = [system_icon_destructive__cancel,351,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 351; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 352; @position = 18; @symbol_constdef = [filename,352,18,26]; @symbol_type<0> = [String,352,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_destructive__cancel.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 353; @position = 18; @symbol_constdef = [dithering,353,18,27]; @symbol_type<0> = [String,353,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 356; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,356,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 356; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 357; @position = 18; @symbol_constdef = [filename,357,18,26]; @symbol_type<0> = [String,357,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 358; @position = 18; @symbol_constdef = [dithering,358,18,27]; @symbol_type<0> = [String,358,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 361; @symbol_moduledef = [prompt_loc__title,361,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 361; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 362; @position = 18; @symbol_constdef = [x,362,18,19]; @symbol_type<0> = [Number,362,23,29]; ]
+            const x as Number = 42;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 363; @position = 18; @symbol_constdef = [y,363,18,19]; @symbol_type<0> = [Number,363,23,29]; ]
+            const y as Number = 30;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 366; @symbol_moduledef = [confirmation_font_enhanced_readability__body,366,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 366; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 367; @position = 18; @symbol_constdef = [exclude,367,18,25]; @symbol_type<0> = [Boolean,367,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 370; @symbol_moduledef = [prompt_color_light__title,370,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 370; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 372 18 ]
+                symbol [ Graphics %tmp.135 372 31 39 ];
+                %tmp.135 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.136 372 40 57 ];
+                %tmp.136 = getv %tmp.135 :COLOR_TRANSPARENT;
+                putv self :background %tmp.136;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 371; @position = 18; @symbol_constdef = [color,371,18,23]; @symbol_type<0> = [Number,371,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 372; @position = 18; @symbol_constdef = [background,372,18,28]; ]
+            const background;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 375; @symbol_moduledef = [system_icon_dark__hint_button_right_top,375,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 375; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 376; @position = 18; @symbol_constdef = [filename,376,18,26]; @symbol_type<0> = [String,376,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 377; @position = 18; @symbol_constdef = [dithering,377,18,27]; @symbol_type<0> = [String,377,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 380; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,380,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 380; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 381; @position = 18; @symbol_constdef = [filename,381,18,26]; @symbol_type<0> = [String,381,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_dark__hint_button_left_middle.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 382; @position = 18; @symbol_constdef = [dithering,382,18,27]; @symbol_type<0> = [String,382,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 385; @symbol_moduledef = [confirmation_icon_dark__hint_keep,385,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 385; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 386; @position = 18; @symbol_constdef = [filename,386,18,26]; @symbol_type<0> = [String,386,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/confirmation_icon__hint_keep.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 387; @position = 18; @symbol_constdef = [dithering,387,18,27]; @symbol_type<0> = [String,387,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 390; @symbol_moduledef = [system_icon_light__cancel,390,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 390; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 391; @position = 18; @symbol_constdef = [filename,391,18,26]; @symbol_type<0> = [String,391,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_light__cancel.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 392; @position = 18; @symbol_constdef = [dithering,392,18,27]; @symbol_type<0> = [String,392,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 395; @symbol_moduledef = [confirmation_icon_light__hint_reject,395,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 395; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 396; @position = 18; @symbol_constdef = [filename,396,18,26]; @symbol_type<0> = [String,396,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/confirmation_icon__hint_reject.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 397; @position = 18; @symbol_constdef = [dithering,397,18,27]; @symbol_type<0> = [String,397,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 400; @symbol_moduledef = [system_icon_light__about,400,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 400; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 401; @position = 18; @symbol_constdef = [filename,401,18,26]; @symbol_type<0> = [String,401,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_light__about.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 402; @position = 18; @symbol_constdef = [dithering,402,18,27]; @symbol_type<0> = [String,402,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 405; @symbol_moduledef = [system_size__toast_icon,405,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 405; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 406; @position = 18; @symbol_constdef = [scaleX,406,18,24]; @symbol_type<0> = [Number,406,28,34]; ]
+            const scaleX as Number = 40;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 407; @position = 18; @symbol_constdef = [scaleY,407,18,24]; @symbol_type<0> = [Number,407,28,34]; ]
+            const scaleY as Number = 40;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 408; @position = 18; @symbol_constdef = [scaleRelativeTo,408,18,33]; @symbol_type<0> = [String,408,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 411; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,411,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 411; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 412; @position = 18; @symbol_constdef = [exclude,412,18,25]; @symbol_type<0> = [Boolean,412,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 415; @symbol_moduledef = [confirmation_icon__hint_reject,415,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 415; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 416; @position = 18; @symbol_constdef = [filename,416,18,26]; @symbol_type<0> = [String,416,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/confirmation_icon__hint_reject.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 417; @position = 18; @symbol_constdef = [dithering,417,18,27]; @symbol_type<0> = [String,417,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 420; @symbol_moduledef = [system_icon_light__hint_action_menu,420,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 420; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 421; @position = 18; @symbol_constdef = [filename,421,18,26]; @symbol_type<0> = [String,421,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 422; @position = 18; @symbol_constdef = [dithering,422,18,27]; @symbol_type<0> = [String,422,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 425; @symbol_moduledef = [system_icon_light__hint_button_right_middle,425,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 425; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 426; @position = 18; @symbol_constdef = [exclude,426,18,25]; @symbol_type<0> = [Boolean,426,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 429; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,429,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 429; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 430; @position = 18; @symbol_constdef = [exclude,430,18,25]; @symbol_type<0> = [Boolean,430,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 433; @symbol_moduledef = [confirmation_loc__hint_reject,433,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 433; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 434; @position = 18; @symbol_constdef = [x,434,18,19]; @symbol_type<0> = [Number,434,23,29]; ]
+            const x as Number = 16;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 435; @position = 18; @symbol_constdef = [y,435,18,19]; @symbol_type<0> = [Number,435,23,29]; ]
+            const y as Number = 275;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 436; @position = 18; @symbol_constdef = [horizontalJustification,436,18,41]; @symbol_type<0> = [String,436,45,51]; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 439; @symbol_moduledef = [confirmation_icon_dark__hint_delete,439,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 439; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 440; @position = 18; @symbol_constdef = [filename,440,18,26]; @symbol_type<0> = [String,440,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/confirmation_icon__hint_delete.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 441; @position = 18; @symbol_constdef = [dithering,441,18,27]; @symbol_type<0> = [String,441,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 444; @symbol_moduledef = [activity_color_dark__background,444,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 444; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 445; @position = 18; @symbol_constdef = [color,445,18,23]; @symbol_type<0> = [Number,445,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 446; @position = 18; @symbol_constdef = [background,446,18,28]; @symbol_type<0> = [Number,446,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 449; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,449,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 449; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 450; @position = 18; @symbol_constdef = [filename,450,18,26]; @symbol_type<0> = [String,450,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_light__hint_button_left_bottom.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 451; @position = 18; @symbol_constdef = [dithering,451,18,27]; @symbol_type<0> = [String,451,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 454; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,454,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 454; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 455; @position = 18; @symbol_constdef = [filename,455,18,26]; @symbol_type<0> = [String,455,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_positive__hint_button_left_middle.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 456; @position = 18; @symbol_constdef = [dithering,456,18,27]; @symbol_type<0> = [String,456,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 459; @symbol_moduledef = [system_size__menu_icon,459,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 459; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 460; @position = 18; @symbol_constdef = [scaleX,460,18,24]; @symbol_type<0> = [Number,460,28,34]; ]
+            const scaleX as Number = 60;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 461; @position = 18; @symbol_constdef = [scaleY,461,18,24]; @symbol_type<0> = [Number,461,28,34]; ]
+            const scaleY as Number = 60;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 462; @position = 18; @symbol_constdef = [scaleRelativeTo,462,18,33]; @symbol_type<0> = [String,462,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 465; @symbol_moduledef = [system_icon_destructive__warning,465,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 465; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 466; @position = 18; @symbol_constdef = [filename,466,18,26]; @symbol_type<0> = [String,466,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_destructive__warning.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 467; @position = 18; @symbol_constdef = [dithering,467,18,27]; @symbol_type<0> = [String,467,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 470; @symbol_moduledef = [system_loc__hint_button_right_middle,470,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 470; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 471; @position = 18; @symbol_constdef = [exclude,471,18,25]; @symbol_type<0> = [Boolean,471,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 474; @symbol_moduledef = [system_icon_dark__cancel,474,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 474; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 475; @position = 18; @symbol_constdef = [filename,475,18,26]; @symbol_type<0> = [String,475,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_dark__cancel.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 476; @position = 18; @symbol_constdef = [compress,476,18,26]; @symbol_type<0> = [String,476,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 477; @position = 18; @symbol_constdef = [dithering,477,18,27]; @symbol_type<0> = [String,477,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 478; @position = 18; @symbol_constdef = [automaticPalette,478,18,34]; @symbol_type<0> = [String,478,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 481; @symbol_moduledef = [prompt_size__body_with_title,481,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 481; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 482; @position = 18; @symbol_constdef = [width,482,18,23]; @symbol_type<0> = [Number,482,27,33]; ]
+            const width as Number = 333;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 483; @position = 18; @symbol_constdef = [height,483,18,24]; @symbol_type<0> = [Number,483,28,34]; ]
+            const height as Number = 250;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 486; @symbol_moduledef = [system_loc__hint_button_right_top,486,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 486; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 487; @position = 18; @symbol_constdef = [x,487,18,19]; @symbol_type<0> = [Number,487,23,29]; ]
+            const x as Number = 360;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 488; @position = 18; @symbol_constdef = [y,488,18,19]; @symbol_type<0> = [Number,488,23,29]; ]
+            const y as Number = 77;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 491; @symbol_moduledef = [system_color_light__text,491,15,39]; ]
+        module system_color_light__text {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 491; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 493 18 ]
+                symbol [ Graphics %tmp.137 493 31 39 ];
+                %tmp.137 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.138 493 40 57 ];
+                %tmp.138 = getv %tmp.137 :COLOR_TRANSPARENT;
+                putv self :background %tmp.138;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 492; @position = 18; @symbol_constdef = [color,492,18,23]; @symbol_type<0> = [Number,492,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 493; @position = 18; @symbol_constdef = [background,493,18,28]; ]
+            const background;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 496; @symbol_moduledef = [system_icon_light__check,496,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 496; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 497; @position = 18; @symbol_constdef = [filename,497,18,26]; @symbol_type<0> = [String,497,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_light__check.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 498; @position = 18; @symbol_constdef = [dithering,498,18,27]; @symbol_type<0> = [String,498,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 501; @symbol_moduledef = [confirmation_input__reject,501,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 501; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 502 18 ]
+                symbol [ WatchUi %tmp.139 502 27 34 ];
+                %tmp.139 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.140 502 35 43 ];
+                %tmp.140 = getv %tmp.139 :KEY_DOWN;
+                putv self :button %tmp.140;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 502; @position = 18; @symbol_constdef = [button,502,18,24]; ]
+            const button;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 505; @symbol_moduledef = [system_icon_light__revert,505,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 505; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 506; @position = 18; @symbol_constdef = [filename,506,18,26]; @symbol_type<0> = [String,506,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_light__revert.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 507; @position = 18; @symbol_constdef = [dithering,507,18,27]; @symbol_type<0> = [String,507,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 510; @symbol_moduledef = [system_size__subwindow,510,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 510; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 511; @position = 18; @symbol_constdef = [exclude,511,18,25]; @symbol_type<0> = [Boolean,511,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 514; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,514,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 514; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 515; @position = 18; @symbol_constdef = [filename,515,18,26]; @symbol_type<0> = [String,515,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_positive__hint_button_left_bottom.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 516; @position = 18; @symbol_constdef = [dithering,516,18,27]; @symbol_type<0> = [String,516,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 519; @symbol_moduledef = [system_icon_dark__check,519,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 519; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 520; @position = 18; @symbol_constdef = [filename,520,18,26]; @symbol_type<0> = [String,520,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_dark__check.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 521; @position = 18; @symbol_constdef = [compress,521,18,26]; @symbol_type<0> = [String,521,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 522; @position = 18; @symbol_constdef = [dithering,522,18,27]; @symbol_type<0> = [String,522,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 523; @position = 18; @symbol_constdef = [automaticPalette,523,18,34]; @symbol_type<0> = [String,523,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 526; @symbol_moduledef = [confirmation_loc__hint_keep,526,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 526; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 527; @position = 18; @symbol_constdef = [x,527,18,19]; @symbol_type<0> = [Number,527,23,29]; ]
+            const x as Number = 16;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 528; @position = 18; @symbol_constdef = [y,528,18,19]; @symbol_type<0> = [Number,528,23,29]; ]
+            const y as Number = 275;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 529; @position = 18; @symbol_constdef = [horizontalJustification,529,18,41]; @symbol_type<0> = [String,529,45,51]; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 532; @symbol_moduledef = [confirmation_loc__hint_delete,532,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 532; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 533; @position = 18; @symbol_constdef = [x,533,18,19]; @symbol_type<0> = [Number,533,23,29]; ]
+            const x as Number = 338;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 534; @position = 18; @symbol_constdef = [y,534,18,19]; @symbol_type<0> = [Number,534,23,29]; ]
+            const y as Number = 77;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 537; @symbol_moduledef = [system_icon_positive__hint_action_menu,537,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 537; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 538; @position = 18; @symbol_constdef = [filename,538,18,26]; @symbol_type<0> = [String,538,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 539; @position = 18; @symbol_constdef = [dithering,539,18,27]; @symbol_type<0> = [String,539,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 542; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,542,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 542; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 543; @position = 18; @symbol_constdef = [exclude,543,18,25]; @symbol_type<0> = [Boolean,543,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 546; @symbol_moduledef = [system_icon_light__hint_button_left_middle,546,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 546; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 547; @position = 18; @symbol_constdef = [filename,547,18,26]; @symbol_type<0> = [String,547,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_light__hint_button_left_middle.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 548; @position = 18; @symbol_constdef = [dithering,548,18,27]; @symbol_type<0> = [String,548,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 551; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,551,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 551; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 552; @position = 18; @symbol_constdef = [filename,552,18,26]; @symbol_type<0> = [String,552,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 553; @position = 18; @symbol_constdef = [dithering,553,18,27]; @symbol_type<0> = [String,553,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 556; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,556,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 556; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 557; @position = 18; @symbol_constdef = [filename,557,18,26]; @symbol_type<0> = [String,557,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 558; @position = 18; @symbol_constdef = [dithering,558,18,27]; @symbol_type<0> = [String,558,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 561; @symbol_moduledef = [system_icon_dark__revert,561,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 561; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 562; @position = 18; @symbol_constdef = [filename,562,18,26]; @symbol_type<0> = [String,562,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_dark__revert.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 563; @position = 18; @symbol_constdef = [compress,563,18,26]; @symbol_type<0> = [String,563,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 564; @position = 18; @symbol_constdef = [dithering,564,18,27]; @symbol_type<0> = [String,564,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 565; @position = 18; @symbol_constdef = [automaticPalette,565,18,34]; @symbol_type<0> = [String,565,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 568; @symbol_moduledef = [confirmation_icon_light__hint_delete,568,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 568; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 569; @position = 18; @symbol_constdef = [filename,569,18,26]; @symbol_type<0> = [String,569,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/confirmation_icon__hint_delete.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 570; @position = 18; @symbol_constdef = [dithering,570,18,27]; @symbol_type<0> = [String,570,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 573; @symbol_moduledef = [system_icon_dark__question,573,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 573; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 574; @position = 18; @symbol_constdef = [filename,574,18,26]; @symbol_type<0> = [String,574,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_dark__question.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 575; @position = 18; @symbol_constdef = [compress,575,18,26]; @symbol_type<0> = [String,575,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 576; @position = 18; @symbol_constdef = [dithering,576,18,27]; @symbol_type<0> = [String,576,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 577; @position = 18; @symbol_constdef = [automaticPalette,577,18,34]; @symbol_type<0> = [String,577,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 580; @symbol_moduledef = [system_icon_light__discard,580,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 580; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 581; @position = 18; @symbol_constdef = [filename,581,18,26]; @symbol_type<0> = [String,581,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_light__discard.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 582; @position = 18; @symbol_constdef = [dithering,582,18,27]; @symbol_type<0> = [String,582,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 585; @symbol_moduledef = [device_info,585,15,26]; ]
+        module device_info {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 585; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 587 18 ]
+                symbol [ Toybox %tmp.142 587 32 38 ];
+                %tmp.142 = getv ? :Toybox;
+                symbol [ System %tmp.143 587 39 45 ];
+                %tmp.143 = getv %tmp.142 :System;
+                symbol [ SCREEN_SHAPE_ROUND %tmp.144 587 46 64 ];
+                %tmp.144 = getv %tmp.143 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.144;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 586; @position = 18; @symbol_constdef = [screenWidth,586,18,29]; @symbol_type<0> = [Number,586,33,39]; ]
+            const screenWidth as Number = 416;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 587; @position = 18; @symbol_constdef = [screenShape,587,18,29]; ]
+            const screenShape;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 588; @position = 18; @symbol_constdef = [hasNightMode,588,18,30]; @symbol_type<0> = [Boolean,588,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 589; @position = 18; @symbol_constdef = [hasGpu,589,18,24]; @symbol_type<0> = [Boolean,589,28,35]; ]
+            const hasGpu as Boolean = true;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 590; @position = 18; @symbol_constdef = [screenHeight,590,18,30]; @symbol_type<0> = [Number,590,34,40]; ]
+            const screenHeight as Number = 416;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 591; @position = 18; @symbol_constdef = [hasTouchScreen,591,18,32]; @symbol_type<0> = [Boolean,591,36,43]; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 592; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,592,18,44]; @symbol_type<0> = [Boolean,592,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 595; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,595,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 595; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 596; @position = 18; @symbol_constdef = [filename,596,18,26]; @symbol_type<0> = [String,596,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/confirmation_icon__hint_completion.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 597; @position = 18; @symbol_constdef = [dithering,597,18,27]; @symbol_type<0> = [String,597,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 600; @symbol_moduledef = [prompt_font__body_no_title,600,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 600; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 601 18 ]
+                symbol [ Graphics %tmp.145 601 34 42 ];
+                %tmp.145 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.146 601 43 62 ];
+                %tmp.146 = getv %tmp.145 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.147 601 63 71 ];
+                %tmp.147 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.148 601 72 92 ];
+                %tmp.148 = getv %tmp.147 :TEXT_JUSTIFY_VCENTER;
+                %tmp.149 = bitor %tmp.146 %tmp.148;
+                putv self :justification %tmp.149;
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 602 18 ]
+                symbol [ Graphics %tmp.150 602 25 33 ];
+                %tmp.150 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.151 602 34 43 ];
+                %tmp.151 = getv %tmp.150 :FONT_TINY;
+                putv self :font %tmp.151;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 601; @position = 18; @symbol_constdef = [justification,601,18,31]; ]
+            const justification;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 602; @position = 18; @symbol_constdef = [font,602,18,22]; ]
+            const font;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 605; @symbol_moduledef = [prompt_size__title_icon,605,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 605; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 606; @position = 18; @symbol_constdef = [scaleX,606,18,24]; @symbol_type<0> = [Float,606,28,33]; ]
+            const scaleX as Float = 0.15;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 607; @position = 18; @symbol_constdef = [scaleRelativeTo,607,18,33]; @symbol_type<0> = [String,607,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 610; @symbol_moduledef = [system_icon_dark__warning,610,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 610; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 611; @position = 18; @symbol_constdef = [filename,611,18,26]; @symbol_type<0> = [String,611,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_dark__warning.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 612; @position = 18; @symbol_constdef = [compress,612,18,26]; @symbol_type<0> = [String,612,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 613; @position = 18; @symbol_constdef = [dithering,613,18,27]; @symbol_type<0> = [String,613,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 614; @position = 18; @symbol_constdef = [automaticPalette,614,18,34]; @symbol_type<0> = [String,614,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 617; @symbol_moduledef = [prompt_loc__title_icon,617,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 617; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 618; @position = 18; @symbol_constdef = [x,618,18,19]; @symbol_type<0> = [Number,618,23,29]; ]
+            const x as Number = 208;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 619; @position = 18; @symbol_constdef = [y,619,18,19]; @symbol_type<0> = [Number,619,23,29]; ]
+            const y as Number = 62;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 620; @position = 18; @symbol_constdef = [horizontalJustification,620,18,41]; @symbol_type<0> = [String,620,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 621; @position = 18; @symbol_constdef = [verticalJustification,621,18,39]; @symbol_type<0> = [String,621,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 624; @symbol_moduledef = [prompt_font_enhanced_readability__title,624,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 624; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 625; @position = 18; @symbol_constdef = [exclude,625,18,25]; @symbol_type<0> = [Boolean,625,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 628; @symbol_moduledef = [prompt_color_dark__body,628,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 628; ]
+            <init> {
+[ "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen" 630 18 ]
+                symbol [ Graphics %tmp.152 630 31 39 ];
+                %tmp.152 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.153 630 40 57 ];
+                %tmp.153 = getv %tmp.152 :COLOR_TRANSPARENT;
+                putv self :background %tmp.153;
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 629; @position = 18; @symbol_constdef = [color,629,18,23]; @symbol_type<0> = [Number,629,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 630; @position = 18; @symbol_constdef = [background,630,18,28]; ]
+            const background;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 633; @symbol_moduledef = [confirmation_icon__hint_delete,633,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 633; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 634; @position = 18; @symbol_constdef = [filename,634,18,26]; @symbol_type<0> = [String,634,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/confirmation_icon__hint_delete.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 635; @position = 18; @symbol_constdef = [dithering,635,18,27]; @symbol_type<0> = [String,635,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 638; @symbol_moduledef = [system_icon_light__hint_button_right_top,638,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 638; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 639; @position = 18; @symbol_constdef = [filename,639,18,26]; @symbol_type<0> = [String,639,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 640; @position = 18; @symbol_constdef = [dithering,640,18,27]; @symbol_type<0> = [String,640,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 643; @symbol_moduledef = [confirmation_size__body,643,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 643; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 644; @position = 18; @symbol_constdef = [width,644,18,23]; @symbol_type<0> = [Number,644,27,33]; ]
+            const width as Number = 250;
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 645; @position = 18; @symbol_constdef = [height,645,18,24]; @symbol_type<0> = [Number,645,28,34]; ]
+            const height as Number = 250;
+        }
+        [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 648; @symbol_moduledef = [system_icon_positive__check,648,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 648; ]
+            <init> {
+            }
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 649; @position = 18; @symbol_constdef = [filename,649,18,26]; @symbol_type<0> = [String,649,30,36]; ]
+            const filename as String = "/config/workspace/project/garmin-ciq/Devices/epix2/system_icon_positive__check.svg";
+            [ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 650; @position = 18; @symbol_constdef = [dithering,650,18,27]; @symbol_type<0> = [String,650,31,37]; ]
+            const dithering as String = "none";
+        }
+    }
+}
+[ @file = "/config/workspace/project/GarminEven/garmin/gen/006-B3943-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}

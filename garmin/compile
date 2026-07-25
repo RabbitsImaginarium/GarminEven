@@ -8,7 +8,7 @@ export CIQ_HOME="/config/workspace/project/garmin-ciq"
 # Paths
 SDK_VERSION="connectiq-sdk-lin-9.2.0-2026-06-09-92a1605b2"
 SDK_PATH="$CIQ_HOME/Sdks/$SDK_VERSION"
-DEV_KEY="/config/workspace/project/garmin/developer_key"
+DEV_KEY="/config/workspace/project/GarminEven/garmin/developer_key"
 
 # Ensure bin directory exists
 mkdir -p bin
