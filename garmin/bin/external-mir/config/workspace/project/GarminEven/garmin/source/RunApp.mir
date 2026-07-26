@@ -1,0 +1,54 @@
+[ @file = "/config/workspace/project/GarminEven/garmin/source/RunApp.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
+import Toybox.Application;
+[ @file = "/config/workspace/project/GarminEven/garmin/source/RunApp.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/config/workspace/project/GarminEven/garmin/source/RunApp.mc"; @line = 4; @position = 4; @symbol_vardef = [isStreaming,4,4,15]; ]
+var isStreaming = true;
+[ @file = "/config/workspace/project/GarminEven/garmin/source/RunApp.mc"; @line = 6; @symbol_classdef = [RemoteApp,6,6,15]; @symbol_extends<0> = [Application,6,24,35]; @symbol_extends<1> = [AppBase,6,36,43]; ]
+class RemoteApp extends Application.AppBase {
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunApp.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunApp.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunApp.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; ]
+    function initialize() as Void {
+_config_workspace_project_GarminEven_garmin_source_RunApp_mc_7_26_7_50_start:
+[ "/config/workspace/project/GarminEven/garmin/source/RunApp.mc" 7 28 ]
+        symbol [ AppBase %tmp.2 7 28 35 ];
+        %tmp.2 = getv ? :AppBase;
+        symbol [ initialize %tmp.3 7 36 46 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_config_workspace_project_GarminEven_garmin_source_RunApp_mc_7_26_7_50_stop:
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunApp.mc"; @line = 8; @symbol_functiondef = [onStart,8,13,20]; @symbol_param<0> = [state,8,21,26]; ]
+    function onStart(state) {
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunApp.mc"; @line = 9; @symbol_functiondef = [onStop,9,13,19]; @symbol_param<0> = [state,9,20,25]; ]
+    function onStop(state) {
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunApp.mc"; @line = 10; @symbol_functiondef = [getInitialView,10,13,27]; ]
+    function getInitialView() {
+_config_workspace_project_GarminEven_garmin_source_RunApp_mc_10_30_12_4_start:
+[ "/config/workspace/project/GarminEven/garmin/source/RunApp.mc" 11 8 ]
+        %tmp.1 = newa 2;
+        symbol [ RunView %tmp.5 11 21 28 ];
+        %tmp.5 = getv ? :RunView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        symbol [ RunDelegate %tmp.11 11 36 47 ];
+        %tmp.11 = getv ? :RunDelegate;
+        %tmp.8 = newc %tmp.11 ();
+        %tmp.12 = dup %tmp.7;
+        %tmp.13 = aputv %tmp.12 1 %tmp.8;
+        ret %tmp.13;
+_config_workspace_project_GarminEven_garmin_source_RunApp_mc_10_30_12_4_stop:
+    }
+}
+[ @file = "/config/workspace/project/GarminEven/garmin/source/RunApp.mc"; @line = 1; ]
+<init> {
+}

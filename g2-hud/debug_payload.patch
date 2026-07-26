@@ -1,0 +1,11 @@
+--- app.js
++++ app.js
+@@ -76,6 +76,7 @@
+     socket.onerror = (err) => logDebug("WebSocket Error!");
+     
+     socket.onmessage = (e) => {
+         try {
++            logDebug(`Raw WS Payload: ${e.data}`);
+             const t = JSON.parse(e.data);
+             const paceStr = t.pace ? `${t.pace} min/km` : "6:30 min/km";
+             const hrStr   = t.hr ? `${t.hr} bpm` : "82 bpm";

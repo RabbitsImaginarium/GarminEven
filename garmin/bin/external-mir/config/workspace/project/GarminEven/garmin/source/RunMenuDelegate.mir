@@ -1,0 +1,99 @@
+[ @file = "/config/workspace/project/GarminEven/garmin/source/RunMenuDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/config/workspace/project/GarminEven/garmin/source/RunMenuDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [System,2,14,20]; ]
+import Toybox.System;
+[ @file = "/config/workspace/project/GarminEven/garmin/source/RunMenuDelegate.mc"; @line = 4; @symbol_classdef = [RunMenuDelegate,4,6,21]; @symbol_extends<0> = [WatchUi,4,30,37]; @symbol_extends<1> = [Menu2InputDelegate,4,38,56]; ]
+class RunMenuDelegate extends WatchUi.Menu2InputDelegate {
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunMenuDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunMenuDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunMenuDelegate.mc"; @line = 5; @symbol_functiondef = [initialize,5,13,23]; ]
+    function initialize() as Void {
+_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_5_26_5_61_start:
+[ "/config/workspace/project/GarminEven/garmin/source/RunMenuDelegate.mc" 5 28 ]
+        symbol [ Menu2InputDelegate %tmp.2 5 28 46 ];
+        %tmp.2 = getv ? :Menu2InputDelegate;
+        symbol [ initialize %tmp.3 5 47 57 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_5_26_5_61_stop:
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunMenuDelegate.mc"; @line = 7; @symbol_functiondef = [onSelect,7,13,21]; @symbol_param<0> = [item,7,22,26]; ]
+    function onSelect(item) {
+_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_7_28_15_4_start:
+[ "/config/workspace/project/GarminEven/garmin/source/RunMenuDelegate.mc" 8 8 ]
+        symbol [ System %tmp.1 8 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 8 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Menu Selected: ";
+        %tmp.4 = lgetv %item;
+        symbol [ item %tmp.4 8 43 47 ];
+        symbol [ getId %tmp.5 8 48 53 ];
+        %tmp.5 = getv function %tmp.4 :getId;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        %tmp.7 = add %tmp.3 %tmp.6;
+        invoke %tmp.1 %tmp.2(%tmp.7);
+[ "/config/workspace/project/GarminEven/garmin/source/RunMenuDelegate.mc" 9 8 ]
+_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_9_8_13_8_if_stmt:
+        %tmp.8 = lgetv %item;
+        symbol [ item %tmp.8 9 12 16 ];
+        symbol [ getId %tmp.9 9 17 22 ];
+        %tmp.9 = getv function %tmp.8 :getId;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        symbol [ equals %tmp.11 9 25 31 ];
+        %tmp.11 = getv function %tmp.10 :equals;
+        %tmp.12 = "stream";
+        %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
+        bf %tmp.13 @_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_9_8_13_8_if_false;
+_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_9_8_13_8_if_true:
+_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_9_43_11_8_start:
+[ "/config/workspace/project/GarminEven/garmin/source/RunMenuDelegate.mc" 10 12 ]
+        %tmp.14 = true;
+        symbol [ isStreaming ? 10 12 23 ];
+        putv self :isStreaming %tmp.14;
+_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_9_43_11_8_stop:
+        goto @_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_9_8_13_8_if_end;
+_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_9_8_13_8_if_false:
+[ "/config/workspace/project/GarminEven/garmin/source/RunMenuDelegate.mc" 11 15 ]
+_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_11_15_13_8_if_stmt:
+        %tmp.15 = lgetv %item;
+        symbol [ item %tmp.15 11 19 23 ];
+        symbol [ getId %tmp.16 11 24 29 ];
+        %tmp.16 = getv function %tmp.15 :getId;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        symbol [ equals %tmp.18 11 32 38 ];
+        %tmp.18 = getv function %tmp.17 :equals;
+        %tmp.19 = "stop";
+        %tmp.20 = invoke %tmp.17 %tmp.18(%tmp.19);
+        bf %tmp.20 @_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_11_15_13_8_if_end;
+_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_11_15_13_8_if_true:
+_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_11_48_13_8_start:
+[ "/config/workspace/project/GarminEven/garmin/source/RunMenuDelegate.mc" 12 12 ]
+        %tmp.21 = false;
+        symbol [ isStreaming ? 12 12 23 ];
+        putv self :isStreaming %tmp.21;
+_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_11_48_13_8_stop:
+        goto @_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_11_15_13_8_if_end;
+_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_11_15_13_8_if_end:
+_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_9_8_13_8_if_end:
+[ "/config/workspace/project/GarminEven/garmin/source/RunMenuDelegate.mc" 14 8 ]
+        symbol [ WatchUi %tmp.22 14 8 15 ];
+        %tmp.22 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.23 14 16 23 ];
+        %tmp.23 = getv function %tmp.22 :popView;
+        symbol [ WatchUi %tmp.24 14 24 31 ];
+        %tmp.24 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_DOWN %tmp.25 14 32 42 ];
+        %tmp.25 = getv %tmp.24 :SLIDE_DOWN;
+        invoke %tmp.22 %tmp.23(%tmp.25);
+_config_workspace_project_GarminEven_garmin_source_RunMenuDelegate_mc_7_28_15_4_stop:
+    }
+}
+[ @file = "/config/workspace/project/GarminEven/garmin/source/RunMenuDelegate.mc"; @line = 1; ]
+<init> {
+}

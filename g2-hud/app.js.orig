@@ -76,7 +76,7 @@ function connectWebSocket() {
             const paceStr = t.pace ? `${t.pace} min/km` : "6:30 min/km";
             const hrStr   = t.hr ? `${t.hr} bpm` : "82 bpm";
             const distStr = t.distance ? `${t.distance} km` : "5.72 km";
-            const timeStr = t.timer ? t.timer : "5:45";
+            const timeStr = t.time ? t.time : "5:45";
             
             updateGlassesDisplay(paceStr, hrStr, `${distStr} | ${timeStr}`);
         } catch (err) {}

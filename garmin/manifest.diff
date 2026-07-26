@@ -1,0 +1,9 @@
+--- manifest.xml
++++ manifest.xml
+@@ -1,6 +1,6 @@
+ <iq:manifest version="3" xmlns:iq="http://www.garmin.com/xml/connectiq">
+-    <iq:application entry="RunApp" id="AF30E9EFAC8741EA8A9C01AF9802C841" name="@Strings.AppName" type="watch-app">
++    <iq:application entry="RunApp" id="AF30E9EFAC8741EA8A9C01AF9802C841" launcherIcon="@Drawables.LauncherIcon" name="@Strings.AppName" type="watch-app">
+         <iq:products>
+             <iq:product id="epix2"/>
+         </iq:products>

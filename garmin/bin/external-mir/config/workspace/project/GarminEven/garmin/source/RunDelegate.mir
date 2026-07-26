@@ -1,0 +1,202 @@
+[ @file = "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [ActivityRecording,2,14,31]; ]
+import Toybox.ActivityRecording;
+[ @file = "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc"; @line = 4; @symbol_classdef = [RunDelegate,4,6,17]; @symbol_extends<0> = [WatchUi,4,26,33]; @symbol_extends<1> = [BehaviorDelegate,4,34,50]; ]
+class RunDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc"; @line = 5; @position = 8; @symbol_vardef = [session,5,8,15]; ]
+    var session = null;
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; ]
+    function initialize() as Void {
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_7_26_7_59_start:
+[ "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc" 7 28 ]
+        symbol [ BehaviorDelegate %tmp.2 7 28 44 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 7 45 55 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_7_26_7_59_stop:
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc"; @line = 10; @symbol_functiondef = [onSelect,10,13,21]; ]
+    function onSelect() {
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_10_24_20_4_start:
+[ "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc" 11 8 ]
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_11_8_18_8_if_stmt:
+        symbol [ session %tmp.2 11 12 19 ];
+        %tmp.2 = getv ? :session;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_11_8_18_8_if_false;
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_11_8_18_8_if_true:
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_11_29_14_8_start:
+[ "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc" 12 12 ]
+        symbol [ ActivityRecording %tmp.5 12 22 39 ];
+        %tmp.5 = getm $.Toybox.ActivityRecording;
+        symbol [ createSession %tmp.6 12 40 53 ];
+        %tmp.6 = getv function %tmp.5 :createSession;
+        %tmp.7 = newd 2;
+        %tmp.9 = const :name;
+        symbol [ name %tmp.9 12 56 60 const ];
+        %tmp.10 = "Run";
+        %tmp.11 = dup %tmp.7;
+        %tmp.12 = aputv %tmp.11 %tmp.9 %tmp.10;
+        %tmp.14 = const :sport;
+        symbol [ sport %tmp.14 12 70 75 const ];
+        symbol [ ActivityRecording %tmp.15 12 77 94 ];
+        %tmp.15 = getm $.Toybox.ActivityRecording;
+        symbol [ SPORT_RUNNING %tmp.16 12 95 108 ];
+        %tmp.16 = getv %tmp.15 :SPORT_RUNNING;
+        %tmp.17 = dup %tmp.12;
+        %tmp.18 = aputv %tmp.17 %tmp.14 %tmp.16;
+        %tmp.19 = invoke %tmp.5 %tmp.6(%tmp.18);
+        symbol [ session ? 12 12 19 ];
+        putv self :session %tmp.19;
+[ "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc" 13 12 ]
+        symbol [ session %tmp.21 13 12 19 ];
+        %tmp.21 = getv ? :session;
+        symbol [ start %tmp.22 13 20 25 ];
+        %tmp.22 = getv function %tmp.21 :start;
+        invoke %tmp.21 %tmp.22();
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_11_29_14_8_stop:
+        goto @_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_11_8_18_8_if_end;
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_11_8_18_8_if_false:
+[ "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc" 14 15 ]
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_14_15_18_8_if_stmt:
+        symbol [ session %tmp.24 14 19 26 ];
+        %tmp.24 = getv ? :session;
+        %tmp.25 = as %tmp.24 { (!Null) };
+        symbol [ isRecording %tmp.26 14 27 38 ];
+        %tmp.26 = getv function %tmp.25 :isRecording;
+        %tmp.27 = invoke %tmp.25 %tmp.26();
+        bf %tmp.27 @_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_14_15_18_8_if_else_false;
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_14_15_18_8_if_true:
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_14_42_16_8_start:
+[ "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc" 15 12 ]
+        symbol [ session %tmp.29 15 12 19 ];
+        %tmp.29 = getv ? :session;
+        %tmp.30 = as %tmp.29 { (!Null) };
+        symbol [ stop %tmp.31 15 20 24 ];
+        %tmp.31 = getv function %tmp.30 :stop;
+        invoke %tmp.30 %tmp.31();
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_14_42_16_8_stop:
+        goto @_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_14_15_18_8_if_end;
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_14_15_18_8_if_else_false:
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_16_15_18_8_start:
+[ "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc" 17 12 ]
+        symbol [ session %tmp.33 17 12 19 ];
+        %tmp.33 = getv ? :session;
+        %tmp.34 = as %tmp.33 { (!Null) };
+        symbol [ start %tmp.35 17 20 25 ];
+        %tmp.35 = getv function %tmp.34 :start;
+        invoke %tmp.34 %tmp.35();
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_16_15_18_8_stop:
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_14_15_18_8_if_end:
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_11_8_18_8_if_end:
+[ "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc" 19 8 ]
+        %tmp.36 = true;
+        ret %tmp.36;
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_10_24_20_4_stop:
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc"; @line = 23; @symbol_functiondef = [onNextPage,23,13,23]; ]
+    function onNextPage() {
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_23_26_23_50_start:
+[ "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc" 23 28 ]
+        %tmp.1 = self;
+        symbol [ pushSubMenu %tmp.2 23 35 46 ];
+        %tmp.2 = getv function %tmp.1 :pushSubMenu;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        ret %tmp.3;
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_23_26_23_50_stop:
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc"; @line = 24; @symbol_functiondef = [onPreviousPage,24,13,27]; ]
+    function onPreviousPage() {
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_24_30_24_54_start:
+[ "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc" 24 32 ]
+        %tmp.1 = self;
+        symbol [ pushSubMenu %tmp.2 24 39 50 ];
+        %tmp.2 = getv function %tmp.1 :pushSubMenu;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        ret %tmp.3;
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_24_30_24_54_stop:
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc"; @line = 26; @symbol_functiondef = [pushSubMenu,26,13,24]; ]
+    function pushSubMenu() {
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_26_27_32_4_start:
+[ "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc" 27 8 ]
+        [ "_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_26_27_32_4_start" "_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_26_27_32_4_stop" ]
+        %menu.1 = local;
+        symbol [ menu %menu.1 27 12 16 ];
+        symbol [ WatchUi %tmp.3 27 23 30 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ Menu2 %tmp.4 27 31 36 ];
+        %tmp.4 = getv function ? %tmp.3 :Menu2;
+        %tmp.5 = newd 1;
+        %tmp.7 = const :title;
+        symbol [ title %tmp.7 27 39 44 const ];
+        %tmp.8 = "Run Settings";
+        %tmp.9 = dup %tmp.5;
+        %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+        %tmp.1 = newc %tmp.4 (%tmp.10);
+        lputv %menu.1 %tmp.1;
+        symbol [ menu %menu.1 27 12 16 ];
+[ "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc" 28 8 ]
+        %tmp.11 = lgetv %menu.1;
+        symbol [ menu %tmp.11 28 8 12 ];
+        symbol [ addItem %tmp.12 28 13 20 ];
+        %tmp.12 = getv function %tmp.11 :addItem;
+        symbol [ WatchUi %tmp.15 28 25 32 ];
+        %tmp.15 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.16 28 33 41 ];
+        %tmp.16 = getv function ? %tmp.15 :MenuItem;
+        %tmp.17 = "Stream to HUD";
+        %tmp.18 = null;
+        %tmp.19 = "stream";
+        %tmp.20 = null;
+        %tmp.13 = newc %tmp.16 (%tmp.17, %tmp.18, %tmp.19, %tmp.20);
+        invoke %tmp.11 %tmp.12(%tmp.13);
+[ "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc" 29 8 ]
+        %tmp.21 = lgetv %menu.1;
+        symbol [ menu %tmp.21 29 8 12 ];
+        symbol [ addItem %tmp.22 29 13 20 ];
+        %tmp.22 = getv function %tmp.21 :addItem;
+        symbol [ WatchUi %tmp.25 29 25 32 ];
+        %tmp.25 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.26 29 33 41 ];
+        %tmp.26 = getv function ? %tmp.25 :MenuItem;
+        %tmp.27 = "Stop Run";
+        %tmp.28 = null;
+        %tmp.29 = "stop";
+        %tmp.30 = null;
+        %tmp.23 = newc %tmp.26 (%tmp.27, %tmp.28, %tmp.29, %tmp.30);
+        invoke %tmp.21 %tmp.22(%tmp.23);
+[ "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc" 30 8 ]
+        symbol [ WatchUi %tmp.31 30 8 15 ];
+        %tmp.31 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.32 30 16 24 ];
+        %tmp.32 = getv function %tmp.31 :pushView;
+        %tmp.33 = lgetv %menu.1;
+        symbol [ menu %tmp.33 30 25 29 ];
+        symbol [ RunMenuDelegate %tmp.37 30 35 50 ];
+        %tmp.37 = getv ? :RunMenuDelegate;
+        %tmp.34 = newc %tmp.37 ();
+        symbol [ WatchUi %tmp.38 30 54 61 ];
+        %tmp.38 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.39 30 62 70 ];
+        %tmp.39 = getv %tmp.38 :SLIDE_UP;
+        invoke %tmp.31 %tmp.32(%tmp.33, %tmp.34, %tmp.39);
+[ "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc" 31 8 ]
+        %tmp.40 = true;
+        ret %tmp.40;
+_config_workspace_project_GarminEven_garmin_source_RunDelegate_mc_26_27_32_4_stop:
+    }
+}
+[ @file = "/config/workspace/project/GarminEven/garmin/source/RunDelegate.mc"; @line = 1; ]
+<init> {
+}

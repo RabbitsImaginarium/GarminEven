@@ -2,7 +2,7 @@
   "package_id": "com.garmin.hud",
   "edition": "202601",
   "name": "Garmin HUD",
-  "version": "1.0.45",
+  "version": "1.0.48",
   "min_app_version": "0.1.0",
   "min_sdk_version": "0.0.7",
   "tagline": "Garmin Watch HUD",

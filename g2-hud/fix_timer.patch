@@ -1,0 +1,7 @@
+--- app.js
++++ app.js
+@@ -81,3 +81,3 @@
+             const distStr = t.distance ? `${t.distance} km` : "5.72 km";
+-            const timeStr = t.time ? t.time : "5:45";
++            const timeStr = t.timer ? t.timer : "5:45";
+             

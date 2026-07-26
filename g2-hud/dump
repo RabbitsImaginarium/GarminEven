@@ -1,4 +1,28 @@
-// ../node_modules/@evenrealities/even_hub_sdk/dist/index.js
+
+
+=== . ===
+
+
+=== ./compile.sh ===
+#!/bin/bash
+# Bundle app.js into bundle.js (unminified so it is readable)
+npx esbuild app.js --bundle --outfile=bundle.js --format=esm
+
+# Clean old packages and pack the directory
+rm -f *.ehpk
+evenhub pack app.json . -o g2hud.ehpk
+
+
+=== ./.evenpackignore ===
+node_modules/
+package.json
+package-lock.json
+app.js
+.evenpackignore
+
+
+=== ./bundle.js ===
+// node_modules/@evenrealities/even_hub_sdk/dist/index.js
 var a1_0x58df53 = a1_0x22c9;
 (function(_0x47c7a7, _0x5d2f73) {
   const _0x34270e = a1_0x22c9, _0x4da033 = _0x47c7a7();
@@ -2181,24 +2205,18 @@ function connectWebSocket() {
   } catch (e) {
     return;
   }
-  socket.onopen = () => logDebug("WebSocket Connected!");
-  socket.onerror = (err) => logDebug("WebSocket Error!");
   socket.onmessage = (e) => {
     try {
-      logDebug(`Raw WS Payload: ${e.data}`);
       const t22 = JSON.parse(e.data);
       const paceStr = t22.pace ? `${t22.pace} min/km` : "6:30 min/km";
       const hrStr = t22.hr ? `${t22.hr} bpm` : "82 bpm";
       const distStr = t22.distance ? `${t22.distance} km` : "5.72 km";
-      const timeStr = t22.timer ? t22.timer : "5:45";
+      const timeStr = t22.time ? t22.time : "5:45";
       updateGlassesDisplay(paceStr, hrStr, `${distStr} | ${timeStr}`);
     } catch (err) {
     }
   };
-  socket.onclose = () => {
-    logDebug("WebSocket Closed. Reconnecting in 3s...");
-    setTimeout(connectWebSocket, 3e3);
-  };
+  socket.onclose = () => setTimeout(connectWebSocket, 3e3);
 }
 async function initGlasses() {
   try {
@@ -2245,4 +2263,235 @@ if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", initGlasses);
 } else {
   initGlasses();
+}
+
+
+=== ./dump ===
+
+
+=== ./package-lock.json ===
+{
+  "name": "garmin-hud-test",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "garmin-hud-test",
+      "version": "1.0.0",
+      "dependencies": {
+        "@evenrealities/even_hub_sdk": "^0.0.12"
+      }
+    },
+    "node_modules/@evenrealities/even_hub_sdk": {
+      "version": "0.0.12",
+      "resolved": "https://registry.npmjs.org/@evenrealities/even_hub_sdk/-/even_hub_sdk-0.0.12.tgz",
+      "integrity": "sha512-PXAeuPl7dMIlSWlctDeQAodIr7iuNROaH9GvRrZ86xzRh33DkMJYY1hSxy6BTk+TLkDA0tYlVi4bOsSIJngINA==",
+      "license": "MIT",
+      "engines": {
+        "node": "^20.0.0 || >=22.0.0"
+      }
+    }
+  }
+}
+
+
+=== ./package.json ===
+{
+  "name": "garmin-hud-test",
+  "version": "1.0.8",
+  "type": "module",
+  "dependencies": {
+    "@evenrealities/even_hub_sdk": "^0.0.12"
+  }
+}
+
+=== ./app.js ===
+import { waitForEvenAppBridge } from '@evenrealities/even_hub_sdk';
+
+const WS_URL = "ws://127.0.0.1:8080/ws";
+let bridge = null;
+
+function logDebug(msg) {
+    console.log(msg);
+    const logEl = document.getElementById("debug-log");
+    if (logEl) {
+        logEl.innerHTML += `\n[${new Date().toISOString().split('T')[1].slice(0,-1)}] ${msg}`;
+        logEl.scrollTop = logEl.scrollHeight;
+    }
+}
+
+function createMetricBitmap(paceStr, hrStr, detailsStr) {
+    const canvas = document.createElement('canvas');
+    canvas.width = 200;
+    canvas.height = 100;
+    const ctx = canvas.getContext('2d', { willReadFrequently: true });
+
+    // Black maps to transparent on the HUD
+    ctx.fillStyle = "#000000";
+    ctx.fillRect(0, 0, 200, 100);
+
+    // White maps to the active green monochrome pixels
+    ctx.fillStyle = "#FFFFFF";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "top";
+
+    // Top two lines: Pace and Heart Rate (larger font)
+    ctx.font = "bold 24px monospace";
+    ctx.fillText(paceStr, 100, 8);
+    ctx.fillText(hrStr, 100, 40);
+
+    // Bottom line: Distance and Time (smaller font)
+    ctx.font = "bold 15px monospace";
+    ctx.fillText(detailsStr, 100, 76);
+
+    const imgData = ctx.getImageData(0, 0, 200, 100).data;
+    const rawBytes = new Array(20000); 
+    for (let i = 0; i < 20000; i++) {
+        rawBytes[i] = imgData[i * 4]; 
+    }
+    return rawBytes;
+}
+
+async function updateGlassesDisplay(pace, hr, details) {
+    if (!bridge) return;
+    const imageBytes = createMetricBitmap(pace, hr, details);
+    try {
+        await bridge.updateImageRawData({ 
+            containerID: 5, 
+            containerName: "pace_img", 
+            imageData: imageBytes 
+        });
+        logDebug(`Pushed display update: ${pace} | ${hr} | ${details}`);
+    } catch (err) {
+        logDebug(`Update error: ${err.message}`);
+    }
+}
+
+function connectWebSocket() {
+    let socket;
+    try {
+        socket = new WebSocket(WS_URL);
+        logDebug("Connecting WebSocket...");
+    } catch (e) { return; }
+
+    socket.onmessage = (e) => {
+        try {
+            const t = JSON.parse(e.data);
+            const paceStr = t.pace ? `${t.pace} min/km` : "6:30 min/km";
+            const hrStr   = t.hr ? `${t.hr} bpm` : "82 bpm";
+            const distStr = t.distance ? `${t.distance} km` : "5.72 km";
+            const timeStr = t.time ? t.time : "5:45";
+            
+            updateGlassesDisplay(paceStr, hrStr, `${distStr} | ${timeStr}`);
+        } catch (err) {}
+    };
+    socket.onclose = () => setTimeout(connectWebSocket, 3000);
+}
+
+async function initGlasses() {
+    try {
+        logDebug("Waiting for Even App Bridge...");
+        bridge = await waitForEvenAppBridge();
+        logDebug("Bridge connected successfully.");
+
+        const payload = {
+            containerTotalNum: 2,
+            textObject: [{
+                xPosition: 100, 
+                yPosition: 80, 
+                width: 240, 
+                height: 60, 
+                containerID: 4, 
+                containerName: 'status-text', 
+                content: 'Ready', 
+                isEventCapture: 1
+            }],
+            imageObject: [{
+                xPosition: 10, 
+                yPosition: 10, 
+                width: 200, 
+                height: 100,
+                containerID: 5, 
+                containerName: 'pace_img'
+            }]
+        };
+
+        logDebug(`\n--- INITIALIZING HUD ---`);
+        let res = await bridge.createStartUpPageContainer(payload);
+        logDebug(`=> Create Code Result: ${res}`);
+
+        if (res === 0) {
+            logDebug("HUD Initialized! Pushing layout...");
+            // Push the requested static layout on boot
+            await updateGlassesDisplay("6:30 min/km", "82 bpm", "5.72 km | 5:45");
+            connectWebSocket();
+        } else {
+            logDebug("Validation failed. Check payload schema.");
+        }
+
+    } catch (e) {
+        logDebug("Bridge Init Error: " + (e.stack || e.message));
+    }
+}
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initGlasses);
+} else {
+    initGlasses();
+}
+
+
+=== ./index.html ===
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUD Debugger</title>
+    <style>
+        body { background-color: #111; color: #00FF66; font-family: monospace; padding: 10px; margin: 0; }
+        #debug-log { background: #000; border: 1px solid #333; padding: 10px; height: 75vh; overflow-y: auto; font-size: 14px; white-space: pre-wrap; word-wrap: break-word; }
+        button { margin-top: 15px; padding: 15px; width: 100%; background: #00FF66; color: #000; border: none; font-weight: bold; font-size: 16px; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div id="debug-log">Initializing Debugger...<br></div>
+    <button onclick="copyLogs()">Copy Logs to Clipboard</button>
+    <script type="module" src="bundle.js"></script>
+    <script>
+        function copyLogs() {
+            const text = document.getElementById("debug-log").innerText;
+            navigator.clipboard.writeText(text).then(() => alert("Copied to clipboard!"));
+        }
+    </script>
+</body>
+</html>
+
+
+=== ./app.json ===
+{
+  "package_id": "com.garmin.hud",
+  "edition": "202601",
+  "name": "Garmin HUD",
+  "version": "1.0.45",
+  "min_app_version": "0.1.0",
+  "min_sdk_version": "0.0.7",
+  "tagline": "Garmin Watch HUD",
+  "description": "Live HUD streaming data from Garmin watch bridge.",
+  "author": "Developer",
+  "entrypoint": "index.html",
+  "permissions": [
+    {
+      "name": "network",
+      "desc": "Connects to local Android bridge server for streaming data",
+      "whitelist": [
+        "127.0.0.1",
+        "localhost"
+      ]
+    }
+  ],
+  "supported_languages": [
+    "en"
+  ]
 }
