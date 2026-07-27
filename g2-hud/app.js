@@ -1,6 +1,8 @@
 import { waitForEvenAppBridge } from '@evenrealities/even_hub_sdk';
 
 const WS_URL = "ws://127.0.0.1:8080/ws";
+// Update interval in messages (messages arrive at 1Hz, so this is also seconds between updates)
+const UPDATE_INTERVAL = 5;
 let bridge = null;
 
 function logDebug(msg) {
@@ -69,6 +71,8 @@ function connectWebSocket() {
     socket.onopen = () => logDebug("WebSocket Connected!");
     socket.onerror = (err) => logDebug("WebSocket Error!");
     
+    let wsMessageCount = 0;
+
     socket.onmessage = (e) => {
         try {
             logDebug(`Raw WS Payload: ${e.data}`);
@@ -78,7 +82,10 @@ function connectWebSocket() {
             const distStr = t.distance ? `${t.distance} km` : "5.72 km";
             const timeStr = t.timer ? t.timer : "5:45";
             
-            updateGlassesDisplay(paceStr, hrStr, `${distStr} | ${timeStr}`);
+            wsMessageCount++;
+            if (wsMessageCount % UPDATE_INTERVAL === 0 || wsMessageCount === 1) {
+                updateGlassesDisplay(paceStr, hrStr, `${distStr} | ${timeStr}`);
+            }
         } catch (err) {}
     };
     

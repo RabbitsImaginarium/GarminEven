@@ -1,5 +1,6 @@
 import Toybox.WatchUi;
 import Toybox.ActivityRecording;
+import Toybox.Attention;
 
 class RunDelegate extends WatchUi.BehaviorDelegate {
     var session = null;
@@ -11,10 +12,19 @@ class RunDelegate extends WatchUi.BehaviorDelegate {
         if (session == null) {
             session = ActivityRecording.createSession({:name=>"Run", :sport=>ActivityRecording.SPORT_RUNNING});
             session.start();
+            if (Attention has :playTone) {
+                Attention.playTone(Attention.TONE_START);
+            }
         } else if (session.isRecording()) {
             session.stop();
+            if (Attention has :playTone) {
+                Attention.playTone(Attention.TONE_STOP);
+            }
         } else {
             session.start();
+            if (Attention has :playTone) {
+                Attention.playTone(Attention.TONE_START);
+            }
         }
         return true;
     }

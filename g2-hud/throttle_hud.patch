@@ -1,0 +1,22 @@
+--- app.js
++++ app.js
+@@ -74,6 +74,8 @@
+     socket.onopen = () => logDebug("WebSocket Connected!");
+     socket.onerror = (err) => logDebug("WebSocket Error!");
+     
++    let wsMessageCount = 0;
++
+     socket.onmessage = (e) => {
+         try {
+             const t = JSON.parse(e.data);
+@@ -83,5 +85,8 @@
+             const distStr = t.distance ? `${t.distance} km` : "5.72 km";
+             const timeStr = t.timer ? t.timer : "5:45";
+             
+-            updateGlassesDisplay(paceStr, hrStr, `${distStr} | ${timeStr}`);
++            wsMessageCount++;
++            if (wsMessageCount % 5 === 0 || wsMessageCount === 1) {
++                updateGlassesDisplay(paceStr, hrStr, `${distStr} | ${timeStr}`);
++            }
+         } catch (err) {}
+     };

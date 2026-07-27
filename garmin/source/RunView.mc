@@ -35,6 +35,11 @@ class RunView extends WatchUi.View {
         return mins.format("%d") + ":" + (secs < 10 ? "0" : "") + secs.format("%d");
     }
 
+    function toggleRecording() {
+        // This method is required by RemoteDelegate.
+        // Recording session is currently managed by RunDelegate.
+    }
+
     function onUpdate(dc) {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
@@ -81,7 +86,7 @@ class RunView extends WatchUi.View {
 
         // Bottom: HR
         dc.setColor(0x55AAFF, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(175, 295, Graphics.FONT_SMALL, "HR", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(155, 295, Graphics.FONT_SMALL, "HR", Graphics.TEXT_JUSTIFY_CENTER);
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(240, 280, Graphics.FONT_NUMBER_HOT, hrStr, Graphics.TEXT_JUSTIFY_CENTER);
 

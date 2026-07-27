@@ -259,538 +259,541 @@ _config_workspace_project_GarminEven_garmin_source_RunView_mc_35_42_35_60_end:
         ret %tmp.36;
 _config_workspace_project_GarminEven_garmin_source_RunView_mc_30_36_36_4_stop:
     }
-    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunView.mc"; @line = 38; @symbol_functiondef = [onUpdate,38,13,21]; @symbol_param<0> = [dc,38,22,24]; ]
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunView.mc"; @line = 38; @symbol_functiondef = [toggleRecording,38,13,28]; ]
+    function toggleRecording() {
+    }
+    [ @file = "/config/workspace/project/GarminEven/garmin/source/RunView.mc"; @line = 43; @symbol_functiondef = [onUpdate,43,13,21]; @symbol_param<0> = [dc,43,22,24]; ]
     function onUpdate(dc) {
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_start:
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 39 8 ]
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_start:
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 44 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 39 8 10 ];
-        symbol [ setColor %tmp.2 39 11 19 ];
+        symbol [ dc %tmp.1 44 8 10 ];
+        symbol [ setColor %tmp.2 44 11 19 ];
         %tmp.2 = getv function %tmp.1 :setColor;
-        symbol [ Graphics %tmp.3 39 20 28 ];
+        symbol [ Graphics %tmp.3 44 20 28 ];
         %tmp.3 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.4 39 29 40 ];
+        symbol [ COLOR_BLACK %tmp.4 44 29 40 ];
         %tmp.4 = getv %tmp.3 :COLOR_BLACK;
-        symbol [ Graphics %tmp.5 39 42 50 ];
+        symbol [ Graphics %tmp.5 44 42 50 ];
         %tmp.5 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.6 39 51 62 ];
+        symbol [ COLOR_BLACK %tmp.6 44 51 62 ];
         %tmp.6 = getv %tmp.5 :COLOR_BLACK;
         invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 40 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 45 8 ]
         %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 40 8 10 ];
-        symbol [ clear %tmp.8 40 11 16 ];
+        symbol [ dc %tmp.7 45 8 10 ];
+        symbol [ clear %tmp.8 45 11 16 ];
         %tmp.8 = getv function %tmp.7 :clear;
         invoke %tmp.7 %tmp.8();
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 43 8 ]
-        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_stop" ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 48 8 ]
+        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_stop" ]
         %info.1 = local;
-        symbol [ info %info.1 43 12 16 ];
-        symbol [ Activity %tmp.9 43 19 27 ];
+        symbol [ info %info.1 48 12 16 ];
+        symbol [ Activity %tmp.9 48 19 27 ];
         %tmp.9 = getm $.Toybox.Activity;
-        symbol [ getActivityInfo %tmp.10 43 28 43 ];
+        symbol [ getActivityInfo %tmp.10 48 28 43 ];
         %tmp.10 = getv function %tmp.9 :getActivityInfo;
         %tmp.11 = invoke %tmp.9 %tmp.10();
         lputv %info.1 %tmp.11;
-        symbol [ info %info.1 43 12 16 ];
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 44 8 ]
-        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_stop" ]
+        symbol [ info %info.1 48 12 16 ];
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 49 8 ]
+        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_stop" ]
         %sensorInfo.2 = local;
-        symbol [ sensorInfo %sensorInfo.2 44 12 22 ];
-        symbol [ Sensor %tmp.12 44 25 31 ];
+        symbol [ sensorInfo %sensorInfo.2 49 12 22 ];
+        symbol [ Sensor %tmp.12 49 25 31 ];
         %tmp.12 = getm $.Toybox.Sensor;
-        symbol [ getInfo %tmp.13 44 32 39 ];
+        symbol [ getInfo %tmp.13 49 32 39 ];
         %tmp.13 = getv function %tmp.12 :getInfo;
         %tmp.14 = invoke %tmp.12 %tmp.13();
         lputv %sensorInfo.2 %tmp.14;
-        symbol [ sensorInfo %sensorInfo.2 44 12 22 ];
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 46 8 ]
-        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_stop" ]
+        symbol [ sensorInfo %sensorInfo.2 49 12 22 ];
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 51 8 ]
+        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_stop" ]
         %paceStr.3 = local;
-        symbol [ paceStr %paceStr.3 46 12 19 ];
+        symbol [ paceStr %paceStr.3 51 12 19 ];
         %tmp.15 = self;
-        symbol [ formatPace %tmp.16 46 22 32 ];
+        symbol [ formatPace %tmp.16 51 22 32 ];
         %tmp.16 = getv function %tmp.15 :formatPace;
         %tmp.17 = lgetv %info.1;
-        symbol [ info %tmp.17 46 33 37 ];
-        symbol [ currentSpeed %tmp.18 46 38 50 ];
+        symbol [ info %tmp.17 51 33 37 ];
+        symbol [ currentSpeed %tmp.18 51 38 50 ];
         %tmp.18 = getv %tmp.17 :currentSpeed;
         %tmp.19 = invoke %tmp.15 %tmp.16(%tmp.18);
         lputv %paceStr.3 %tmp.19;
-        symbol [ paceStr %paceStr.3 46 12 19 ];
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 47 8 ]
-        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_stop" ]
+        symbol [ paceStr %paceStr.3 51 12 19 ];
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 52 8 ]
+        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_stop" ]
         %distKm.4 = local;
-        symbol [ distKm %distKm.4 47 12 18 ];
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_47_21_47_88_begin:
+        symbol [ distKm %distKm.4 52 12 18 ];
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_21_52_88_begin:
         %tmp.20 = lgetv %info.1;
-        symbol [ info %tmp.20 47 22 26 ];
-        symbol [ elapsedDistance %tmp.21 47 27 42 ];
+        symbol [ info %tmp.20 52 22 26 ];
+        symbol [ elapsedDistance %tmp.21 52 27 42 ];
         %tmp.21 = getv %tmp.20 :elapsedDistance;
         %tmp.22 = null;
         %tmp.23 = ne %tmp.21 %tmp.22;
-        bf %tmp.23 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_47_21_47_88_else_false;
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_47_21_47_88_true:
+        bf %tmp.23 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_21_52_88_else_false;
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_21_52_88_true:
         %tmp.24 = lgetv %info.1;
-        symbol [ info %tmp.24 47 55 59 ];
-        symbol [ elapsedDistance %tmp.25 47 60 75 ];
+        symbol [ info %tmp.24 52 55 59 ];
+        symbol [ elapsedDistance %tmp.25 52 60 75 ];
         %tmp.25 = getv %tmp.24 :elapsedDistance;
         %tmp.26 = 1000.0;
         %tmp.27 = div %tmp.25 %tmp.26;
         push %tmp.27;
-        goto @_config_workspace_project_GarminEven_garmin_source_RunView_mc_47_21_47_88_end;
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_47_21_47_88_else_false:
+        goto @_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_21_52_88_end;
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_21_52_88_else_false:
         %tmp.28 = 0.0;
         push %tmp.28;
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_47_21_47_88_end:
-        %tmp.29 = phi [%tmp.23 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_47_21_47_88_begin] [%tmp.27 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_47_21_47_88_true] [%tmp.28 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_47_21_47_88_else_false] [%tmp.29 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_47_21_47_88_end];
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_21_52_88_end:
+        %tmp.29 = phi [%tmp.23 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_21_52_88_begin] [%tmp.27 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_21_52_88_true] [%tmp.28 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_21_52_88_else_false] [%tmp.29 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_21_52_88_end];
         lputv %distKm.4 %tmp.29;
-        symbol [ distKm %distKm.4 47 12 18 ];
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 48 8 ]
-        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_stop" ]
+        symbol [ distKm %distKm.4 52 12 18 ];
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 53 8 ]
+        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_stop" ]
         %distStr.5 = local;
-        symbol [ distStr %distStr.5 48 12 19 ];
+        symbol [ distStr %distStr.5 53 12 19 ];
         %tmp.30 = lgetv %distKm.4;
-        symbol [ distKm %tmp.30 48 22 28 ];
-        symbol [ format %tmp.31 48 29 35 ];
+        symbol [ distKm %tmp.30 53 22 28 ];
+        symbol [ format %tmp.31 53 29 35 ];
         %tmp.31 = getv function %tmp.30 :format;
         %tmp.32 = "%.2f";
         %tmp.33 = invoke %tmp.30 %tmp.31(%tmp.32);
         lputv %distStr.5 %tmp.33;
-        symbol [ distStr %distStr.5 48 12 19 ];
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 49 8 ]
-        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_stop" ]
+        symbol [ distStr %distStr.5 53 12 19 ];
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 54 8 ]
+        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_stop" ]
         %timerStr.6 = local;
-        symbol [ timerStr %timerStr.6 49 12 20 ];
+        symbol [ timerStr %timerStr.6 54 12 20 ];
         %tmp.34 = self;
-        symbol [ formatTimer %tmp.35 49 23 34 ];
+        symbol [ formatTimer %tmp.35 54 23 34 ];
         %tmp.35 = getv function %tmp.34 :formatTimer;
         %tmp.36 = lgetv %info.1;
-        symbol [ info %tmp.36 49 35 39 ];
-        symbol [ timerTime %tmp.37 49 40 49 ];
+        symbol [ info %tmp.36 54 35 39 ];
+        symbol [ timerTime %tmp.37 54 40 49 ];
         %tmp.37 = getv %tmp.36 :timerTime;
         %tmp.38 = invoke %tmp.34 %tmp.35(%tmp.37);
         lputv %timerStr.6 %tmp.38;
-        symbol [ timerStr %timerStr.6 49 12 20 ];
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 51 8 ]
-        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_stop" ]
+        symbol [ timerStr %timerStr.6 54 12 20 ];
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 56 8 ]
+        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_stop" ]
         %hr.7 = local;
-        symbol [ hr %hr.7 51 12 14 ];
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_17_51_100_begin:
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_18_51_64_begin:
+        symbol [ hr %hr.7 56 12 14 ];
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_17_56_100_begin:
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_18_56_64_begin:
         %tmp.39 = lgetv %sensorInfo.2;
-        symbol [ sensorInfo %tmp.39 51 18 28 ];
+        symbol [ sensorInfo %tmp.39 56 18 28 ];
         %tmp.40 = null;
         %tmp.41 = ne %tmp.39 %tmp.40;
-        bf %tmp.41 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_17_51_100_else_false;
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_40_51_64_true:
+        bf %tmp.41 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_17_56_100_else_false;
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_40_56_64_true:
         %tmp.42 = lgetv %sensorInfo.2;
-        symbol [ sensorInfo %tmp.42 51 40 50 ];
+        symbol [ sensorInfo %tmp.42 56 40 50 ];
         %tmp.43 = as %tmp.42 { (!Null) };
-        symbol [ heartRate %tmp.44 51 51 60 ];
+        symbol [ heartRate %tmp.44 56 51 60 ];
         %tmp.44 = getv %tmp.43 :heartRate;
         %tmp.45 = null;
         %tmp.46 = ne %tmp.44 %tmp.45;
         push %tmp.46;
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_40_51_64_end:
-        %tmp.47 = phi [%tmp.41 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_18_51_64_begin] [%tmp.46 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_40_51_64_true] [%tmp.47 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_40_51_64_end];
-        bf %tmp.47 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_17_51_100_else_false;
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_17_51_100_true:
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_40_56_64_end:
+        %tmp.47 = phi [%tmp.41 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_18_56_64_begin] [%tmp.46 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_40_56_64_true] [%tmp.47 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_40_56_64_end];
+        bf %tmp.47 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_17_56_100_else_false;
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_17_56_100_true:
         %tmp.48 = lgetv %sensorInfo.2;
-        symbol [ sensorInfo %tmp.48 51 72 82 ];
+        symbol [ sensorInfo %tmp.48 56 72 82 ];
         %tmp.49 = as %tmp.48 { (!Null) };
-        symbol [ heartRate %tmp.50 51 83 92 ];
+        symbol [ heartRate %tmp.50 56 83 92 ];
         %tmp.50 = getv %tmp.49 :heartRate;
         push %tmp.50;
-        goto @_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_17_51_100_end;
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_17_51_100_else_false:
+        goto @_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_17_56_100_end;
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_17_56_100_else_false:
         %tmp.51 = lgetv %info.1;
-        symbol [ info %tmp.51 51 95 99 ];
-        symbol [ currentHeartRate %tmp.52 51 100 116 ];
+        symbol [ info %tmp.51 56 95 99 ];
+        symbol [ currentHeartRate %tmp.52 56 100 116 ];
         %tmp.52 = getv %tmp.51 :currentHeartRate;
         push %tmp.52;
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_17_51_100_end:
-        %tmp.53 = phi [%tmp.47 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_17_51_100_begin] [%tmp.50 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_17_51_100_true] [%tmp.52 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_17_51_100_else_false] [%tmp.53 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_51_17_51_100_end];
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_17_56_100_end:
+        %tmp.53 = phi [%tmp.47 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_17_56_100_begin] [%tmp.50 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_17_56_100_true] [%tmp.52 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_17_56_100_else_false] [%tmp.53 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_56_17_56_100_end];
         lputv %hr.7 %tmp.53;
-        symbol [ hr %hr.7 51 12 14 ];
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 52 8 ]
-        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_stop" ]
+        symbol [ hr %hr.7 56 12 14 ];
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 57 8 ]
+        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_stop" ]
         %hrStr.8 = local;
-        symbol [ hrStr %hrStr.8 52 12 17 ];
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_20_52_53_begin:
+        symbol [ hrStr %hrStr.8 57 12 17 ];
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_57_20_57_53_begin:
         %tmp.54 = lgetv %hr.7;
-        symbol [ hr %tmp.54 52 21 23 ];
+        symbol [ hr %tmp.54 57 21 23 ];
         %tmp.55 = null;
         %tmp.56 = ne %tmp.54 %tmp.55;
-        bf %tmp.56 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_20_52_53_else_false;
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_20_52_53_true:
+        bf %tmp.56 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_57_20_57_53_else_false;
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_57_20_57_53_true:
         %tmp.57 = lgetv %hr.7;
-        symbol [ hr %tmp.57 52 35 37 ];
+        symbol [ hr %tmp.57 57 35 37 ];
         %tmp.58 = as %tmp.57 { (!Null) };
-        symbol [ format %tmp.59 52 38 44 ];
+        symbol [ format %tmp.59 57 38 44 ];
         %tmp.59 = getv function %tmp.58 :format;
         %tmp.60 = "%d";
         %tmp.61 = invoke %tmp.58 %tmp.59(%tmp.60);
         push %tmp.61;
-        goto @_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_20_52_53_end;
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_20_52_53_else_false:
+        goto @_config_workspace_project_GarminEven_garmin_source_RunView_mc_57_20_57_53_end;
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_57_20_57_53_else_false:
         %tmp.62 = "---";
         push %tmp.62;
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_20_52_53_end:
-        %tmp.63 = phi [%tmp.56 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_20_52_53_begin] [%tmp.61 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_20_52_53_true] [%tmp.62 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_20_52_53_else_false] [%tmp.63 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_52_20_52_53_end];
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_57_20_57_53_end:
+        %tmp.63 = phi [%tmp.56 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_57_20_57_53_begin] [%tmp.61 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_57_20_57_53_true] [%tmp.62 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_57_20_57_53_else_false] [%tmp.63 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_57_20_57_53_end];
         lputv %hrStr.8 %tmp.63;
-        symbol [ hrStr %hrStr.8 52 12 17 ];
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 55 8 ]
+        symbol [ hrStr %hrStr.8 57 12 17 ];
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 60 8 ]
         %tmp.64 = lgetv %dc;
-        symbol [ dc %tmp.64 55 8 10 ];
-        symbol [ setPenWidth %tmp.65 55 11 22 ];
+        symbol [ dc %tmp.64 60 8 10 ];
+        symbol [ setPenWidth %tmp.65 60 11 22 ];
         %tmp.65 = getv function %tmp.64 :setPenWidth;
         %tmp.66 = 4;
         invoke %tmp.64 %tmp.65(%tmp.66);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 56 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 61 8 ]
         %tmp.67 = lgetv %dc;
-        symbol [ dc %tmp.67 56 8 10 ];
-        symbol [ setColor %tmp.68 56 11 19 ];
+        symbol [ dc %tmp.67 61 8 10 ];
+        symbol [ setColor %tmp.68 61 11 19 ];
         %tmp.68 = getv function %tmp.67 :setColor;
-        symbol [ Graphics %tmp.69 56 20 28 ];
+        symbol [ Graphics %tmp.69 61 20 28 ];
         %tmp.69 = getm $.Toybox.Graphics;
-        symbol [ COLOR_ORANGE %tmp.70 56 29 41 ];
+        symbol [ COLOR_ORANGE %tmp.70 61 29 41 ];
         %tmp.70 = getv %tmp.69 :COLOR_ORANGE;
-        symbol [ Graphics %tmp.71 56 43 51 ];
+        symbol [ Graphics %tmp.71 61 43 51 ];
         %tmp.71 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.72 56 52 69 ];
+        symbol [ COLOR_TRANSPARENT %tmp.72 61 52 69 ];
         %tmp.72 = getv %tmp.71 :COLOR_TRANSPARENT;
         invoke %tmp.67 %tmp.68(%tmp.70, %tmp.72);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 57 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 62 8 ]
         %tmp.73 = lgetv %dc;
-        symbol [ dc %tmp.73 57 8 10 ];
-        symbol [ drawCircle %tmp.74 57 11 21 ];
+        symbol [ dc %tmp.73 62 8 10 ];
+        symbol [ drawCircle %tmp.74 62 11 21 ];
         %tmp.74 = getv function %tmp.73 :drawCircle;
         %tmp.75 = 208;
         %tmp.76 = 208;
         %tmp.77 = 195;
         invoke %tmp.73 %tmp.74(%tmp.75, %tmp.76, %tmp.77);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 60 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 65 8 ]
         %tmp.78 = lgetv %dc;
-        symbol [ dc %tmp.78 60 8 10 ];
-        symbol [ setColor %tmp.79 60 11 19 ];
+        symbol [ dc %tmp.78 65 8 10 ];
+        symbol [ setColor %tmp.79 65 11 19 ];
         %tmp.79 = getv function %tmp.78 :setColor;
         %tmp.80 = 0x55AAFF;
-        symbol [ Graphics %tmp.81 60 30 38 ];
+        symbol [ Graphics %tmp.81 65 30 38 ];
         %tmp.81 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.82 60 39 56 ];
+        symbol [ COLOR_TRANSPARENT %tmp.82 65 39 56 ];
         %tmp.82 = getv %tmp.81 :COLOR_TRANSPARENT;
         invoke %tmp.78 %tmp.79(%tmp.80, %tmp.82);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 61 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 66 8 ]
         %tmp.83 = lgetv %dc;
-        symbol [ dc %tmp.83 61 8 10 ];
-        symbol [ drawText %tmp.84 61 11 19 ];
+        symbol [ dc %tmp.83 66 8 10 ];
+        symbol [ drawText %tmp.84 66 11 19 ];
         %tmp.84 = getv function %tmp.83 :drawText;
         %tmp.85 = 208;
         %tmp.86 = 55;
-        symbol [ Graphics %tmp.87 61 29 37 ];
+        symbol [ Graphics %tmp.87 66 29 37 ];
         %tmp.87 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.88 61 38 48 ];
+        symbol [ FONT_XTINY %tmp.88 66 38 48 ];
         %tmp.88 = getv %tmp.87 :FONT_XTINY;
         %tmp.89 = "PACE";
-        symbol [ Graphics %tmp.90 61 58 66 ];
+        symbol [ Graphics %tmp.90 66 58 66 ];
         %tmp.90 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.91 61 67 86 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.91 66 67 86 ];
         %tmp.91 = getv %tmp.90 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.83 %tmp.84(%tmp.85, %tmp.86, %tmp.88, %tmp.89, %tmp.91);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 62 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 67 8 ]
         %tmp.92 = lgetv %dc;
-        symbol [ dc %tmp.92 62 8 10 ];
-        symbol [ setColor %tmp.93 62 11 19 ];
+        symbol [ dc %tmp.92 67 8 10 ];
+        symbol [ setColor %tmp.93 67 11 19 ];
         %tmp.93 = getv function %tmp.92 :setColor;
-        symbol [ Graphics %tmp.94 62 20 28 ];
+        symbol [ Graphics %tmp.94 67 20 28 ];
         %tmp.94 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.95 62 29 40 ];
+        symbol [ COLOR_WHITE %tmp.95 67 29 40 ];
         %tmp.95 = getv %tmp.94 :COLOR_WHITE;
-        symbol [ Graphics %tmp.96 62 42 50 ];
+        symbol [ Graphics %tmp.96 67 42 50 ];
         %tmp.96 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.97 62 51 68 ];
+        symbol [ COLOR_TRANSPARENT %tmp.97 67 51 68 ];
         %tmp.97 = getv %tmp.96 :COLOR_TRANSPARENT;
         invoke %tmp.92 %tmp.93(%tmp.95, %tmp.97);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 63 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 68 8 ]
         %tmp.98 = lgetv %dc;
-        symbol [ dc %tmp.98 63 8 10 ];
-        symbol [ drawText %tmp.99 63 11 19 ];
+        symbol [ dc %tmp.98 68 8 10 ];
+        symbol [ drawText %tmp.99 68 11 19 ];
         %tmp.99 = getv function %tmp.98 :drawText;
         %tmp.100 = 208;
         %tmp.101 = 75;
-        symbol [ Graphics %tmp.102 63 29 37 ];
+        symbol [ Graphics %tmp.102 68 29 37 ];
         %tmp.102 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_HOT %tmp.103 63 38 53 ];
+        symbol [ FONT_NUMBER_HOT %tmp.103 68 38 53 ];
         %tmp.103 = getv %tmp.102 :FONT_NUMBER_HOT;
         %tmp.104 = lgetv %paceStr.3;
-        symbol [ paceStr %tmp.104 63 55 62 ];
-        symbol [ Graphics %tmp.105 63 64 72 ];
+        symbol [ paceStr %tmp.104 68 55 62 ];
+        symbol [ Graphics %tmp.105 68 64 72 ];
         %tmp.105 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.106 63 73 92 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.106 68 73 92 ];
         %tmp.106 = getv %tmp.105 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.98 %tmp.99(%tmp.100, %tmp.101, %tmp.103, %tmp.104, %tmp.106);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 66 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 71 8 ]
         %tmp.107 = lgetv %dc;
-        symbol [ dc %tmp.107 66 8 10 ];
-        symbol [ setPenWidth %tmp.108 66 11 22 ];
+        symbol [ dc %tmp.107 71 8 10 ];
+        symbol [ setPenWidth %tmp.108 71 11 22 ];
         %tmp.108 = getv function %tmp.107 :setPenWidth;
         %tmp.109 = 2;
         invoke %tmp.107 %tmp.108(%tmp.109);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 67 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 72 8 ]
         %tmp.110 = lgetv %dc;
-        symbol [ dc %tmp.110 67 8 10 ];
-        symbol [ setColor %tmp.111 67 11 19 ];
+        symbol [ dc %tmp.110 72 8 10 ];
+        symbol [ setColor %tmp.111 72 11 19 ];
         %tmp.111 = getv function %tmp.110 :setColor;
-        symbol [ Graphics %tmp.112 67 20 28 ];
+        symbol [ Graphics %tmp.112 72 20 28 ];
         %tmp.112 = getm $.Toybox.Graphics;
-        symbol [ COLOR_LT_GRAY %tmp.113 67 29 42 ];
+        symbol [ COLOR_LT_GRAY %tmp.113 72 29 42 ];
         %tmp.113 = getv %tmp.112 :COLOR_LT_GRAY;
-        symbol [ Graphics %tmp.114 67 44 52 ];
+        symbol [ Graphics %tmp.114 72 44 52 ];
         %tmp.114 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.115 67 53 70 ];
+        symbol [ COLOR_TRANSPARENT %tmp.115 72 53 70 ];
         %tmp.115 = getv %tmp.114 :COLOR_TRANSPARENT;
         invoke %tmp.110 %tmp.111(%tmp.113, %tmp.115);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 68 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 73 8 ]
         %tmp.116 = lgetv %dc;
-        symbol [ dc %tmp.116 68 8 10 ];
-        symbol [ drawLine %tmp.117 68 11 19 ];
+        symbol [ dc %tmp.116 73 8 10 ];
+        symbol [ drawLine %tmp.117 73 11 19 ];
         %tmp.117 = getv function %tmp.116 :drawLine;
         %tmp.118 = 208;
         %tmp.119 = 175;
         %tmp.120 = 208;
         %tmp.121 = 255;
         invoke %tmp.116 %tmp.117(%tmp.118, %tmp.119, %tmp.120, %tmp.121);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 71 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 76 8 ]
         %tmp.122 = lgetv %dc;
-        symbol [ dc %tmp.122 71 8 10 ];
-        symbol [ setColor %tmp.123 71 11 19 ];
+        symbol [ dc %tmp.122 76 8 10 ];
+        symbol [ setColor %tmp.123 76 11 19 ];
         %tmp.123 = getv function %tmp.122 :setColor;
         %tmp.124 = 0x55AAFF;
-        symbol [ Graphics %tmp.125 71 30 38 ];
+        symbol [ Graphics %tmp.125 76 30 38 ];
         %tmp.125 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.126 71 39 56 ];
+        symbol [ COLOR_TRANSPARENT %tmp.126 76 39 56 ];
         %tmp.126 = getv %tmp.125 :COLOR_TRANSPARENT;
         invoke %tmp.122 %tmp.123(%tmp.124, %tmp.126);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 72 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 77 8 ]
         %tmp.127 = lgetv %dc;
-        symbol [ dc %tmp.127 72 8 10 ];
-        symbol [ drawText %tmp.128 72 11 19 ];
+        symbol [ dc %tmp.127 77 8 10 ];
+        symbol [ drawText %tmp.128 77 11 19 ];
         %tmp.128 = getv function %tmp.127 :drawText;
         %tmp.129 = 106;
         %tmp.130 = 175;
-        symbol [ Graphics %tmp.131 72 30 38 ];
+        symbol [ Graphics %tmp.131 77 30 38 ];
         %tmp.131 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.132 72 39 49 ];
+        symbol [ FONT_XTINY %tmp.132 77 39 49 ];
         %tmp.132 = getv %tmp.131 :FONT_XTINY;
         %tmp.133 = "DISTANCE";
-        symbol [ Graphics %tmp.134 72 63 71 ];
+        symbol [ Graphics %tmp.134 77 63 71 ];
         %tmp.134 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.135 72 72 91 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.135 77 72 91 ];
         %tmp.135 = getv %tmp.134 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.127 %tmp.128(%tmp.129, %tmp.130, %tmp.132, %tmp.133, %tmp.135);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 73 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 78 8 ]
         %tmp.136 = lgetv %dc;
-        symbol [ dc %tmp.136 73 8 10 ];
-        symbol [ setColor %tmp.137 73 11 19 ];
+        symbol [ dc %tmp.136 78 8 10 ];
+        symbol [ setColor %tmp.137 78 11 19 ];
         %tmp.137 = getv function %tmp.136 :setColor;
-        symbol [ Graphics %tmp.138 73 20 28 ];
+        symbol [ Graphics %tmp.138 78 20 28 ];
         %tmp.138 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.139 73 29 40 ];
+        symbol [ COLOR_WHITE %tmp.139 78 29 40 ];
         %tmp.139 = getv %tmp.138 :COLOR_WHITE;
-        symbol [ Graphics %tmp.140 73 42 50 ];
+        symbol [ Graphics %tmp.140 78 42 50 ];
         %tmp.140 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.141 73 51 68 ];
+        symbol [ COLOR_TRANSPARENT %tmp.141 78 51 68 ];
         %tmp.141 = getv %tmp.140 :COLOR_TRANSPARENT;
         invoke %tmp.136 %tmp.137(%tmp.139, %tmp.141);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 74 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 79 8 ]
         %tmp.142 = lgetv %dc;
-        symbol [ dc %tmp.142 74 8 10 ];
-        symbol [ drawText %tmp.143 74 11 19 ];
+        symbol [ dc %tmp.142 79 8 10 ];
+        symbol [ drawText %tmp.143 79 11 19 ];
         %tmp.143 = getv function %tmp.142 :drawText;
         %tmp.144 = 106;
         %tmp.145 = 195;
-        symbol [ Graphics %tmp.146 74 30 38 ];
+        symbol [ Graphics %tmp.146 79 30 38 ];
         %tmp.146 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_MEDIUM %tmp.147 74 39 57 ];
+        symbol [ FONT_NUMBER_MEDIUM %tmp.147 79 39 57 ];
         %tmp.147 = getv %tmp.146 :FONT_NUMBER_MEDIUM;
         %tmp.148 = lgetv %distStr.5;
-        symbol [ distStr %tmp.148 74 59 66 ];
-        symbol [ Graphics %tmp.149 74 68 76 ];
+        symbol [ distStr %tmp.148 79 59 66 ];
+        symbol [ Graphics %tmp.149 79 68 76 ];
         %tmp.149 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.150 74 77 96 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.150 79 77 96 ];
         %tmp.150 = getv %tmp.149 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.142 %tmp.143(%tmp.144, %tmp.145, %tmp.147, %tmp.148, %tmp.150);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 77 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 82 8 ]
         %tmp.151 = lgetv %dc;
-        symbol [ dc %tmp.151 77 8 10 ];
-        symbol [ setColor %tmp.152 77 11 19 ];
+        symbol [ dc %tmp.151 82 8 10 ];
+        symbol [ setColor %tmp.152 82 11 19 ];
         %tmp.152 = getv function %tmp.151 :setColor;
         %tmp.153 = 0x55AAFF;
-        symbol [ Graphics %tmp.154 77 30 38 ];
+        symbol [ Graphics %tmp.154 82 30 38 ];
         %tmp.154 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.155 77 39 56 ];
+        symbol [ COLOR_TRANSPARENT %tmp.155 82 39 56 ];
         %tmp.155 = getv %tmp.154 :COLOR_TRANSPARENT;
         invoke %tmp.151 %tmp.152(%tmp.153, %tmp.155);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 78 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 83 8 ]
         %tmp.156 = lgetv %dc;
-        symbol [ dc %tmp.156 78 8 10 ];
-        symbol [ drawText %tmp.157 78 11 19 ];
+        symbol [ dc %tmp.156 83 8 10 ];
+        symbol [ drawText %tmp.157 83 11 19 ];
         %tmp.157 = getv function %tmp.156 :drawText;
         %tmp.158 = 310;
         %tmp.159 = 175;
-        symbol [ Graphics %tmp.160 78 30 38 ];
+        symbol [ Graphics %tmp.160 83 30 38 ];
         %tmp.160 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.161 78 39 49 ];
+        symbol [ FONT_XTINY %tmp.161 83 39 49 ];
         %tmp.161 = getv %tmp.160 :FONT_XTINY;
         %tmp.162 = "TIMER";
-        symbol [ Graphics %tmp.163 78 60 68 ];
+        symbol [ Graphics %tmp.163 83 60 68 ];
         %tmp.163 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.164 78 69 88 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.164 83 69 88 ];
         %tmp.164 = getv %tmp.163 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.156 %tmp.157(%tmp.158, %tmp.159, %tmp.161, %tmp.162, %tmp.164);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 79 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 84 8 ]
         %tmp.165 = lgetv %dc;
-        symbol [ dc %tmp.165 79 8 10 ];
-        symbol [ setColor %tmp.166 79 11 19 ];
+        symbol [ dc %tmp.165 84 8 10 ];
+        symbol [ setColor %tmp.166 84 11 19 ];
         %tmp.166 = getv function %tmp.165 :setColor;
-        symbol [ Graphics %tmp.167 79 20 28 ];
+        symbol [ Graphics %tmp.167 84 20 28 ];
         %tmp.167 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.168 79 29 40 ];
+        symbol [ COLOR_WHITE %tmp.168 84 29 40 ];
         %tmp.168 = getv %tmp.167 :COLOR_WHITE;
-        symbol [ Graphics %tmp.169 79 42 50 ];
+        symbol [ Graphics %tmp.169 84 42 50 ];
         %tmp.169 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.170 79 51 68 ];
+        symbol [ COLOR_TRANSPARENT %tmp.170 84 51 68 ];
         %tmp.170 = getv %tmp.169 :COLOR_TRANSPARENT;
         invoke %tmp.165 %tmp.166(%tmp.168, %tmp.170);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 80 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 85 8 ]
         %tmp.171 = lgetv %dc;
-        symbol [ dc %tmp.171 80 8 10 ];
-        symbol [ drawText %tmp.172 80 11 19 ];
+        symbol [ dc %tmp.171 85 8 10 ];
+        symbol [ drawText %tmp.172 85 11 19 ];
         %tmp.172 = getv function %tmp.171 :drawText;
         %tmp.173 = 310;
         %tmp.174 = 195;
-        symbol [ Graphics %tmp.175 80 30 38 ];
+        symbol [ Graphics %tmp.175 85 30 38 ];
         %tmp.175 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_MEDIUM %tmp.176 80 39 57 ];
+        symbol [ FONT_NUMBER_MEDIUM %tmp.176 85 39 57 ];
         %tmp.176 = getv %tmp.175 :FONT_NUMBER_MEDIUM;
         %tmp.177 = lgetv %timerStr.6;
-        symbol [ timerStr %tmp.177 80 59 67 ];
-        symbol [ Graphics %tmp.178 80 69 77 ];
+        symbol [ timerStr %tmp.177 85 59 67 ];
+        symbol [ Graphics %tmp.178 85 69 77 ];
         %tmp.178 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.179 80 78 97 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.179 85 78 97 ];
         %tmp.179 = getv %tmp.178 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.171 %tmp.172(%tmp.173, %tmp.174, %tmp.176, %tmp.177, %tmp.179);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 83 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 88 8 ]
         %tmp.180 = lgetv %dc;
-        symbol [ dc %tmp.180 83 8 10 ];
-        symbol [ setColor %tmp.181 83 11 19 ];
+        symbol [ dc %tmp.180 88 8 10 ];
+        symbol [ setColor %tmp.181 88 11 19 ];
         %tmp.181 = getv function %tmp.180 :setColor;
         %tmp.182 = 0x55AAFF;
-        symbol [ Graphics %tmp.183 83 30 38 ];
+        symbol [ Graphics %tmp.183 88 30 38 ];
         %tmp.183 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.184 83 39 56 ];
+        symbol [ COLOR_TRANSPARENT %tmp.184 88 39 56 ];
         %tmp.184 = getv %tmp.183 :COLOR_TRANSPARENT;
         invoke %tmp.180 %tmp.181(%tmp.182, %tmp.184);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 84 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 89 8 ]
         %tmp.185 = lgetv %dc;
-        symbol [ dc %tmp.185 84 8 10 ];
-        symbol [ drawText %tmp.186 84 11 19 ];
+        symbol [ dc %tmp.185 89 8 10 ];
+        symbol [ drawText %tmp.186 89 11 19 ];
         %tmp.186 = getv function %tmp.185 :drawText;
-        %tmp.187 = 175;
+        %tmp.187 = 155;
         %tmp.188 = 295;
-        symbol [ Graphics %tmp.189 84 30 38 ];
+        symbol [ Graphics %tmp.189 89 30 38 ];
         %tmp.189 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.190 84 39 49 ];
+        symbol [ FONT_SMALL %tmp.190 89 39 49 ];
         %tmp.190 = getv %tmp.189 :FONT_SMALL;
         %tmp.191 = "HR";
-        symbol [ Graphics %tmp.192 84 57 65 ];
+        symbol [ Graphics %tmp.192 89 57 65 ];
         %tmp.192 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.193 84 66 85 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.193 89 66 85 ];
         %tmp.193 = getv %tmp.192 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.185 %tmp.186(%tmp.187, %tmp.188, %tmp.190, %tmp.191, %tmp.193);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 85 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 90 8 ]
         %tmp.194 = lgetv %dc;
-        symbol [ dc %tmp.194 85 8 10 ];
-        symbol [ setColor %tmp.195 85 11 19 ];
+        symbol [ dc %tmp.194 90 8 10 ];
+        symbol [ setColor %tmp.195 90 11 19 ];
         %tmp.195 = getv function %tmp.194 :setColor;
-        symbol [ Graphics %tmp.196 85 20 28 ];
+        symbol [ Graphics %tmp.196 90 20 28 ];
         %tmp.196 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.197 85 29 40 ];
+        symbol [ COLOR_WHITE %tmp.197 90 29 40 ];
         %tmp.197 = getv %tmp.196 :COLOR_WHITE;
-        symbol [ Graphics %tmp.198 85 42 50 ];
+        symbol [ Graphics %tmp.198 90 42 50 ];
         %tmp.198 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.199 85 51 68 ];
+        symbol [ COLOR_TRANSPARENT %tmp.199 90 51 68 ];
         %tmp.199 = getv %tmp.198 :COLOR_TRANSPARENT;
         invoke %tmp.194 %tmp.195(%tmp.197, %tmp.199);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 86 8 ]
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 91 8 ]
         %tmp.200 = lgetv %dc;
-        symbol [ dc %tmp.200 86 8 10 ];
-        symbol [ drawText %tmp.201 86 11 19 ];
+        symbol [ dc %tmp.200 91 8 10 ];
+        symbol [ drawText %tmp.201 91 11 19 ];
         %tmp.201 = getv function %tmp.200 :drawText;
         %tmp.202 = 240;
         %tmp.203 = 280;
-        symbol [ Graphics %tmp.204 86 30 38 ];
+        symbol [ Graphics %tmp.204 91 30 38 ];
         %tmp.204 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_HOT %tmp.205 86 39 54 ];
+        symbol [ FONT_NUMBER_HOT %tmp.205 91 39 54 ];
         %tmp.205 = getv %tmp.204 :FONT_NUMBER_HOT;
         %tmp.206 = lgetv %hrStr.8;
-        symbol [ hrStr %tmp.206 86 56 61 ];
-        symbol [ Graphics %tmp.207 86 63 71 ];
+        symbol [ hrStr %tmp.206 91 56 61 ];
+        symbol [ Graphics %tmp.207 91 63 71 ];
         %tmp.207 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.208 86 72 91 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.208 91 72 91 ];
         %tmp.208 = getv %tmp.207 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.200 %tmp.201(%tmp.202, %tmp.203, %tmp.205, %tmp.206, %tmp.208);
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 89 8 ]
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_89_8_92_8_if_stmt:
-        symbol [ isStreaming %tmp.210 89 12 23 ];
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 94 8 ]
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_94_8_97_8_if_stmt:
+        symbol [ isStreaming %tmp.210 94 12 23 ];
         %tmp.210 = getv ? :isStreaming;
-        bf %tmp.210 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_89_8_92_8_if_end;
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_89_8_92_8_if_true:
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_89_25_92_8_start:
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 90 12 ]
-        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_89_25_92_8_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_89_25_92_8_stop" ]
+        bf %tmp.210 @_config_workspace_project_GarminEven_garmin_source_RunView_mc_94_8_97_8_if_end;
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_94_8_97_8_if_true:
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_94_25_97_8_start:
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 95 12 ]
+        [ "_config_workspace_project_GarminEven_garmin_source_RunView_mc_94_25_97_8_start" "_config_workspace_project_GarminEven_garmin_source_RunView_mc_94_25_97_8_stop" ]
         %jsonStr.9 = local;
-        symbol [ jsonStr %jsonStr.9 90 16 23 ];
+        symbol [ jsonStr %jsonStr.9 95 16 23 ];
         %tmp.211 = "{\"pace\":\"";
         %tmp.212 = lgetv %paceStr.3;
-        symbol [ paceStr %tmp.212 90 43 50 ];
+        symbol [ paceStr %tmp.212 95 43 50 ];
         %tmp.213 = add %tmp.211 %tmp.212;
         %tmp.214 = "\",\"distance\":\"";
         %tmp.215 = add %tmp.213 %tmp.214;
         %tmp.216 = lgetv %distStr.5;
-        symbol [ distStr %tmp.216 90 76 83 ];
+        symbol [ distStr %tmp.216 95 76 83 ];
         %tmp.217 = add %tmp.215 %tmp.216;
         %tmp.218 = "\",\"timer\":\"";
         %tmp.219 = add %tmp.217 %tmp.218;
         %tmp.220 = lgetv %timerStr.6;
-        symbol [ timerStr %tmp.220 90 106 114 ];
+        symbol [ timerStr %tmp.220 95 106 114 ];
         %tmp.221 = add %tmp.219 %tmp.220;
         %tmp.222 = "\",\"hr\":\"";
         %tmp.223 = add %tmp.221 %tmp.222;
         %tmp.224 = lgetv %hrStr.8;
-        symbol [ hrStr %tmp.224 90 134 139 ];
+        symbol [ hrStr %tmp.224 95 134 139 ];
         %tmp.225 = add %tmp.223 %tmp.224;
         %tmp.226 = "\"}";
         %tmp.227 = add %tmp.225 %tmp.226;
         lputv %jsonStr.9 %tmp.227;
-        symbol [ jsonStr %jsonStr.9 90 16 23 ];
-[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 91 12 ]
-        symbol [ Communications %tmp.228 91 12 26 ];
+        symbol [ jsonStr %jsonStr.9 95 16 23 ];
+[ "/config/workspace/project/GarminEven/garmin/source/RunView.mc" 96 12 ]
+        symbol [ Communications %tmp.228 96 12 26 ];
         %tmp.228 = getm $.Toybox.Communications;
-        symbol [ transmit %tmp.229 91 27 35 ];
+        symbol [ transmit %tmp.229 96 27 35 ];
         %tmp.229 = getv function %tmp.228 :transmit;
         %tmp.230 = lgetv %jsonStr.9;
-        symbol [ jsonStr %tmp.230 91 36 43 ];
+        symbol [ jsonStr %tmp.230 96 36 43 ];
         %tmp.231 = null;
-        symbol [ CommListener %tmp.235 91 55 67 ];
+        symbol [ CommListener %tmp.235 96 55 67 ];
         %tmp.235 = getv ? :CommListener;
         %tmp.232 = newc %tmp.235 ();
         invoke %tmp.228 %tmp.229(%tmp.230, %tmp.231, %tmp.232);
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_89_25_92_8_stop:
-        goto @_config_workspace_project_GarminEven_garmin_source_RunView_mc_89_8_92_8_if_end;
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_89_8_92_8_if_end:
-_config_workspace_project_GarminEven_garmin_source_RunView_mc_38_26_93_4_stop:
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_94_25_97_8_stop:
+        goto @_config_workspace_project_GarminEven_garmin_source_RunView_mc_94_8_97_8_if_end;
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_94_8_97_8_if_end:
+_config_workspace_project_GarminEven_garmin_source_RunView_mc_43_26_98_4_stop:
     }
 }
 [ @file = "/config/workspace/project/GarminEven/garmin/source/RunView.mc"; @line = 1; ]

@@ -2127,6 +2127,7 @@ var on = a1_0x58df53(387);
 
 // app.js
 var WS_URL = "ws://127.0.0.1:8080/ws";
+var UPDATE_INTERVAL = 5;
 var bridge = null;
 function logDebug(msg) {
   console.log(msg);
@@ -2183,6 +2184,7 @@ function connectWebSocket() {
   }
   socket.onopen = () => logDebug("WebSocket Connected!");
   socket.onerror = (err) => logDebug("WebSocket Error!");
+  let wsMessageCount = 0;
   socket.onmessage = (e) => {
     try {
       logDebug(`Raw WS Payload: ${e.data}`);
@@ -2191,7 +2193,10 @@ function connectWebSocket() {
       const hrStr = t22.hr ? `${t22.hr} bpm` : "82 bpm";
       const distStr = t22.distance ? `${t22.distance} km` : "5.72 km";
       const timeStr = t22.timer ? t22.timer : "5:45";
-      updateGlassesDisplay(paceStr, hrStr, `${distStr} | ${timeStr}`);
+      wsMessageCount++;
+      if (wsMessageCount % UPDATE_INTERVAL === 0 || wsMessageCount === 1) {
+        updateGlassesDisplay(paceStr, hrStr, `${distStr} | ${timeStr}`);
+      }
     } catch (err) {
     }
   };
